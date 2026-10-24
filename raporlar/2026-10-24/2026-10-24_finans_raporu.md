@@ -1,194 +1,155 @@
 # 📊 Günlük Küresel ve Yerel Finans Bülteni — 2026-10-24
-> **Oluşturulma Zamanı:** `2026-10-24 20:58:53 (Örnek/Demo Veri)`  
+> **Oluşturulma Zamanı:** `2026-10-24 22:11:05`  
 > **Kapsam:** BIST (TL & USD Teknik Analiz) • S&P 500 & Küresel Endeksler • Altın, Gümüş & Rasyo • Fear & Greed (S&P 500, Altın, Kripto) • TEFAS Dönemsel Şampiyonlar • Kripto & BTC Dominance • Tahvil, CDS & Döviz • Petrol & Emtia • 2 Haftalık Ekonomik Takvim • Otorite ve Sektör Haberleri
 
 ## 1. 🇹🇷 BIST 100 ve Borsa İstanbul Endeksleri (TL ve Dolar Bazlı Analiz)
 ### 1.1. TL Bazlı BIST Endeksleri (Günlük, 1H, 1A, 3A, YTD ve 1Y)
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **BIST 100** (`XU100.IS`) | **9.685,40 puan** | 🟢 **+1,42%** *(Artış)* | 🟢 **+3,85%** *(Artış)* | 🔴 **-1,90%** *(Azalış)* | 🔴 **-10,45%** *(Azalış)* | 🟢 **+29,65%** *(Artış)* | 🟢 **+24,80%** *(Artış)* |
-| **BIST 30** (`XU030.IS`) | **10.720,15 puan** | 🟢 **+1,65%** *(Artış)* | 🟢 **+4,10%** *(Artış)* | 🔴 **-1,40%** *(Azalış)* | 🔴 **-9,80%** *(Azalış)* | 🟢 **+33,40%** *(Artış)* | 🟢 **+28,10%** *(Artış)* |
-| **BIST Bankacılık** (`XBANK.IS`) | **13.450,00 puan** | 🟢 **+2,18%** *(Artış)* | 🟢 **+5,60%** *(Artış)* | 🟢 **+1,25%** *(Artış)* | 🔴 **-8,20%** *(Azalış)* | 🟢 **+54,20%** *(Artış)* | 🟢 **+61,50%** *(Artış)* |
-| **BIST Sınai** (`XUSIN.IS`) | **12.940,50 puan** | 🟢 **+0,82%** *(Artış)* | 🟢 **+2,15%** *(Artış)* | 🔴 **-3,40%** *(Azalış)* | 🔴 **-14,10%** *(Azalış)* | 🟢 **+11,80%** *(Artış)* | 🟢 **+9,40%** *(Artış)* |
+| **BIST 100** (`XU100.IS`) | **11.117,00 puan** | 🔴 **-0,92%** *(Azalış)* | 🔴 **-5,16%** *(Azalış)* | 🔴 **-13,74%** *(Azalış)* | 🔴 **-18,78%** *(Azalış)* | 🔴 **-1,28%** *(Azalış)* | 🟢 **+4,80%** *(Artış)* |
+| **BIST 30** (`XU030.IS`) | **13.874,20 puan** | 🔴 **-0,98%** *(Azalış)* | 🔴 **-4,70%** *(Azalış)* | 🔴 **-12,96%** *(Azalış)* | 🔴 **-10,47%** *(Azalış)* | 🟢 **+13,50%** *(Artış)* | 🟢 **+19,94%** *(Artış)* |
+| **BIST Bankacılık** (`XBANK.IS`) | **15.107,20 puan** | 🔴 **-1,58%** *(Azalış)* | 🔴 **-4,47%** *(Azalış)* | 🔴 **-7,12%** *(Azalış)* | 🔴 **-2,14%** *(Azalış)* | 🔴 **-8,66%** *(Azalış)* | 🟢 **+7,21%** *(Artış)* |
+| **BIST Sınai** (`XUSIN.IS`) | **13.562,00 puan** | 🔴 **-1,69%** *(Azalış)* | 🔴 **-8,47%** *(Azalış)* | 🔴 **-21,67%** *(Azalış)* | 🔴 **-27,76%** *(Azalış)* | 🔴 **-3,22%** *(Azalış)* | 🔴 **-1,34%** *(Azalış)* |
 
 ### 1.2. 💵 Dolar (USD) Bazlı BIST 100 Performansı (`XU100 / USDTRY`)
 | Gösterge | Güncel USD | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **BIST 100 (USD Bazlı)** | **282,54 USD** | 🟢 **+1,30%** *(Artış)* | 🟢 **+3,52%** *(Artış)* | 🔴 **-2,45%** *(Azalış)* | 🔴 **-13,80%** *(Azalış)* | 🟢 **+11,40%** *(Artış)* | 🟢 **+1,85%** *(Artış)* |
+| **BIST 100 (USD Bazlı)** | **223,73 USD** | 🔴 **-0,84%** *(Azalış)* | 🔴 **-5,48%** *(Azalış)* | 🔴 **-15,03%** *(Azalış)* | 🔴 **-22,55%** *(Azalış)* | 🔴 **-14,67%** *(Azalış)* | 🔴 **-11,36%** *(Azalış)* |
 
 ### 1.3. 📐 BIST 100 Dolar Bazlı Taban (Dip) ve Tavan (Zirve) Teknik Analizi
 | Teknik Analiz Yöntemi | Referans Seviye (USD) | Tarih / Detay | Güncel Fiyata Uzaklık / Durum |
 |:---|---:|:---|:---|
-| **52 Haftalık (1 Yıl) Dolar Tavanı (Zirve)** | **344,20 USD** | `2026-07-18` | 🔴 Zirveden **-17,91%** aşağıda |
-| **52 Haftalık (1 Yıl) Dolar Tabanı (Dip)** | **254,80 USD** | `2025-12-26` | 🟢 Dipten **+10,89%** yukarıda (Kanal Konumu: **%31.0**) |
-| **Son 3 Aylık Dolar Tavanı / Tabanı** | **327,80 $ / 261,40 $** | 63 İş Günü | Tavana: **-13,81%** / Tabana: **+8,09%** |
-| **Son Yerel Swing Tavan (Pivot Direnç)** | **298,60 USD** | `2026-09-24` | Son yerel tepeden **-5,38%** uzaklıkta |
-| **Son Yerel Swing Taban (Pivot Destek)** | **261,40 USD** | `2026-10-14` | Son yerel dipten **+8,09%** yukarıda |
-| **Fibonacci Düzeltme Seviyeleri (1Y)** | `%61.8:` **288,95 $** | `%50:` **299,50 $** | `%38.2:` **310,05 $** • `%23.6:` **323,10 $** |
-| **Hareketli Ortalamalar & RSI (USD)** | `MA50:` **289,40 $** | `MA200:` **296,80 $** | `RSI(14):` **44.6** |
+| **52 Haftalık (1 Yıl) Dolar Tavanı (Zirve)** | **333,44 USD** | `2026-05-11` | 🔴 Zirveden **-32,90%** aşağıda |
+| **52 Haftalık (1 Yıl) Dolar Tabanı (Dip)** | **223,73 USD** | `2026-10-23` | 🟢 Dipten **0,00%** yukarıda (Kanal Konumu: **%0.0**) |
+| **Son 3 Aylık Dolar Tavanı / Tabanı** | **305,07 $ / 223,73 $** | 63 İş Günü | Tavana: **-26,66%** / Tabana: **0,00%** |
+| **Son Yerel Swing Tavan (Pivot Direnç)** | **299,16 USD** | `2026-09-09` | Son yerel tepeden **-25,21%** uzaklıkta |
+| **Son Yerel Swing Taban (Pivot Destek)** | **243,68 USD** | `2026-09-30` | Son yerel dipten **-8,19%** yukarıda |
+| **Fibonacci Düzeltme Seviyeleri (1Y)** | `%61.8:` **265,64 $** | `%50:` **278,58 $** | `%38.2:` **291,53 $** • `%23.6:` **307,55 $** |
+| **Hareketli Ortalamalar & RSI (USD)** | `MA50:` **271,17 $** | `MA200:` **296,06 $** | `RSI(14):` **25.5** |
 
-> **💡 Teknik Analiz Özeti:** BIST 100 Dolar bazında 282,54$ seviyesinde olup 1 yıllık dolar kanalının alt (ucuz/destek) bölgesinde (%31,0) yer alıyor. 52 haftalık zirvesinden (344,20$) %17,9 aşağıda, 52 haftalık dibinden (254,80$) ise %10,9 yukarıda bulunuyor. Son yerel Swing tabanı olan 261,40$ desteğinden %8,1 tepki veren endekste ilk kritik direnç Fibonacci %61,8 (288,95$) ve 200 günlük ortalama (296,80$) bölgesidir.
+> **💡 Teknik Analiz Özeti:** BIST 100 Dolar bazında 223.73$ seviyesinde olup 1 yıllık dolar kanalının alt (ucuz/destek) bölgesinde (%0.0) yer alıyor. 52 haftalık zirvesinden (333.44$) %32.9 aşağıda, 52 haftalık dibinden (223.73$) ise %0.0 yukarıda bulunuyor. Endeks 200 günlük dolar ortalamasının (296.06$) altında baskı altında seyrederken RSI(14) göstergesi 25.5 seviyesindedir.
 
 ## 2. 🌎 S&P 500 ve ABD / Küresel Endeksler (Çoklu Dönem)
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **S&P 500** (`^GSPC`) | **5.842,50 puan** | 🟢 **+0,48%** *(Artış)* | 🟢 **+0,85%** *(Artış)* | 🟢 **+2,35%** *(Artış)* | 🟢 **+7,60%** *(Artış)* | 🟢 **+22,40%** *(Artış)* | 🟢 **+38,20%** *(Artış)* |
-| **Nasdaq** (`^IXIC`) | **18.590,20 puan** | 🟢 **+0,76%** *(Artış)* | 🟢 **+1,40%** *(Artış)* | 🟢 **+3,10%** *(Artış)* | 🟢 **+8,90%** *(Artış)* | 🟢 **+23,80%** *(Artış)* | 🟢 **+42,10%** *(Artış)* |
-| **Dow Jones** (`^DJI`) | **42.374,30 puan** | 🔴 **-0,32%** *(Azalış)* | 🔴 **-0,95%** *(Azalış)* | 🟢 **+0,80%** *(Artış)* | 🟢 **+5,40%** *(Artış)* | 🟢 **+12,40%** *(Artış)* | 🟢 **+27,60%** *(Artış)* |
-| **VIX Volatilite Endeksi** (`^VIX`) | **18,45 puan** | 🔴 **-3,20%** *(Azalış)* | 🟢 **+2,30%** *(Artış)* | 🟢 **+19,80%** *(Artış)* | 🟢 **+12,10%** *(Artış)* | 🟢 **+48,20%** *(Artış)* | 🔴 **-4,10%** *(Azalış)* |
+| **S&P 500** (`^GSPC`) | **7.623,68 puan** | 🔴 **-0,52%** *(Azalış)* | 🔴 **-0,47%** *(Azalış)* | 🔴 **-1,04%** *(Azalış)* | 🟢 **+2,84%** *(Artış)* | 🟢 **+11,37%** *(Artış)* | 🟢 **+12,25%** *(Artış)* |
+| **Nasdaq** (`^IXIC`) | **25.955,34 puan** | 🔴 **-0,21%** *(Azalış)* | 🔴 **-0,71%** *(Azalış)* | 🔴 **-3,65%** *(Azalış)* | 🟢 **+4,10%** *(Artış)* | 🟢 **+11,67%** *(Artış)* | 🟢 **+11,85%** *(Artış)* |
+| **Dow Jones** (`^DJI`) | **52.215,16 puan** | 🔴 **-1,23%** *(Azalış)* | 🟢 **+0,41%** *(Artış)* | 🟢 **+1,68%** *(Artış)* | ⚪ **+0,01%** *(Yatay)* | 🟢 **+8,64%** *(Artış)* | 🟢 **+10,61%** *(Artış)* |
+| **VIX Volatilite Endeksi** (`^VIX`) | **19,45 puan** | 🟢 **+2,21%** *(Artış)* | 🔴 **-2,70%** *(Azalış)* | 🟢 **+24,12%** *(Artış)* | 🟢 **+6,81%** *(Artış)* | 🟢 **+30,10%** *(Artış)* | 🟢 **+12,43%** *(Artış)* |
 
 ## 3. 🪙 Altın, Gümüş (Döviz Çoklu Dönem + Günlük TL) ve Altın/Gümüş Oranı
 ### 3.1. Döviz (USD / Ons) Bazlı Altın ve Gümüş Performansı
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **Ons Altın (USD)** (`GC=F`) | **2.738,50 USD** | 🟢 **+0,85%** *(Artış)* | 🟢 **+1,72%** *(Artış)* | 🟢 **+4,30%** *(Artış)* | 🟢 **+14,20%** *(Artış)* | 🟢 **+32,80%** *(Artış)* | 🟢 **+38,60%** *(Artış)* |
-| **Ons Gümüş (USD)** (`SI=F`) | **33,85 USD** | 🟢 **+1,15%** *(Artış)* | 🟢 **+6,40%** *(Artış)* | 🟢 **+9,80%** *(Artış)* | 🟢 **+16,90%** *(Artış)* | 🟢 **+41,20%** *(Artış)* | 🟢 **+46,80%** *(Artış)* |
+| **Ons Altın (USD)** (`GC=F`) | **4.007,90 USD** | 🔴 **-1,29%** *(Azalış)* | 🔴 **-4,14%** *(Azalış)* | 🔴 **-6,75%** *(Azalış)* | 🔴 **-1,69%** *(Azalış)* | 🔴 **-7,68%** *(Azalış)* | 🔴 **-3,14%** *(Azalış)* |
+| **Ons Gümüş (USD)** (`SI=F`) | **53,71 USD** | 🔴 **-1,92%** *(Azalış)* | 🔴 **-5,76%** *(Azalış)* | 🔴 **-15,36%** *(Azalış)* | 🔴 **-8,14%** *(Azalış)* | 🔴 **-23,42%** *(Azalış)* | 🟢 **+11,03%** *(Artış)* |
 
 ### 3.2. TL Bazlı Günlük Değerler ve Altın / Gümüş Rasyosu (`XAU/XAG`)
 | Gösterge | Güncel Değer | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | Yılbaşı (YTD) | 1 Yıl (1Y) | Not |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **Gram Altın (TL - Sadece Günlük)** | **3.018,45 TL** | 🟢 **+0,97%** *(Artış)* | - | - | - | - | Ons × USD/TRY |
-| **Gram Gümüş (TL - Sadece Günlük)** | **37,31 TL** | 🟢 **+1,27%** *(Artış)* | - | - | - | - | Ons × USD/TRY |
-| **Altın / Gümüş Oranı (XAU/XAG)** | **80,90 kat** | 🔴 **-0,30%** *(Azalış)* | 🔴 **-4,40%** *(Azalış)* | 🔴 **-5,01%** *(Azalış)* | 🔴 **-5,95%** *(Azalış)* | 🔴 **-5,58%** *(Azalış)* | 1 Ons Altın = 80.9 Ons Gümüş |
+| **Gram Altın (TL - Sadece Günlük)** | **6.402,74 TL** | 🔴 **-1,38%** *(Azalış)* | - | - | - | - | Ons × USD/TRY |
+| **Gram Gümüş (TL - Sadece Günlük)** | **85,80 TL** | 🔴 **-2,01%** *(Azalış)* | - | - | - | - | Ons × USD/TRY |
+| **Altın / Gümüş Oranı (XAU/XAG)** | **74,62 kat** | 🟢 **+0,65%** *(Artış)* | 🟢 **+1,72%** *(Artış)* | 🟢 **+10,17%** *(Artış)* | 🟢 **+20,55%** *(Artış)* | 🔴 **-12,76%** *(Azalış)* | 1 Ons Altın = 74.62 Ons Gümüş |
 
-> **💡 Rasyo Notu:** Altın/Gümüş oranı 80,90 seviyesinde; son 1 ayda gümüşün altına kıyasla daha hızlı yükselmesiyle rasyo %5,01 geriledi.
+> **💡 Rasyo Notu:** Altın/Gümüş oranı 74.62 ile dengeli bantta seyrediyor.
 
 ## 4. 🧭 Korku ve Açgözlülük Endeksleri (S&P 500 • Altın • Kripto)
 | Piyasa | Güncel Skor (0-100) | Duyarlılık Bölgesi | Önceki Gün | Geçen Hafta | Geçen Ay | Açıklama |
 |:---|:---:|:---|:---:|:---:|:---:|:---|
-| **S&P 500 (ABD Borsası)** | **68 / 100** | **Açgözlülük** | 66 | 71 | 62 | S&P 500 zirveye yakın seyrederken yatırımcı iştahı 'Açgözlülük' (Greed) bölgesinde güçlü kalmaya devam ediyor. |
-| **Altın (Ons Gold)** | **76 / 100** | **Aşırı Açgözlülük** | 74 | 72 | 65 | Merkez bankası alımları ve jeopolitik güvenli liman talebiyle altında 'Aşırı Açgözlülük' (Extreme Greed) momentumu hakim. |
-| **Kripto Piyasası (BTC & Genel)** | **72 / 100** | **Açgözlülük** | 70 | 64 | 54 | Bitcoin'in 68 bin dolar üzerinde tutunması ve ETF girişleriyle kripto duyarlılığı 'Açgözlülük' bölgesinde. |
+| **S&P 500 (ABD Borsası)** | **21 / 100** | **Aşırı Korku** | 20 | 22 | 33 | S&P 500 fiyat momentumu, VIX volatilitesi ve piyasa genişliği bazlı duyarlılık. |
+| **Altın (Ons Gold)** | **26 / 100** | **Korku** | 26 | 44 | 40 | Ons Altın RSI(14), 50/200 günlük ortalama sapması ve güvenli liman talebi endeksi. |
+| **Kripto Piyasası (BTC & Genel)** | **51 / 100** | **Nötr** | 50 | 55 | 71 | Alternative.me kripto volatilite, hacim ve sosyal duyarlılık endeksi. |
 
 ## 5. 🏆 TEFAS Fonları: Dönemsel En Çok Kazandıranlar ve Kapsamları
 ### 5.1. Son 1 Günde En Çok Kazandıran TEFAS Fonları
-| Sıra | Kod | Fon Adı | Kapsamı / Şemsiye Türü | Günlük | 1 Hafta | 1 Ay | YTD (Yılbaşı) | 1 Yıl |
-|:---:|:---:|:---|:---|---:|---:|---:|---:|---:|
-| 1 | **TI2** | İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu | *Teknoloji & Yerli Hisse Kapsamı* | **+3,42%** | **+6,10%** | **+4,80%** | **+48,20%** | **+62,40%** |
-| 2 | **TAU** | İş Portföy BIST Banka Endeksi Hisse Senedi Fonu | *Bankacılık & Finans Sektörü Hisse Kapsamı* | **+2,85%** | **+5,90%** | **+2,10%** | **+64,50%** | **+78,10%** |
-| 3 | **GUM** | Ak Portföy Gümüş Fon Sepeti Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+2,40%** | **+7,80%** | **+12,40%** | **+52,10%** | **+66,80%** |
-| 4 | **YHZ** | Yapı Kredi Portföy BIST Banka Endeksi Hisse Senedi Fonu | *Bankacılık & Finans Sektörü Hisse Kapsamı* | **+2,32%** | **+5,75%** | **+1,95%** | **+63,80%** | **+76,90%** |
+_Veri bulunamadı._
 
 ### 5.2. Son 1 Haftada En Çok Kazandıran TEFAS Fonları
-| Sıra | Kod | Fon Adı | Kapsamı / Şemsiye Türü | Günlük | 1 Hafta | 1 Ay | YTD (Yılbaşı) | 1 Yıl |
-|:---:|:---:|:---|:---|---:|---:|---:|---:|---:|
-| 1 | **GUM** | Ak Portföy Gümüş Fon Sepeti Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+2,40%** | **+7,80%** | **+12,40%** | **+52,10%** | **+66,80%** |
-| 2 | **GTZ** | Garanti Portföy Gümüş Fon Sepeti Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+2,15%** | **+7,45%** | **+11,90%** | **+50,80%** | **+64,90%** |
-| 3 | **TI2** | İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu | *Teknoloji & Yerli Hisse Kapsamı* | **+3,42%** | **+6,10%** | **+4,80%** | **+48,20%** | **+62,40%** |
-| 4 | **TAU** | İş Portföy BIST Banka Endeksi Hisse Senedi Fonu | *Bankacılık & Finans Sektörü Hisse Kapsamı* | **+2,85%** | **+5,90%** | **+2,10%** | **+64,50%** | **+78,10%** |
+_Veri bulunamadı._
 
 ### 5.3. Son 1 Ayda En Çok Kazandıran TEFAS Fonları
-| Sıra | Kod | Fon Adı | Kapsamı / Şemsiye Türü | Günlük | 1 Hafta | 1 Ay | YTD (Yılbaşı) | 1 Yıl |
-|:---:|:---:|:---|:---|---:|---:|---:|---:|---:|
-| 1 | **GUM** | Ak Portföy Gümüş Fon Sepeti Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+2,40%** | **+7,80%** | **+12,40%** | **+52,10%** | **+66,80%** |
-| 2 | **KZL** | Kuveyt Türk Portföy Altın Katılım Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+0,95%** | **+3,10%** | **+8,90%** | **+49,40%** | **+64,20%** |
-| 3 | **AFT** | Ak Portföy Yeni Teknolojiler Yabancı Hisse Senedi Fonu | *Teknoloji & Yabancı Hisse Kapsamı* | **+0,94%** | **+2,40%** | **+7,15%** | **+44,60%** | **+58,90%** |
-| 4 | **YAY** | Yapı Kredi Portföy Yabancı Teknoloji Sektörü Hisse Senedi Fonu | *Teknoloji & Yabancı Hisse Kapsamı* | **+0,88%** | **+2,25%** | **+6,95%** | **+45,10%** | **+60,40%** |
+_Veri bulunamadı._
 
 ### 5.4. Yılbaşından İtibaren (YTD) En Çok Kazandıran TEFAS Fonları
-| Sıra | Kod | Fon Adı | Kapsamı / Şemsiye Türü | Günlük | 1 Hafta | 1 Ay | YTD (Yılbaşı) | 1 Yıl |
-|:---:|:---:|:---|:---|---:|---:|---:|---:|---:|
-| 1 | **IIH** | İstanbul Portföy Üçüncü Hisse Senedi Fonu | *Yerli Hisse Senedi (BIST) Kapsamı* | **+1,65%** | **+3,90%** | **+2,40%** | **+68,40%** | **+84,50%** |
-| 2 | **TAU** | İş Portföy BIST Banka Endeksi Hisse Senedi Fonu | *Bankacılık & Finans Sektörü Hisse Kapsamı* | **+2,85%** | **+5,90%** | **+2,10%** | **+64,50%** | **+78,10%** |
-| 3 | **MAC** | Marmara Capital Portföy Hisse Senedi Fonu | *Yerli Hisse Senedi (BIST) Kapsamı* | **+1,38%** | **+3,20%** | **+1,80%** | **+56,20%** | **+71,40%** |
-| 4 | **GUM** | Ak Portföy Gümüş Fon Sepeti Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+2,40%** | **+7,80%** | **+12,40%** | **+52,10%** | **+66,80%** |
+_Veri bulunamadı._
 
 ### 5.5. Son 1 Yılda En Çok Kazandıran TEFAS Fonları
-| Sıra | Kod | Fon Adı | Kapsamı / Şemsiye Türü | Günlük | 1 Hafta | 1 Ay | YTD (Yılbaşı) | 1 Yıl |
-|:---:|:---:|:---|:---|---:|---:|---:|---:|---:|
-| 1 | **IIH** | İstanbul Portföy Üçüncü Hisse Senedi Fonu | *Yerli Hisse Senedi (BIST) Kapsamı* | **+1,65%** | **+3,90%** | **+2,40%** | **+68,40%** | **+84,50%** |
-| 2 | **TAU** | İş Portföy BIST Banka Endeksi Hisse Senedi Fonu | *Bankacılık & Finans Sektörü Hisse Kapsamı* | **+2,85%** | **+5,90%** | **+2,10%** | **+64,50%** | **+78,10%** |
-| 3 | **MAC** | Marmara Capital Portföy Hisse Senedi Fonu | *Yerli Hisse Senedi (BIST) Kapsamı* | **+1,38%** | **+3,20%** | **+1,80%** | **+56,20%** | **+71,40%** |
-| 4 | **GUM** | Ak Portföy Gümüş Fon Sepeti Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+2,40%** | **+7,80%** | **+12,40%** | **+52,10%** | **+66,80%** |
-
-### 5.6. Özel Takip Listenizdeki TEFAS Fonları
-| Sıra | Kod | Fon Adı | Kapsamı / Şemsiye Türü | Günlük | 1 Hafta | 1 Ay | YTD (Yılbaşı) | 1 Yıl |
-|:---:|:---:|:---|:---|---:|---:|---:|---:|---:|
-| 1 | **TI2** | İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu | *Teknoloji & Yerli Hisse Kapsamı* | **+3,42%** | **+6,10%** | **+4,80%** | **+48,20%** | **+62,40%** |
-| 2 | **TTE** | İş Portföy BIST Teknoloji Endeksi Hisse Senedi Fonu | *Teknoloji & Yerli Hisse Kapsamı* | **+2,95%** | **+5,40%** | **+3,90%** | **+41,50%** | **+54,80%** |
-| 3 | **MAC** | Marmara Capital Portföy Hisse Senedi Fonu | *Yerli Hisse Senedi (BIST) Kapsamı* | **+1,38%** | **+3,20%** | **+1,80%** | **+56,20%** | **+71,40%** |
-| 4 | **IPB** | İstanbul Portföy Birinci Değişken Fon | *Değişken / Aktif Dağılım Kapsamı* | **+0,88%** | **+2,40%** | **+3,50%** | **+46,80%** | **+61,20%** |
-| 5 | **AFT** | Ak Portföy Yeni Teknolojiler Yabancı Hisse Senedi Fonu | *Teknoloji & Yabancı Hisse Kapsamı* | **+0,94%** | **+2,40%** | **+7,15%** | **+44,60%** | **+58,90%** |
-| 6 | **KZL** | Kuveyt Türk Portföy Altın Katılım Fonu | *Altın & Kıymetli Madenler Kapsamı* | **+0,95%** | **+3,10%** | **+8,90%** | **+49,40%** | **+64,20%** |
-| 7 | **PPN** | Nurol Portföy Para Piyasası Fonu | *Para Piyasası & Kısa Vadeli Likidite Kapsamı* | **+0,14%** | **+0,98%** | **+4,18%** | **+44,10%** | **+55,60%** |
+_Veri bulunamadı._
 
 ## 6. ₿ Kripto Varlıklar (`BTC`, `ETH`, `XRP`), Toplam Piyasa Değeri ve BTC Dominance
-- **Küresel Kripto Toplam Piyasa Değeri (Total Market Cap):** **$2.36 Trilyon USD** (Günlük: **+1,62%** • Haftalık: **+2,84%** • Aylık: **+6,52%** • YTD: **+45,60%** • 1 Yıllık: **+79,40%**)
-- **Bitcoin Dominance (`BTC.D`):** **%57.45** (Ethereum Payı: **%13.4**)
+- **Küresel Kripto Toplam Piyasa Değeri (Total Market Cap):** **$2.71 Trilyon USD** (Günlük: **-4,02%** • Haftalık: **-2,17%** • Aylık: **-7,94%** • YTD: **-12,74%** • 1 Yıllık: **-32,17%**)
+- **Bitcoin Dominance (`BTC.D`):** **%59.57** (Ethereum Payı: **%10.51**)
 
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **Bitcoin (BTC)** (`BTC-USD`) | **68.450,00 USD** | 🟢 **+1,85%** *(Artış)* | 🟢 **+3,40%** *(Artış)* | 🟢 **+8,90%** *(Artış)* | 🟢 **+4,20%** *(Artış)* | 🟢 **+61,80%** *(Artış)* | 🟢 **+98,40%** *(Artış)* |
-| **Ethereum (ETH)** (`ETH-USD`) | **2.640,00 USD** | 🟢 **+0,95%** *(Artış)* | 🟢 **+1,80%** *(Artış)* | 🟢 **+2,10%** *(Artış)* | 🔴 **-18,40%** *(Azalış)* | 🟢 **+15,60%** *(Artış)* | 🟢 **+44,20%** *(Artış)* |
-| **Ripple (XRP)** (`XRP-USD`) | **0,54 USD** | 🟢 **+1,50%** *(Artış)* | 🔴 **-1,20%** *(Azalış)* | 🔴 **-6,40%** *(Azalış)* | 🔴 **-8,90%** *(Azalış)* | 🔴 **-11,80%** *(Azalış)* | 🔴 **-1,40%** *(Azalış)* |
+| **Bitcoin (BTC)** (`BTC-USD`) | **80.390,37 USD** | 🔴 **-0,84%** *(Azalış)* | 🔴 **-1,79%** *(Azalış)* | 🔴 **-5,16%** *(Azalış)* | 🟢 **+4,29%** *(Artış)* | 🔴 **-8,13%** *(Azalış)* | 🔴 **-27,60%** *(Azalış)* |
+| **Ethereum (ETH)** (`ETH-USD`) | **2.335,29 USD** | 🔴 **-2,05%** *(Azalış)* | 🔴 **-2,89%** *(Azalış)* | 🔴 **-13,10%** *(Azalış)* | 🔴 **-3,67%** *(Azalış)* | 🔴 **-21,29%** *(Azalış)* | 🔴 **-40,65%** *(Azalış)* |
+| **Ripple (XRP)** (`XRP-USD`) | **1,28 USD** | 🔴 **-0,71%** *(Azalış)* | 🔴 **-1,38%** *(Azalış)* | 🔴 **-13,58%** *(Azalış)* | 🔴 **-12,23%** *(Azalış)* | 🔴 **-30,18%** *(Azalış)* | 🔴 **-48,77%** *(Azalış)* |
 
 ## 7. 🏛️ ABD & Türkiye Tahvilleri, CDS Risk Primi, Euro ve Dolar Fiyatları
 ### 7.1. Döviz Kurları, EUR/USD Paritesi ve Küresel Dolar Endeksi (`DXY`)
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **Dolar / TL** (`USDTRY=X`) | **34,28 TL** | 🟢 **+0,12%** *(Artış)* | 🟢 **+0,32%** *(Artış)* | 🟢 **+0,56%** *(Artış)* | 🟢 **+3,88%** *(Artış)* | 🟢 **+16,05%** *(Artış)* | 🟢 **+22,40%** *(Artış)* |
-| **Euro / TL** (`EURTRY=X`) | **37,15 TL** | 🟢 **+0,25%** *(Artış)* | ⚪ **-0,18%** *(Yatay)* | 🔴 **-2,10%** *(Azalış)* | 🟢 **+3,40%** *(Artış)* | 🟢 **+13,80%** *(Artış)* | 🟢 **+24,90%** *(Artış)* |
-| **EUR / USD Paritesi** (`EURUSD=X`) | **1,08 USD** | 🟢 **+0,14%** *(Artış)* | 🔴 **-0,45%** *(Azalış)* | 🔴 **-2,65%** *(Azalış)* | ⚪ **-0,40%** *(Yatay)* | 🔴 **-1,95%** *(Azalış)* | 🟢 **+2,10%** *(Artış)* |
-| **DXY Dolar Endeksi** (`DX-Y.NYB`) | **104,25 puan** | 🟢 **+0,14%** *(Artış)* | 🟢 **+0,65%** *(Artış)* | 🟢 **+3,40%** *(Artış)* | ⚪ **-0,15%** *(Yatay)* | 🟢 **+2,85%** *(Artış)* | 🔴 **-1,90%** *(Azalış)* |
+| **Dolar / TL** (`USDTRY=X`) | **49,69 TL** | ⚪ **-0,08%** *(Yatay)* | 🟢 **+0,33%** *(Artış)* | 🟢 **+1,51%** *(Artış)* | 🟢 **+4,87%** *(Artış)* | 🟢 **+15,68%** *(Artış)* | 🟢 **+18,37%** *(Artış)* |
+| **Euro / TL** (`EURTRY=X`) | **55,67 TL** | 🔴 **-0,32%** *(Azalış)* | ⚪ **+0,16%** *(Yatay)* | ⚪ **-0,03%** *(Yatay)* | 🟢 **+3,20%** *(Artış)* | 🟢 **+10,02%** *(Artış)* | 🟢 **+13,98%** *(Artış)* |
+| **EUR / USD Paritesi** (`EURUSD=X`) | **1,12 USD** | 🔴 **-0,15%** *(Azalış)* | ⚪ **-0,19%** *(Yatay)* | 🔴 **-1,50%** *(Azalış)* | 🔴 **-1,60%** *(Azalış)* | 🔴 **-4,62%** *(Azalış)* | 🔴 **-3,48%** *(Azalış)* |
+| **DXY Dolar Endeksi** (`DX-Y.NYB`) | **101,81 puan** | 🟢 **+0,20%** *(Artış)* | ⚪ **-0,03%** *(Yatay)* | 🟢 **+0,51%** *(Artış)* | ⚪ **+0,30%** *(Yatay)* | 🟢 **+3,59%** *(Artış)* | 🟢 **+2,89%** *(Artış)* |
 
 ### 7.2. ABD Hazine Tahvilleri, Türkiye Gösterge Tahvilleri ve 5Y CDS
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **ABD 5 Yıllık Tahvil** (`^FVX`) | **%4,03** | 🟢 **+0,30%** *(Artış)* | 🟢 **+3,80%** *(Artış)* | 🟢 **+14,20%** *(Artış)* | 🔴 **-2,10%** *(Azalış)* | 🟢 **+4,80%** *(Artış)* | 🔴 **-16,20%** *(Azalış)* |
-| **ABD 10 Yıllık Tahvil** (`^TNX`) | **%4,21** | 🟢 **+0,45%** *(Artış)* | 🟢 **+3,20%** *(Artış)* | 🟢 **+12,60%** *(Artış)* | 🔴 **-0,80%** *(Azalış)* | 🟢 **+8,50%** *(Artış)* | 🔴 **-13,40%** *(Azalış)* |
-| **ABD 30 Yıllık Tahvil** (`^TYX`) | **%4,50** | 🟢 **+0,40%** *(Artış)* | 🟢 **+2,60%** *(Artış)* | 🟢 **+9,80%** *(Artış)* | 🟢 **+0,90%** *(Artış)* | 🟢 **+11,60%** *(Artış)* | 🔴 **-9,80%** *(Azalış)* |
-| **Türkiye 2 Yıllık Tahvil** (`TR2Y`) | **%42,65** | 🔴 **-0,15%** *(Azalış)* | 🔴 **-0,45%** *(Azalış)* | 🟢 **+1,20%** *(Artış)* | 🟢 **+2,40%** *(Artış)* | 🟢 **+7,50%** *(Artış)* | 🟢 **+14,80%** *(Artış)* |
-| **Türkiye 10 Yıllık Tahvil** (`TR10Y`) | **%29,80** | ⚪ **-0,10%** *(Yatay)* | 🔴 **-0,80%** *(Azalış)* | 🟢 **+3,10%** *(Artış)* | 🟢 **+5,20%** *(Artış)* | 🟢 **+11,40%** *(Artış)* | 🟢 **+8,90%** *(Artış)* |
-| **Türkiye 5 Yıllık CDS** (`TR_CDS_5Y`) | **266,50 bp** | 🔴 **-0,56%** *(Azalış)* | 🔴 **-1,80%** *(Azalış)* | 🔴 **-3,40%** *(Azalış)* | 🟢 **+1,20%** *(Artış)* | 🔴 **-5,80%** *(Azalış)* | 🔴 **-34,20%** *(Azalış)* |
+| **ABD 5 Yıllık Tahvil** (`^FVX`) | **%4,80** | 🟢 **+0,78%** *(Artış)* | 🔴 **-1,92%** *(Azalış)* | 🔴 **-4,38%** *(Azalış)* | 🟢 **+9,28%** *(Artış)* | 🟢 **+29,10%** *(Artış)* | 🟢 **+33,58%** *(Artış)* |
+| **ABD 10 Yıllık Tahvil** (`^TNX`) | **%4,99** | 🟢 **+0,71%** *(Artış)* | 🔴 **-2,16%** *(Azalış)* | 🔴 **-3,37%** *(Azalış)* | 🟢 **+7,48%** *(Artış)* | 🟢 **+19,82%** *(Artış)* | 🟢 **+24,98%** *(Artış)* |
+| **ABD 30 Yıllık Tahvil** (`^TYX`) | **%5,32** | 🟢 **+0,53%** *(Artış)* | 🔴 **-2,23%** *(Azalış)* | 🔴 **-2,67%** *(Azalış)* | 🟢 **+3,71%** *(Artış)* | 🟢 **+9,81%** *(Artış)* | 🟢 **+16,23%** *(Artış)* |
+| **Türkiye 2 Yıllık Tahvil** (`TR2Y`) | **Veri Yok** | - | - | - | - | - | - |
+| **Türkiye 10 Yıllık Tahvil** (`TR10Y`) | **Veri Yok** | - | - | - | - | - | - |
+| **Türkiye 5 Yıllık CDS** (`TR_CDS_5Y`) | **Veri Yok** | - | - | - | - | - | - |
 
 ## 8. 🛢️ Petrol ve Küresel Emtia Grupları (Enerji • Sanayi Metalleri • Tarım)
 | Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |
 |:---|---:|:---|:---|:---|:---|:---|:---|
-| **Brent Petrol** (`BZ=F`) | **74,90 USD** | 🔴 **-0,65%** *(Azalış)* | 🟢 **+2,40%** *(Artış)* | 🟢 **+1,80%** *(Artış)* | 🔴 **-7,80%** *(Azalış)* | 🔴 **-2,80%** *(Azalış)* | 🔴 **-15,40%** *(Azalış)* |
-| **Ham Petrol (WTI)** (`CL=F`) | **71,15 USD** | 🔴 **-0,63%** *(Azalış)* | 🟢 **+2,75%** *(Artış)* | 🟢 **+1,95%** *(Artış)* | 🔴 **-8,40%** *(Azalış)* | ⚪ **-0,70%** *(Yatay)* | 🔴 **-14,80%** *(Azalış)* |
-| **Doğalgaz** (`NG=F`) | **2,52 USD** | 🟢 **+2,44%** *(Artış)* | 🟢 **+11,50%** *(Artış)* | 🔴 **-8,20%** *(Azalış)* | 🟢 **+18,40%** *(Artış)* | ⚪ **+0,40%** *(Yatay)* | 🔴 **-16,20%** *(Azalış)* |
-| **Bakır (Dr. Copper)** (`HG=F`) | **4,38 USD** | 🟢 **+0,69%** *(Artış)* | 🟢 **+0,45%** *(Artış)* | 🔴 **-2,10%** *(Azalış)* | 🟢 **+6,40%** *(Artış)* | 🟢 **+12,60%** *(Artış)* | 🟢 **+21,80%** *(Artış)* |
-| **Buğday** (`ZW=F`) | **572,50 cent** | 🔴 **-0,95%** *(Azalış)* | 🔴 **-2,80%** *(Azalış)* | 🔴 **-1,40%** *(Azalış)* | 🟢 **+4,60%** *(Artış)* | 🔴 **-8,90%** *(Azalış)* | 🔴 **-1,20%** *(Azalış)* |
-| **Kahve** (`KC=F`) | **248,40 cent** | 🔴 **-1,11%** *(Azalış)* | 🔴 **-3,10%** *(Azalış)* | 🔴 **-6,80%** *(Azalış)* | 🟢 **+6,20%** *(Artış)* | 🟢 **+31,80%** *(Artış)* | 🟢 **+49,50%** *(Artış)* |
+| **Brent Petrol** (`BZ=F`) | **116,72 USD** | 🟢 **+3,14%** *(Artış)* | 🟢 **+6,24%** *(Artış)* | 🟢 **+9,49%** *(Artış)* | 🟢 **+32,10%** *(Artış)* | 🟢 **+91,82%** *(Artış)* | 🟢 **+77,01%** *(Artış)* |
+| **Ham Petrol (WTI)** (`CL=F`) | **103,27 USD** | 🟢 **+3,82%** *(Artış)* | 🟢 **+1,83%** *(Artış)* | 🟢 **+9,15%** *(Artış)* | 🟢 **+25,01%** *(Artış)* | 🟢 **+79,85%** *(Artış)* | 🟢 **+67,92%** *(Artış)* |
+| **Doğalgaz** (`NG=F`) | **2,64 USD** | 🔴 **-5,58%** *(Azalış)* | 🔴 **-15,28%** *(Azalış)* | 🔴 **-19,93%** *(Azalış)* | 🔴 **-4,59%** *(Azalış)* | 🔴 **-28,38%** *(Azalış)* | 🔴 **-20,10%** *(Azalış)* |
+| **Bakır (Dr. Copper)** (`HG=F`) | **6,48 USD** | 🟢 **+1,78%** *(Artış)* | 🔴 **-0,84%** *(Azalış)* | 🔴 **-3,61%** *(Azalış)* | 🟢 **+2,16%** *(Artış)* | 🟢 **+15,03%** *(Artış)* | 🟢 **+27,14%** *(Artış)* |
+| **Buğday** (`ZW=F`) | **625,00 cent** | ⚪ **+0,04%** *(Yatay)* | 🔴 **-5,37%** *(Azalış)* | 🔴 **-11,60%** *(Azalış)* | 🔴 **-5,30%** *(Azalış)* | 🟢 **+23,27%** *(Artış)* | 🟢 **+21,95%** *(Artış)* |
+| **Kahve** (`KC=F`) | **307,45 cent** | 🔴 **-1,60%** *(Azalış)* | 🟢 **+0,61%** *(Artış)* | 🟢 **+11,66%** *(Artış)* | 🔴 **-5,27%** *(Azalış)* | 🔴 **-11,84%** *(Azalış)* | 🔴 **-23,71%** *(Azalış)* |
 
 ## 9. 🗓️ Ekonomik Takvim (ABD ve Türkiye — Bugün, Bu Hafta ve Gelecek Hafta)
 ### 9.1. 📌 Bugün Açıklanan / Takip Edilen Önemli Veriler
-| Tarih | Saat | Ülke / Kurum | Önem | Veri / Karar Başlığı | Açıklanan | Beklenti | Önceki |
-|:---|:---:|:---|:---:|:---|---:|---:|---:|
-| `2026-10-24` | `10:00` | **Türkiye (TCMB/TÜİK)** | 🔥 Yüksek | TCMB Piyasa Katılımcıları Anketi ve Enflasyon Beklentileri | **%43,11** | %43,50 | %43,14 |
-| `2026-10-24` | `14:00` | **Türkiye (TCMB)** | 🔥 Yüksek | TCMB Para Politikası Kurulu (PPK) Faiz Kararı Özeti | **%50,00** | %50,00 | %50,00 |
-| `2026-10-24` | `15:30` | **ABD (Fed/Makro)** | 🔥 Yüksek | Dayanıklı Mal Siparişleri (Aylık) | **-0.8%** | -1.0% | 0.0% |
-| `2026-10-24` | `17:00` | **ABD (Fed/Makro)** | 🔥 Yüksek | Michigan Tüketici Güven Endeksi ve Enflasyon Beklentisi | **70.5** | 69.0 | 68.9 |
+_Bu dönem için listelenen yüksek/orta önemde veri bulunmuyor._
 
 ### 9.2. 📅 Bu Haftanın Kalanında Açıklanacak Önemli Veriler
 | Tarih | Saat | Ülke / Kurum | Önem | Veri / Karar Başlığı | Açıklanan | Beklenti | Önceki |
 |:---|:---:|:---|:---:|:---|---:|---:|---:|
-| `2026-10-25` | `10:00` | **Türkiye (TCMB)** | 🔸 Orta | Reel Kesim Güven Endeksi ve İmalat Sanayi Kapasite Kullanım Oranı | **-** | 100.2 | 99.8 |
-| `2026-10-26` | `15:30` | **ABD (Fed/Makro)** | 🔥 Yüksek | Haftalık İşsizlik Maaşı Başvuruları | **-** | 240K | 227K |
-| `2026-10-26` | `16:45` | **ABD (Fed/Makro)** | 🔥 Yüksek | Öncü İmalat ve Hizmetler PMI Verileri | **-** | 47.5 | 47.3 |
+| `2026-10-29` | `14:30` | **Türkiye (TCMB)** | 🔥 Yüksek | TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri | **-** | - | - |
+| `2026-10-29` | `10:00` | **Türkiye (TÜİK)** | 🔸 Orta | TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi | **-** | - | - |
+| `2026-10-30` | `10:00` | **Türkiye (TÜİK)** | 🔸 Orta | TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi | **-** | - | - |
 
 ### 9.3. 🔭 Gelecek Hafta Açıklanacak Kritik Veriler (Ön Haber)
 | Tarih | Saat | Ülke / Kurum | Önem | Veri / Karar Başlığı | Açıklanan | Beklenti | Önceki |
 |:---|:---:|:---|:---:|:---|---:|---:|---:|
-| `2026-10-30` | `15:30` | **ABD (Fed/Makro)** | 🔥 Yüksek | ABD 3. Çeyrek Öncü GSYH Büyüme Oranı (Çeyreklik) | **-** | %3,0 | %3,0 |
-| `2026-10-31` | `10:00` | **Türkiye (TÜİK)** | 🔸 Orta | TÜİK Dış Ticaret Dengesi ve Ekonomik Güven Endeksi | **-** | - | - |
-| `2026-10-31` | `14:30` | **Türkiye (TCMB)** | 🔥 Yüksek | TCMB Haftalık Döviz Rezervleri ve Yabancı Menkul Kıymet İstatistikleri | **-** | - | - |
-| `2026-10-31` | `15:30` | **ABD (Fed/Makro)** | 🔥 Yüksek | Fed'in Favori Enflasyon Göstergesi: Çekirdek PCE Fiyat Endeksi | **-** | %0,3 | %0,1 |
-| `2026-11-01` | `15:30` | **ABD (Fed/Makro)** | 🔥 Yüksek | ABD Tarım Dışı İstihdam (NFP) ve İşsizlik Oranı | **-** | 115K / %4,1 | 254K / %4,1 |
-| `2026-11-04` | `10:00` | **Türkiye (TÜİK)** | 🔥 Yüksek | TÜİK Ekim Ayı TÜFE ve ÜFE Enflasyon Verileri | **-** | %2,45 | %2,97 |
+| `2026-11-03` | `10:00` | **Türkiye (TÜİK)** | 🔥 Yüksek | TÜİK Aylık ve Yıllık TÜFE (Enflasyon) Verileri | **-** | - | - |
+| `2026-11-04` | `10:00` | **Türkiye (TÜİK)** | 🔥 Yüksek | TÜİK Aylık ve Yıllık TÜFE (Enflasyon) Verileri | **-** | - | - |
+| `2026-11-05` | `14:30` | **Türkiye (TCMB)** | 🔥 Yüksek | TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri | **-** | - | - |
 
 ## 10. 🏦 Finans Otoriteleri ve Bankaların Açıklamaları (Başlıklar)
-1. **TCMB Başkanı Karahan: Dezenflasyon sürecinde hizmet enflasyonundaki katılığın zayıflamasını yakından izliyoruz** — *(Bloomberg HT)* `#TCMB` `#Karahan` `#Enflasyon`
-2. **Goldman Sachs ve Morgan Stanley, Türkiye için yıl sonu politika faizi ve enflasyon patikası tahminlerini güncelledi** — *(Ekonomim)* `#Goldman Sachs` `#Morgan Stanley` `#Faiz`
-3. **BofA (Bank of America) Raporu: Türk tahvillerine ve bankacılık hisselerine yabancı ilgisi devam ediyor** — *(Dünya Gazetesi)* `#BofA` `#Tahvil`
-4. **Fed yetkililerinden faiz indirimi mesajı: İstihdam piyasası dengelenirken kademeli gevşeme sürecek** — *(CNBC-e)* `#Fed` `#Faiz`
-5. **Hazine ve Maliye Bakanı Mehmet Şimşek: Cari açıktaki düşüş ve rezerv birikimi makro finansal istikrarı güçlendiriyor** — *(Anadolu Ajansı)* `#Hazine` `#Şimşek` `#Rezerv`
+1. **Merkez Bankası'nın faizi %36'ya indirme kararı nasıl yorumlandı?** — *(BBC)* `#Merkez Bankası` `#Faiz`
+2. **Merkez Bankası faiz kararını açıkladı** — *(TRT Haber)* `#Merkez Bankası` `#Faiz`
+3. **TCMB Faiz Kararını Bugün Açıklıyor: Beklentiler ve Piyasa Senaryoları** — *(Investing.com Türkiye)* `#TCMB` `#Faiz`
+4. **Son dakika...Merkez Bankası faiz kararını açıklayacak! İşte piyasanın tahmini** — *(Uzmanpara)* `#Merkez Bankası` `#Faiz`
+5. **Merkez Bankası'nın faiz indirimi işe yarayacak mı?** — *(DW.com)* `#Merkez Bankası` `#Faiz`
+6. **Fitch'ten Türk leasing ve faktoring şirketleri için varlık uyarısı** — *(Bloomberght)* `#Fitch`
+7. **JPMorgan, Türkiye'deki bankacılık faaliyetlerini büyütme kararı aldığını açıkladı** — *(Habertürk)* `#JPMorgan`
+8. **EKİM 2026 FED FAİZ KARARI NE ZAMAN AÇIKLANACAK? Amerikan Merkez Bankası (FED) faiz beklentisi ne yönde? FED Ekim ayı toplantı tarihleri...** — *(Uzmanpara)* `#Merkez Bankası` `#Fed` `#Faiz`
+9. **FED FAİZ KARARI NE ZAMAN, BU HAFTA MI? FED Ekim Ayı Faiz Kararı Toplantı Tarihi 2026** — *(CNN Türk)* `#Fed` `#Faiz`
+10. **Fed'in faiz kararı öncesi altın fiyatları üzerinde baskı sürüyor** — *(Foreks.com)* `#Fed` `#Faiz`
 
 ## 11. 🏠🚗 Türkiye Konut (TÜİK) ve Araç (ODMD) Satış İstatistikleri
-- 🏠 **Konut:** TÜİK Konut Satış İstatistikleri: Türkiye genelinde konut satışları bir önceki yılın aynı ayına göre %37,3 artarak 140 bin 919 oldu — *(TÜİK / Bloomberg HT)*
-- 🏠 **Konut:** İpotekli konut satışları yıllık bazda %60,3 artış gösterirken toplam satışlar içindeki payı %11,2 olarak gerçekleşti — *(TÜİK / Ekonomim)*
-- 🚗 **Otomotiv:** ODMD Verileri: Türkiye otomobil ve hafif ticari araç toplam pazarı Ocak-Eylül döneminde 849 bin 892 adet seviyesinde gerçekleşti — *(ODMD / Otomotiv Sektörü)*
-- 🚗 **Otomotiv:** Otomobil satışlarında elektrikli ve hibrit araçların toplam pazar payı %25 sınırını aştı — *(ODMD / Dünya)*
+- 🏠 **Konut:** TÜİK konut satış istatistiklerini açıkladı: Dikkat çekici düşüş — *(Amida Haber)*
+- 🏠 **Konut:** Balıkesir'de Eylül'de 3 Bin Konut Satıldı — *(Gazete Merhaba)*
+- 🚗 **Otomotiv:** ODMD: Otomobil ve hafif ticari araç pazarı eylülde yüzde 24,3 daraldı — *(Foreks.com)*
+- 🚗 **Otomotiv:** Eylül'de otomotiv satışlarında sert fren — *(Bloomberght)*
 
 ---
 ## 🎙️ Haber Spikeri Metni (Sesli Okuma / TTS Önizlemesi)
@@ -197,20 +158,20 @@
 İyi günler. 2026-10-24 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un TL ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.
 
 [BIST 100 TL VE DOLAR BAZLI TEKNIK ANALIZ]
-Borsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 1 virgül 42 artışla 9685 virgül 40 puan seviyesinde tamamladı. Haftalık bazda yüzde 3 virgül 85, aylıkta yüzde 1 virgül 90 (azalış), yılbaşından itibaren yüzde 29 virgül 65 (artış) ve son bir yılda yüzde 24 virgül 80 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 1 virgül 65 artışla 10720 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 2 virgül 18 artışla 13450 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 0 virgül 82 artışla 12940 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 282 virgül 54 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 344 virgül 20 dolardan yüzde 17 virgül 9 aşağıda, bir yıllık dolar tabanı olan 254 virgül 80 dolardan ise yüzde 10 virgül 9 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 296 virgül 80 dolar, Ar Es Ay göstergesi ise 44 virgül 6 seviyesindedir.
+Borsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 0 virgül 92 düşüşle 11117 puan seviyesinde tamamladı. Haftalık bazda yüzde 5 virgül 16, aylıkta yüzde 13 virgül 74 (azalış), yılbaşından itibaren yüzde 1 virgül 28 (azalış) ve son bir yılda yüzde 4 virgül 80 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 0 virgül 98 düşüşle 13874 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 1 virgül 58 düşüşle 15107 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 1 virgül 69 düşüşle 13562 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 223 virgül 73 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 32 virgül 9 aşağıda, bir yıllık dolar tabanı olan 223 virgül 73 dolardan ise yüzde 0 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 296 virgül 06 dolar, Ar Es Ay göstergesi ise 25 virgül 5 seviyesindedir.
 
 [S&P 500, ALTIN, GÜMÜŞ VE KORKU/AÇGÖZLÜLÜK ENDEKSLERI]
-Küresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 0 virgül 48 artışla 5842 virgül 50 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 85, aylıkta yüzde 2 virgül 35 (artış), yılbaşından itibaren yüzde 22 virgül 40 (artış) ve son bir yılda yüzde 38 virgül 20 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 0 virgül 76 artışla 18590 puan seviyesinde tamamladı. Ons altın, günü yüzde 0 virgül 85 artışla 2738 virgül 50 USD seviyesinde tamamladı. Haftalık bazda yüzde 1 virgül 72, aylıkta yüzde 4 virgül 30 (artış), yılbaşından itibaren yüzde 32 virgül 80 (artış) ve son bir yılda yüzde 38 virgül 60 değişim kaydetti. Ons gümüş, günü yüzde 1 virgül 15 artışla 33 virgül 85 USD seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 40, aylıkta yüzde 9 virgül 80 (artış), yılbaşından itibaren yüzde 41 virgül 20 (artış) ve son bir yılda yüzde 46 virgül 80 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 3018 virgül 45 Türk Lirası, Gram Gümüş ise 37 virgül 31 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 80 virgül 90 düzeyindedir. Korku ve Açgözlülük endeksleri; S&P 500 (ABD Borsası) için 68 puan ile Açgözlülük, Altın (Ons Gold) için 76 puan ile Aşırı Açgözlülük, Kripto Piyasası (BTC & Genel) için 72 puan ile Açgözlülük bölgesine işaret ediyor.
+Küresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 0 virgül 52 düşüşle 7623 virgül 68 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 47, aylıkta yüzde 1 virgül 04 (azalış), yılbaşından itibaren yüzde 11 virgül 37 (artış) ve son bir yılda yüzde 12 virgül 25 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 0 virgül 21 düşüşle 25955 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 29 düşüşle 4007 virgül 90 USD seviyesinde tamamladı. Haftalık bazda yüzde 4 virgül 14, aylıkta yüzde 6 virgül 75 (azalış), yılbaşından itibaren yüzde 7 virgül 68 (azalış) ve son bir yılda yüzde 3 virgül 14 değişim kaydetti. Ons gümüş, günü yüzde 1 virgül 92 düşüşle 53 virgül 71 USD seviyesinde tamamladı. Haftalık bazda yüzde 5 virgül 76, aylıkta yüzde 15 virgül 36 (azalış), yılbaşından itibaren yüzde 23 virgül 42 (azalış) ve son bir yılda yüzde 11 virgül 03 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6402 virgül 74 Türk Lirası, Gram Gümüş ise 85 virgül 80 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 74 virgül 62 düzeyindedir. Korku ve Açgözlülük endeksleri; S&P 500 (ABD Borsası) için 21 puan ile Aşırı Korku, Altın (Ons Gold) için 26 puan ile Korku, Kripto Piyasası (BTC & Genel) için 51 puan ile Nötr bölgesine işaret ediyor.
 
 [TEFAS DÖNEMSEL EN ÇOK KAZANDIRAN FONLAR]
-TEFAS yatırım fonlarında dönemsel bazda en çok kazandıran fonlar şöyle: Son bir günde lider fon, Teknoloji & Yerli Hisse Kapsamı içinden yüzde 3 virgül 42 getiri ile İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu (TI2) oldu. Son bir haftada lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 7 virgül 80 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Son bir ayda lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 12 virgül 40 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Yılbaşından itibaren lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 68 virgül 40 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (IIH) oldu. Son bir yılda lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 84 virgül 50 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (IIH) oldu.
+TEFAS yatırım fonlarında dönemsel bazda en çok kazandıran fonlar şöyle:
 
 [KRIPTO, TAHVIL, DÖVIZ VE EMTIA PIYASALARI]
-Kripto para piyasasının toplam büyüklüğü 2 virgül 36 trilyon dolar, Bitkoin dominansı ise yüzde 57 virgül 45 seviyesinde. Bitkoin, günü yüzde 1 virgül 85 artışla 68450 USD seviyesinde tamamladı. Haftalık bazda yüzde 3 virgül 40, aylıkta yüzde 8 virgül 90 (artış), yılbaşından itibaren yüzde 61 virgül 80 (artış) ve son bir yılda yüzde 98 virgül 40 değişim kaydetti. Eteryum, günü yüzde 0 virgül 95 artışla 2640 USD seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 1 virgül 50 artışla 0 virgül 54 USD seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 12 artışla 34 virgül 28 TL seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 25 artışla 37 virgül 15 TL seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 14 artışla 1 virgül 08 USD seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 14 artışla 104 virgül 25 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 0 virgül 30 artışla 4 virgül 03 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 0 virgül 45 artışla 4 virgül 21 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 0 virgül 40 artışla 4 virgül 50 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 15 düşüşle 42 virgül 65 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 10 yatay seyirle 29 virgül 80 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 56 düşüşle 266 virgül 50 bp seviyesinde tamamladı. Brent petrol, günü yüzde 0 virgül 65 düşüşle 74 virgül 90 USD seviyesinde tamamladı. Batı Teksas türü ham petrol, günü yüzde 0 virgül 63 düşüşle 71 virgül 15 USD seviyesinde tamamladı. Doğalgaz vadeli kontratı, günü yüzde 2 virgül 44 artışla 2 virgül 52 USD seviyesinde tamamladı. Bakır, günü yüzde 0 virgül 69 artışla 4 virgül 38 USD seviyesinde tamamladı.
+Kripto para piyasasının toplam büyüklüğü 2 virgül 71 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 57 seviyesinde. Bitkoin, günü yüzde 0 virgül 84 düşüşle 80390 USD seviyesinde tamamladı. Haftalık bazda yüzde 1 virgül 79, aylıkta yüzde 5 virgül 16 (azalış), yılbaşından itibaren yüzde 8 virgül 13 (azalış) ve son bir yılda yüzde 27 virgül 60 değişim kaydetti. Eteryum, günü yüzde 2 virgül 05 düşüşle 2335 virgül 29 USD seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 0 virgül 71 düşüşle 1 virgül 28 USD seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 08 yatay seyirle 49 virgül 69 TL seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 32 düşüşle 55 virgül 67 TL seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 15 düşüşle 1 virgül 12 USD seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 20 artışla 101 virgül 81 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 0 virgül 78 artışla 4 virgül 80 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 0 virgül 71 artışla 4 virgül 99 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 0 virgül 53 artışla 5 virgül 32 % seviyesinde tamamladı. Brent petrol, günü yüzde 3 virgül 14 artışla 116 virgül 72 USD seviyesinde tamamladı. Batı Teksas türü ham petrol, günü yüzde 3 virgül 82 artışla 103 virgül 27 USD seviyesinde tamamladı. Doğalgaz vadeli kontratı, günü yüzde 5 virgül 58 düşüşle 2 virgül 64 USD seviyesinde tamamladı. Bakır, günü yüzde 1 virgül 78 artışla 6 virgül 48 USD seviyesinde tamamladı.
 
 [EKONOMIK TAKVIM (BUGÜN, BU HAFTA VE GELECEK HAFTA)]
-ABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bugün Türkiye (TCMB/TÜİK) tarafında TCMB Piyasa Katılımcıları Anketi ve Enflasyon Beklentileri takip edildi; açıklanan veri %43,11, beklenti %43,50. Bugün Türkiye (TCMB) tarafında TCMB Para Politikası Kurulu (PPK) Faiz Kararı Özeti takip edildi; açıklanan veri %50,00, beklenti %50,00. Bugün ABD (Fed/Makro) tarafında Dayanıklı Mal Siparişleri (Aylık) takip edildi; açıklanan veri -0.8%, beklenti -1.0%. Bugün ABD (Fed/Makro) tarafında Michigan Tüketici Güven Endeksi ve Enflasyon Beklentisi takip edildi; açıklanan veri 70.5, beklenti 69.0. Bu haftanın kalanında Türkiye (TCMB) Reel Kesim Güven Endeksi ve İmalat Sanayi Kapasite Kullanım Oranı, ABD (Fed/Makro) Haftalık İşsizlik Maaşı Başvuruları, ABD (Fed/Makro) Öncü İmalat ve Hizmetler PMI Verileri verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-10-30 tarihinde ABD (Fed/Makro) ABD 3. Çeyrek Öncü GSYH Büyüme Oranı (Çeyreklik), 2026-10-31 tarihinde Türkiye (TÜİK) TÜİK Dış Ticaret Dengesi ve Ekonomik Güven Endeksi, 2026-10-31 tarihinde Türkiye (TCMB) TCMB Haftalık Döviz Rezervleri ve Yabancı Menkul Kıymet İstatistikleri, 2026-10-31 tarihinde ABD (Fed/Makro) Fed'in Favori Enflasyon Göstergesi: Çekirdek PCE Fiyat Endeksi yer alıyor.
+ABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bu haftanın kalanında Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, Türkiye (TÜİK) TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi, Türkiye (TÜİK) TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-03 tarihinde Türkiye (TÜİK) TÜİK Aylık ve Yıllık TÜFE (Enflasyon) Verileri, 2026-11-04 tarihinde Türkiye (TÜİK) TÜİK Aylık ve Yıllık TÜFE (Enflasyon) Verileri, 2026-11-05 tarihinde Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.
 
 [OTORITE AÇIKLAMALARI, KONUT/ARAÇ İSTATISTIKLERI VE KAPANIŞ]
-Finans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Bloomberg HT: TCMB Başkanı Karahan: Dezenflasyon sürecinde hizmet enflasyonundaki katılığın zayıflamasını yakından izliyoruz. Ekonomim: Goldman Sachs ve Morgan Stanley, Türkiye için yıl sonu politika faizi ve enflasyon patikası tahminlerini güncelledi. Dünya Gazetesi: BofA (Bank of America) Raporu: Türk tahvillerine ve bankacılık hisselerine yabancı ilgisi devam ediyor. CNBC-e: Fed yetkililerinden faiz indirimi mesajı: İstihdam piyasası dengelenirken kademeli gevşeme sürecek. Anadolu Ajansı: Hazine ve Maliye Bakanı Mehmet Şimşek: Cari açıktaki düşüş ve rezerv birikimi makro finansal istikrarı güçlendiriyor. TÜİK Konut Satış İstatistikleri: Türkiye genelinde konut satışları bir önceki yılın aynı ayına göre %37,3 artarak 140 bin 919 oldu. İpotekli konut satışları yıllık bazda %60,3 artış gösterirken toplam satışlar içindeki payı %11,2 olarak gerçekleşti. ODMD Verileri: Türkiye otomobil ve hafif ticari araç toplam pazarı Ocak-Eylül döneminde 849 bin 892 adet seviyesinde gerçekleşti. Otomobil satışlarında elektrikli ve hibrit araçların toplam pazar payı %25 sınırını aştı. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.
+Finans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: BBC: Merkez Bankası'nın faizi %36'ya indirme kararı nasıl yorumlandı?. TRT Haber: Merkez Bankası faiz kararını açıkladı. Investing.com Türkiye: TCMB Faiz Kararını Bugün Açıklıyor: Beklentiler ve Piyasa Senaryoları. Uzmanpara: Son dakika...Merkez Bankası faiz kararını açıklayacak! İşte piyasanın tahmini. DW.com: Merkez Bankası'nın faiz indirimi işe yarayacak mı?. TÜİK konut satış istatistiklerini açıkladı: Dikkat çekici düşüş. Balıkesir'de Eylül'de 3 Bin Konut Satıldı. ODMD: Otomobil ve hafif ticari araç pazarı eylülde yüzde 24,3 daraldı. Eylül'de otomotiv satışlarında sert fren. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.
 ```
