@@ -165,6 +165,69 @@ class CalendarCollector:
 
         return today_tr, this_week_tr, next_week_tr
 
+    def _fetch_tradingview_backup_calendar(
+        self, target_date: datetime
+    ) -> Tuple[List[EconomicEvent], List[EconomicEvent], List[EconomicEvent]]:
+        """
+        ForexFactory erişilemediğinde devreye giren Yedek Ekonomik Takvim kaynağı:
+        TradingView Economic Calendar API (US, TR, EU yüksek önemli veriler).
+        """
+        today_out: List[EconomicEvent] = []
+        week_out: List[EconomicEvent] = []
+        next_out: List[EconomicEvent] = []
+
+        start_dt = target_date.strftime("%Y-%m-%dT00:00:00.000Z")
+        end_dt = (target_date + timedelta(days=14)).strftime("%Y-%m-%dT23:59:59.000Z")
+        today_str = target_date.strftime("%Y-%m-%d")
+        week_limit_str = (target_date + timedelta(days=6)).strftime("%Y-%m-%d")
+
+        url = "https://economic-calendar.tradingview.com/events"
+        params = {
+            "from": start_dt,
+            "to": end_dt,
+            "countries": "US,TR,EU",
+            "minImportance": "1",
+        }
+        headers = {
+            "Origin": "https://www.tradingview.com",
+            "Referer": "https://www.tradingview.com/",
+        }
+        try:
+            resp = self.session.get(url, params=params, headers=headers, timeout=self.timeout)
+            if resp.status_code == 200:
+                items = resp.json().get("result", [])
+                for item in items:
+                    imp = int(item.get("importance", 0))
+                    if imp < 1:
+                        continue
+                    raw_date = item.get("date", "")
+                    ev_date = raw_date[:10] if len(raw_date) >= 10 else ""
+                    saat = raw_date[11:16] if len(raw_date) >= 16 else "Gün İçi"
+                    c_code = item.get("country", "")
+                    ulke_str = {"US": "ABD (Fed/Makro)", "TR": "Türkiye (TCMB/TÜİK)", "EU": "Euro Bölgesi (ECB)"}.get(c_code, c_code)
+
+                    grup = "bugun" if ev_date == today_str else ("bu_hafta" if ev_date <= week_limit_str else "gelecek_hafta")
+                    ev = EconomicEvent(
+                        donem_grubu=grup,
+                        tarih=ev_date,
+                        saat=saat,
+                        ulke=ulke_str,
+                        onem="Yüksek",
+                        baslik=self._translate_title(item.get("title", "")),
+                        gerceklesen=str(item.get("actual") if item.get("actual") is not None else "-"),
+                        beklenti=str(item.get("forecast") if item.get("forecast") is not None else "-"),
+                        onceki=str(item.get("previous") if item.get("previous") is not None else "-"),
+                    )
+                    if grup == "bugun":
+                        today_out.append(ev)
+                    elif grup == "bu_hafta":
+                        week_out.append(ev)
+                    else:
+                        next_out.append(ev)
+        except Exception:
+            pass
+        return today_out, week_out, next_out
+
     def collect_all_calendar_horizons(
         self, target_date: datetime
     ) -> Tuple[List[EconomicEvent], List[EconomicEvent], List[EconomicEvent]]:
@@ -236,5 +299,13 @@ class CalendarCollector:
                     )
         except Exception:
             pass
+
+        # 3. Yedek Kaynak Kontrolü: Eğer ForexFactory'den ABD/Euro verisi gelmediyse TradingView Takvimini devreye sok
+        has_global = any("ABD" in e.ulke or "Euro" in e.ulke for e in (today_events + this_week_events + next_week_events))
+        if not has_global:
+            tv_today, tv_week, tv_next = self._fetch_tradingview_backup_calendar(target_date)
+            today_events.extend(tv_today)
+            this_week_events.extend(tv_week)
+            next_week_events.extend(tv_next)
 
         return today_events[:10], this_week_events[:12], next_week_events[:12]

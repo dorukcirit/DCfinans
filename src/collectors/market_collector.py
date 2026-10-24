@@ -11,6 +11,7 @@ from src.models import (
     GoldSilverSummary,
     MultiPeriodAsset,
 )
+from src.collectors.backup_validators import BackupDataValidator
 
 DEFAULT_HEADERS = {
     "User-Agent": (
@@ -77,17 +78,21 @@ class MarketCollector:
         self.timeout = timeout
         self.session = requests.Session()
         self.session.headers.update(DEFAULT_HEADERS)
+        self.validator = BackupDataValidator(timeout=timeout)
         # symbol -> list of (date_str 'YYYY-MM-DD', close_float)
         self._series_cache: Dict[str, List[Tuple[str, float]]] = {}
+        self._source_status: Dict[str, str] = {}
 
     def fetch_yahoo_series_1y(self, symbol: str) -> List[Tuple[str, float]]:
         """
-        Yahoo Finance v8 API üzerinden son 1 yıllık (~260 iş günü) günlük kapanış serisini döner.
-        Liste elemanları: ('YYYY-MM-DD', kapanis_fiyati)
+        Birincil kaynak olarak Yahoo Finance v8 API'den 1 yıllık seriyi çeker;
+        ardından BackupDataValidator ile (Stooq, Binance, TradingView, ER-API)
+        çapraz doğrulama yapar. Birincil kaynak hata verirse yedek kaynağı kullanır.
         """
         if symbol in self._series_cache:
             return self._series_cache[symbol]
 
+        primary_series: List[Tuple[str, float]] = []
         urls = [
             f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=1y",
             f"https://query2.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range=1y",
@@ -114,19 +119,23 @@ class MarketCollector:
                         dt_str = datetime.utcfromtimestamp(int(ts)).strftime("%Y-%m-%d")
                         series.append((dt_str, float(cl)))
 
-                # Aynı güne ait mükerrer kayıt varsa sonuncuyu tut
                 dedup: Dict[str, float] = {}
                 for d_s, val in series:
                     dedup[d_s] = val
                 final_series = sorted(dedup.items(), key=lambda x: x[0])
 
                 if final_series:
-                    self._series_cache[symbol] = final_series
-                    return final_series
+                    primary_series = final_series
+                    break
             except Exception:
                 continue
 
-        return []
+        # Yedek kaynakla çapraz kontrol veya failover
+        reconciled_series, status_label = self.validator.reconcile_series(symbol, primary_series)
+        self._source_status[symbol] = status_label
+        if reconciled_series:
+            self._series_cache[symbol] = reconciled_series
+        return reconciled_series
 
     @staticmethod
     def _calc_multi_period_from_series(
@@ -243,6 +252,7 @@ class MarketCollector:
             metrics = self._calc_multi_period_from_series(series)
             fiyat = metrics["fiyat"]
             onceki = metrics["onceki_kapanis"]
+            kaynak_etiketi = self._source_status.get(kod, "Yahoo Finance")
 
             assets.append(
                 MultiPeriodAsset(
@@ -260,7 +270,7 @@ class MarketCollector:
                     degisim_ytd=metrics["ytd"],
                     degisim_1y=metrics["1y"],
                     not_bilgisi=not_bilgisi,
-                    kaynak="Yahoo Finance",
+                    kaynak=kaynak_etiketi,
                 )
             )
 
@@ -575,8 +585,8 @@ class MarketCollector:
 
     def collect_crypto_global(self, kripto_assets: List[MultiPeriodAsset]) -> CryptoGlobalSummary:
         """
-        CoinGecko /api/v3/global üzerinden Toplam Kripto Piyasa Değeri (Total Market Cap)
-        ve Bitcoin Dominance (BTC.D %) verilerini çeker.
+        Birincil kaynak CoinGecko (/api/v3/global) ve yedek kaynak CoinPaprika (/v1/global)
+        üzerinden Toplam Kripto Piyasa Değeri ve Bitcoin Dominance verilerini çapraz doğrular.
         """
         summary = CryptoGlobalSummary()
         try:
@@ -596,6 +606,16 @@ class MarketCollector:
                     summary.eth_dominance_yuzde = round(float(pcts["eth"]), 2)
         except Exception:
             pass
+
+        # Yedek Kaynak: CoinPaprika ile çapraz kontrol / failover
+        paprika = self.validator.fetch_coinpaprika_global()
+        if paprika:
+            if summary.total_mcap_trilyon_usd is None:
+                summary.total_mcap_trilyon_usd = paprika.get("total_mcap_trilyon_usd")
+            if summary.btc_dominance_yuzde is None:
+                summary.btc_dominance_yuzde = paprika.get("btc_dominance_yuzde")
+            if summary.total_mcap_degisim_1g is None:
+                summary.total_mcap_degisim_1g = paprika.get("total_mcap_degisim_1g")
 
         # Haftalık/Aylık/YTD/Yıllık toplam market cap değişimini BTC ve ETH ağırlıklı seriden tahminle tamamla
         btc = next((a for a in kripto_assets if "BTC" in a.kod), None)

@@ -70,6 +70,11 @@ class NewsCollector:
         encoded = quote_plus(f"{query} when:7d")
         return f"https://news.google.com/rss/search?q={encoded}&hl=tr&gl=TR&ceid=TR:tr"
 
+    def _bing_news_rss_url(self, query: str) -> str:
+        """Google News RSS yedek kaynağı olarak Bing News Türkçe RSS arama uç noktası."""
+        encoded = quote_plus(query)
+        return f"https://www.bing.com/news/search?q={encoded}&format=rss&mkt=tr-TR"
+
     def collect_authority_and_bank_headlines(
         self, keywords: List[str], max_headlines: int = 10
     ) -> List[NewsHeadline]:
@@ -84,11 +89,17 @@ class NewsCollector:
         direct_feeds = [
             ("https://www.bloomberght.com/rss", "Bloomberg HT"),
             ("https://www.ekonomim.com/rss", "Ekonomim"),
+            ("https://www.trthaber.com/ekonomi_articles.rss", "TRT Haber Ekonomi"),
         ]
 
         raw_candidates: List[Dict[str, str]] = []
         for q in queries:
-            raw_candidates.extend(self._fetch_rss_items(self._google_news_rss_url(q), "Google Haberler", max_items=6))
+            g_items = self._fetch_rss_items(self._google_news_rss_url(q), "Google Haberler", max_items=6)
+            if g_items:
+                raw_candidates.extend(g_items)
+            else:
+                # Google News hata verirse yedek Bing News RSS devreye girer
+                raw_candidates.extend(self._fetch_rss_items(self._bing_news_rss_url(q), "Bing Haberler", max_items=6))
 
         for feed_url, src_name in direct_feeds:
             raw_candidates.extend(self._fetch_rss_items(feed_url, src_name, max_items=15))
@@ -133,10 +144,14 @@ class NewsCollector:
         results: List[NewsHeadline] = []
         seen: Set[str] = set()
 
-        # 1. Konut Satış İstatistikleri (son 30 gün, çünkü TÜİK ayda bir açıklar)
+        # 1. Konut Satış İstatistikleri (Birincil: Google News RSS, Yedek: Bing News RSS)
         housing_q = quote_plus('("TÜİK" AND "konut satış") OR "konut satış istatistikleri" OR "konut fiyat endeksi" when:30d')
         housing_url = f"https://news.google.com/rss/search?q={housing_q}&hl=tr&gl=TR&ceid=TR:tr"
         housing_items = self._fetch_rss_items(housing_url, "TÜİK / Konut Sektörü", max_items=6)
+        if not housing_items:
+            housing_items = self._fetch_rss_items(
+                self._bing_news_rss_url("TÜİK konut satış istatistikleri"), "TÜİK / Konut (Yedek)", max_items=6
+            )
 
         count_h = 0
         for item in housing_items:
@@ -160,10 +175,14 @@ class NewsCollector:
                 if count_h >= max_per_topic:
                     break
 
-        # 2. Otomotiv / Araç Satış İstatistikleri (ODMD - son 30 gün)
+        # 2. Otomotiv / Araç Satış İstatistikleri (Birincil: Google News RSS, Yedek: Bing News RSS)
         auto_q = quote_plus('("ODMD" AND ("otomobil" OR "satış")) OR "otomobil ve hafif ticari araç" OR "araç satışları" when:30d')
         auto_url = f"https://news.google.com/rss/search?q={auto_q}&hl=tr&gl=TR&ceid=TR:tr"
         auto_items = self._fetch_rss_items(auto_url, "ODMD / Otomotiv Sektörü", max_items=6)
+        if not auto_items:
+            auto_items = self._fetch_rss_items(
+                self._bing_news_rss_url("ODMD otomobil hafif ticari araç satışları"), "ODMD / Otomotiv (Yedek)", max_items=6
+            )
 
         count_a = 0
         for item in auto_items:

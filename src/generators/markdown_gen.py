@@ -38,8 +38,8 @@ def _fmt_pct_short(val: float | None) -> str:
 
 def _render_multi_period_table(assets: List[MultiPeriodAsset]) -> str:
     lines = [
-        "| Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) |",
-        "|:---|---:|:---|:---|:---|:---|:---|:---|",
+        "| Varlık / Endeks | Kapanış / Son | Günlük (1G) | 1 Hafta (1H) | 1 Ay (1A) | 3 Ay (3A) | Yılbaşı (YTD) | 1 Yıl (1Y) | Kaynak & Çapraz Doğrulama |",
+        "|:---|---:|:---|:---|:---|:---|:---|:---|:---|",
     ]
     for a in assets:
         lines.append(
@@ -49,7 +49,7 @@ def _render_multi_period_table(assets: List[MultiPeriodAsset]) -> str:
             f"{_fmt_pct_with_trend(a.degisim_1a, 0.50)} | "
             f"{_fmt_pct_with_trend(a.degisim_3a, 0.75)} | "
             f"{_fmt_pct_with_trend(a.degisim_ytd, 0.75)} | "
-            f"{_fmt_pct_with_trend(a.degisim_1y, 1.00)} |"
+            f"{_fmt_pct_with_trend(a.degisim_1y, 1.00)} | `{a.kaynak}` |"
         )
     return "\n".join(lines)
 
