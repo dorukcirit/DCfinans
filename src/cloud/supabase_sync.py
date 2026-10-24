@@ -16,7 +16,10 @@ class SupabaseSyncClient:
         cfg = supabase_cfg or {}
         url_env = cfg.get("url_env", "SUPABASE_URL")
         key_env = cfg.get("key_env", "SUPABASE_SERVICE_ROLE_KEY")
-        self.url = (os.environ.get(url_env) or os.environ.get("SUPABASE_URL") or "").rstrip("/")
+        raw_url = (os.environ.get(url_env) or os.environ.get("SUPABASE_URL") or "").rstrip("/")
+        if raw_url.endswith("/rest/v1"):
+            raw_url = raw_url[: -len("/rest/v1")].rstrip("/")
+        self.url = raw_url
         self.key = (
             os.environ.get(key_env)
             or os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
