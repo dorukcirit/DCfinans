@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Günlük Küresel ve Yerel Finans Bülteni — Dashboard</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --card-alt: #263349;
+      --border: #334155;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #22c55e;
+      --green-bg: rgba(34, 197, 94, 0.14);
+      --red: #ef4444;
+      --red-bg: rgba(239, 68, 68, 0.14);
+      --neutral: #cbd5e1;
+      --neutral-bg: rgba(148, 163, 184, 0.14);
+      --gold: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 20px;
+    }
+    .container { max-width: 1380px; margin: 0 auto; }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin-bottom: 22px;
+    }
+    .brand h1 { font-size: 1.45rem; font-weight: 700; color: #fff; }
+    .brand p { color: var(--muted); font-size: 0.88rem; margin-top: 4px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 9px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--card-alt);
+      color: var(--text);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+    .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .btn-primary { background: #0284c7; border-color: #38bdf8; color: #fff; }
+    .btn-excel { background: #15803d; border-color: #22c55e; color: #fff; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px; margin-bottom: 22px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 18px; margin-bottom: 22px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+    .fg-score-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+    .fg-number { font-size: 2rem; font-weight: 800; color: var(--gold); }
+    .fg-bar-bg { width: 100%; height: 10px; background: #0f172a; border-radius: 99px; overflow: hidden; margin: 10px 0; }
+    .fg-bar-fill { height: 100%; background: linear-gradient(90deg, #ef4444 0%, #eab308 50%, #22c55e 100%); border-radius: 99px; }
+    .fg-meta { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--muted); margin-top: 8px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+    th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid rgba(51, 65, 85, 0.65); white-space: nowrap; }
+    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+    th { background: rgba(15, 23, 42, 0.6); color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.03em; }
+    tr:hover td { background: rgba(56, 189, 248, 0.04); }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.78rem;
+    }
+    .b-up { background: var(--green-bg); color: var(--green); }
+    .b-down { background: var(--red-bg); color: var(--red); }
+    .b-flat { background: var(--neutral-bg); color: var(--neutral); }
+    .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 12px; }
+    .tech-box { background: rgba(15, 23, 42, 0.55); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+    .tech-box .lbl { font-size: 0.76rem; color: var(--muted); }
+    .tech-box .val { font-size: 1.15rem; font-weight: 700; margin-top: 4px; }
+    .tech-box .sub { font-size: 0.78rem; color: var(--accent); margin-top: 3px; }
+    .note-box {
+      margin-top: 14px;
+      padding: 12px 16px;
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      font-size: 0.88rem;
+      color: #e2e8f0;
+    }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .tab-btn {
+      padding: 7px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #0f172a;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .tab-btn.active { background: var(--accent); color: #0f172a; border-color: var(--accent); }
+    .headline-list { list-style: none; }
+    .headline-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+      font-size: 0.9rem;
+    }
+    .headline-list li:last-child { border-bottom: none; }
+    .tag {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      font-size: 0.72rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-left: 6px;
+    }
+    .speaker-box {
+      white-space: pre-wrap;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      max-height: 420px;
+      overflow-y: auto;
+    }
+    @media (max-width: 768px) {
+      body { padding: 10px; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1 id="bulten-baslik">📊 Günlük Küresel ve Yerel Finans Bülteni</h1>
+        <p id="bulten-meta">Yükleniyor...</p>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" id="btn-tts-play" onclick="toggleSpeech()">🎙️ Sesli Bülteni Oku (TTS)</button>
+        <button class="btn" onclick="stopSpeech()">⏹️ Durdur</button>
+        <a class="btn btn-excel" href="./Finans_Veri_Tabani.xlsx" download>📥 Güncel Excel Tablosunu İndir (.xlsx)</a>
+      </div>
+    </header>
+
+    <!-- 1. FEAR & GREED ENDEKSLERİ (S&P 500, ALTIN, KRİPTO) -->
+    <div class="grid-3" id="fg-container"></div>
+
+    <!-- 2. BIST 100 TL VE DOLAR BAZLI HİBRİT TEKNİK ANALİZ -->
+    <div class="card">
+      <h2>
+        <span>🇹🇷 1. BIST 100 & Borsa İstanbul (TL Çoklu Dönem ve Dolar Bazlı Teknik Analiz)</span>
+        <span style="font-size:0.8rem;color:var(--accent)">TL + USD Taban/Tavan & Fibonacci</span>
+      </h2>
+      <div class="table-wrap" id="table-bist"></div>
+      <div class="tech-grid" id="bist-usd-tech-grid"></div>
+      <div class="note-box" id="bist-tech-note"></div>
+    </div>
+
+    <!-- 3. S&P 500 VE KÜRESEL ENDEKSLER -->
+    <div class="card">
+      <h2>🌎 2. S&P 500 ve ABD / Küresel Endeksler (1G • 1H • 1A • 3A • YTD • 1Y)</h2>
+      <div class="table-wrap" id="table-abd"></div>
+    </div>
+
+    <!-- 4. ALTIN, GÜMÜŞ VE ALTIN/GÜMÜŞ ORANI -->
+    <div class="card">
+      <h2>🪙 3. Altın ve Gümüş (Döviz Çoklu Dönem • Günlük TL • Altın/Gümüş Rasyosu)</h2>
+      <div class="table-wrap" id="table-metals"></div>
+      <div class="tech-grid" id="metals-summary-grid"></div>
+      <div class="note-box" id="metals-ratio-note"></div>
+    </div>
+
+    <!-- 5. TEFAS FONLARINDA DÖNEMSEL ŞAMPİYONLAR -->
+    <div class="card">
+      <h2>🏆 4. TEFAS Fonları: Dönemsel En Çok Kazandıranlar ve Kapsamları</h2>
+      <div class="tabs" id="tefas-tabs">
+        <button class="tab-btn active" onclick="renderTefasTab('gunluk', this)">Son 1 Gün Liderleri</button>
+        <button class="tab-btn" onclick="renderTefasTab('haftalik', this)">Son 1 Hafta Liderleri</button>
+        <button class="tab-btn" onclick="renderTefasTab('aylik', this)">Son 1 Ay Liderleri</button>
+        <button class="tab-btn" onclick="renderTefasTab('ytd', this)">Yılbaşı (YTD) Liderleri</button>
+        <button class="tab-btn" onclick="renderTefasTab('yillik', this)">Son 1 Yıl Liderleri</button>
+        <button class="tab-btn" onclick="renderTefasTab('watchlist', this)">Özel Takip Listem</button>
+      </div>
+      <div class="table-wrap" id="table-tefas"></div>
+    </div>
+
+    <!-- 6. KRİPTO PİYASASI & BTC DOMINANCE -->
+    <div class="card">
+      <h2>₿ 5. Kripto Varlıklar (BTC • ETH • XRP), Total Market Cap ve Bitcoin Dominance</h2>
+      <div class="tech-grid" id="crypto-global-grid" style="margin-bottom:14px;"></div>
+      <div class="table-wrap" id="table-crypto"></div>
+    </div>
+
+    <!-- 7. TAHVİL, CDS, EURO, DOLAR VE DXY -->
+    <div class="grid-2">
+      <div class="card" style="margin-bottom:0;">
+        <h2>💵 6. Dolar, Euro, EUR/USD ve Küresel DXY Endeksi</h2>
+        <div class="table-wrap" id="table-fx"></div>
+      </div>
+      <div class="card" style="margin-bottom:0;">
+        <h2>🏛️ 7. ABD & TR Tahvil Faizleri ve Türkiye 5Y CDS</h2>
+        <div class="table-wrap" id="table-bonds"></div>
+      </div>
+    </div>
+    <div style="height:20px;"></div>
+
+    <!-- 8. PETROL VE EMTİA GRUPLARI -->
+    <div class="card">
+      <h2>🛢️ 8. Petrol, Doğalgaz, Sanayi Metalleri (Bakır) ve Tarım Emtiaları</h2>
+      <div class="table-wrap" id="table-commodities"></div>
+    </div>
+
+    <!-- 9. EKONOMİK TAKVİM (BUGÜN, BU HAFTA, GELECEK HAFTA) -->
+    <div class="card">
+      <h2>🗓️ 9. ABD ve Türkiye Ekonomik Takvimi (Bugün • Bu Hafta • Gelecek Hafta)</h2>
+      <div class="tabs">
+        <button class="tab-btn active" onclick="renderCalendarTab('bugun', this)">📌 Bugün Açıklananlar</button>
+        <button class="tab-btn" onclick="renderCalendarTab('bu_hafta', this)">📅 Bu Haftanın Kalanı</button>
+        <button class="tab-btn" onclick="renderCalendarTab('gelecek_hafta', this)">🔭 Gelecek Hafta Açıklanacaklar</button>
+      </div>
+      <div class="table-wrap" id="table-calendar"></div>
+    </div>
+
+    <!-- 10. OTORİTE/BANKA AÇIKLAMALARI VE KONUT/ARAÇ İSTATİSTİKLERİ -->
+    <div class="grid-2">
+      <div class="card">
+        <h2>🏦 10. Finans Otoriteleri ve Banka Açıklamaları</h2>
+        <ul class="headline-list" id="list-authorities"></ul>
+      </div>
+      <div class="card">
+        <h2>🏠🚗 11. Türkiye Konut (TÜİK) ve Araç (ODMD) Satış İstatistikleri</h2>
+        <ul class="headline-list" id="list-housing-auto"></ul>
+      </div>
+    </div>
+
+    <!-- 11. HABER SPİKERİ VE TTS METNİ -->
+    <div class="card">
+      <h2>🎙️ 12. Haber Spikeri Bülten Metni (Yazılı & Sesli Okuma Kaynağı)</h2>
+      <div class="speaker-box" id="speaker-text-box"></div>
+    </div>
+  </div>
+
+  <script src="./latest_report_data.js"></script>
+  <script>
+    let GLOBAL_PAYLOAD = null;
+
+    function fmtNum(v, unit = "") {
+      if (v === null || v === undefined) return "-";
+      const s = Number(v).toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      return unit === "%" ? `%${s}` : `${s} ${unit}`.trim();
+    }
+
+    function classifyTrend(pct, th = 0.2) {
+      if (pct === null || pct === undefined) return { label: "-", cls: "b-flat" };
+      if (pct > th) return { label: "Artış", cls: "b-up" };
+      if (pct < -th) return { label: "Azalış", cls: "b-down" };
+      return { label: "Yatay", cls: "b-flat" };
+    }
+
+    function fmtPctBadge(pct, th = 0.2) {
+      if (pct === null || pct === undefined) return `<span class="badge b-flat">-</span>`;
+      const t = classifyTrend(pct, th);
+      const sign = pct > 0 ? "+" : "";
+      const s = `${sign}${Number(pct).toFixed(2).replace(".", ",")}%`;
+      return `<span class="badge ${t.cls}">${s} (${t.label})</span>`;
+    }
+
+    function renderMultiPeriodTable(assets) {
+      if (!assets || !assets.length) return "<p>Veri bulunamadı.</p>";
+      let html = `<table><thead><tr>
+        <th>Varlık / Endeks</th><th>Kod</th><th>Kapanış / Son</th>
+        <th>Günlük (1G)</th><th>1 Hafta (1H)</th><th>1 Ay (1A)</th>
+        <th>3 Ay (3A)</th><th>Yılbaşı (YTD)</th><th>1 Yıl (1Y)</th>
+      </tr></thead><tbody>`;
+      for (const a of assets) {
+        html += `<tr>
+          <td><strong>${a.ad}</strong></td>
+          <td style="color:var(--muted)"><code>${a.kod}</code></td>
+          <td><strong>${fmtNum(a.fiyat, a.birim)}</strong></td>
+          <td>${fmtPctBadge(a.degisim_1g, 0.1)}</td>
+          <td>${fmtPctBadge(a.degisim_1h, 0.25)}</td>
+          <td>${fmtPctBadge(a.degisim_1a, 0.5)}</td>
+          <td>${fmtPctBadge(a.degisim_3a, 0.75)}</td>
+          <td>${fmtPctBadge(a.degisim_ytd, 0.75)}</td>
+          <td>${fmtPctBadge(a.degisim_1y, 1.0)}</td>
+        </tr>`;
+      }
+      html += `</tbody></table>`;
+      return html;
+    }
+
+    function renderTefasTab(tabKey, btnEl) {
+      if (btnEl) {
+        document.querySelectorAll("#tefas-tabs .tab-btn").forEach(b => b.classList.remove("active"));
+        btnEl.classList.add("active");
+      }
+      if (!GLOBAL_PAYLOAD) return;
+      const r = GLOBAL_PAYLOAD.ham_veriler;
+      const list = tabKey === "watchlist"
+        ? (r.takip_edilen_fonlar || [])
+        : ((r.tefas_donemsel_liderler && r.tefas_donemsel_liderler[tabKey]) || []);
+      if (!list.length) {
+        document.getElementById("table-tefas").innerHTML = "<p>Bu kategori için fon verisi bulunamadı.</p>";
+        return;
+      }
+      let html = `<table><thead><tr>
+        <th>Sıra</th><th>Fon Kodu</th><th>Fon Adı</th><th>Kapsamı / Şemsiye Türü</th>
+        <th>Günlük</th><th>1 Hafta</th><th>1 Ay</th><th>Yılbaşı (YTD)</th><th>1 Yıl</th>
+      </tr></thead><tbody>`;
+      for (const f of list) {
+        html += `<tr>
+          <td>${f.sira}</td>
+          <td><strong>${f.kod}</strong></td>
+          <td style="white-space:normal;max-width:340px;">${f.ad}</td>
+          <td style="color:var(--accent);white-space:normal;">${f.kapsam_turu}</td>
+          <td>${fmtPctBadge(f.getiri_1g, 0.1)}</td>
+          <td>${fmtPctBadge(f.getiri_1h, 0.25)}</td>
+          <td>${fmtPctBadge(f.getiri_1a, 0.5)}</td>
+          <td>${fmtPctBadge(f.getiri_ytd, 0.75)}</td>
+          <td>${fmtPctBadge(f.getiri_1y, 1.0)}</td>
+        </tr>`;
+      }
+      html += `</tbody></table>`;
+      document.getElementById("table-tefas").innerHTML = html;
+    }
+
+    function renderCalendarTab(horizon, btnEl) {
+      if (btnEl) {
+        btnEl.parentElement.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btnEl.classList.add("active");
+      }
+      if (!GLOBAL_PAYLOAD) return;
+      const r = GLOBAL_PAYLOAD.ham_veriler;
+      const map = {
+        bugun: r.ekonomik_takvim_bugun || [],
+        bu_hafta: r.ekonomik_takvim_bu_hafta || [],
+        gelecek_hafta: r.ekonomik_takvim_gelecek_hafta || [],
+      };
+      const events = map[horizon] || [];
+      if (!events.length) {
+        document.getElementById("table-calendar").innerHTML = "<p style='color:var(--muted)'>Bu dönem için listelenen veri bulunmuyor.</p>";
+        return;
+      }
+      let html = `<table><thead><tr>
+        <th>Tarih</th><th>Saat</th><th>Ülke / Kurum</th><th>Önem</th>
+        <th>Veri / Karar Başlığı</th><th>Açıklanan</th><th>Beklenti</th><th>Önceki</th>
+      </tr></thead><tbody>`;
+      for (const ev of events) {
+        const badgeCls = ev.onem === "Yüksek" ? "b-down" : "b-flat";
+        html += `<tr>
+          <td><code>${ev.tarih}</code></td>
+          <td><code>${ev.saat}</code></td>
+          <td><strong>${ev.ulke}</strong></td>
+          <td><span class="badge ${badgeCls}">${ev.onem}</span></td>
+          <td style="text-align:left;white-space:normal;">${ev.baslik}</td>
+          <td><strong>${ev.gerceklesen}</strong></td>
+          <td>${ev.beklenti}</td>
+          <td>${ev.onceki}</td>
+        </tr>`;
+      }
+      html += `</tbody></table>`;
+      document.getElementById("table-calendar").innerHTML = html;
+    }
+
+    function renderDashboard(payload) {
+      GLOBAL_PAYLOAD = payload;
+      const meta = payload.meta || {};
+      const r = payload.ham_veriler || {};
+
+      document.getElementById("bulten-baslik").textContent = `📊 ${meta.bulten_adi || "Günlük Finans Bülteni"} — ${meta.tarih || ""}`;
+      document.getElementById("bulten-meta").textContent =
+        `Son Güncelleme: ${meta.olusturulma_zamani || ""} • Tahmini Sesli Okuma Süresi: ~${meta.tahmini_okuma_suresi_dakika || 5} dk`;
+
+      // Fear & Greed
+      const fgList = r.korku_acgozluluk_endeksleri || [];
+      document.getElementById("fg-container").innerHTML = fgList.map(fg => `
+        <div class="card" style="margin-bottom:0;">
+          <div class="fg-score-row">
+            <strong>🧭 ${fg.piyasa}</strong>
+            <span class="fg-number">${fg.skor}<span style="font-size:0.9rem;color:var(--muted)">/100</span></span>
+          </div>
+          <div><span class="badge ${fg.skor >= 55 ? 'b-up' : (fg.skor <= 44 ? 'b-down' : 'b-flat')}">${fg.durum_tr}</span></div>
+          <div class="fg-bar-bg"><div class="fg-bar-fill" style="width:${fg.skor}%"></div></div>
+          <p style="font-size:0.8rem;color:var(--muted)">${fg.aciklama}</p>
+          <div class="fg-meta">
+            <span>Dün: <strong>${fg.onceki_gun ?? '-'}</strong></span>
+            <span>Geçen Hafta: <strong>${fg.onceki_hafta ?? '-'}</strong></span>
+            <span>Geçen Ay: <strong>${fg.onceki_ay ?? '-'}</strong></span>
+          </div>
+        </div>
+      `).join("");
+
+      // BIST Tablosu + USD Satırı
+      const bt = r.bist100_dolar_teknik || {};
+      const bistRows = [...(r.bist_endeksleri || [])];
+      if (bt.guncel_usd) {
+        bistRows.push({
+          ad: "BIST 100 (Dolar / USD Bazlı)",
+          kod: "XU100/USD",
+          fiyat: bt.guncel_usd,
+          birim: "USD",
+          degisim_1g: bt.degisim_1g_usd,
+          degisim_1h: bt.degisim_1h_usd,
+          degisim_1a: bt.degisim_1a_usd,
+          degisim_3a: bt.degisim_3a_usd,
+          degisim_ytd: bt.degisim_ytd_usd,
+          degisim_1y: bt.degisim_1y_usd,
+        });
+      }
+      document.getElementById("table-bist").innerHTML = renderMultiPeriodTable(bistRows);
+
+      document.getElementById("bist-usd-tech-grid").innerHTML = `
+        <div class="tech-box">
+          <div class="lbl">52 Haftalık (1Y) Dolar Tavanı</div>
+          <div class="val">${fmtNum(bt.tavan_52h_usd, "USD")}</div>
+          <div class="sub">Zirveden %${bt.tavana_uzaklik_52h_yuzde} aşağıda (${bt.tavan_52h_tarih || ''})</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">52 Haftalık (1Y) Dolar Tabanı</div>
+          <div class="val">${fmtNum(bt.taban_52h_usd, "USD")}</div>
+          <div class="sub">Dipten +%${bt.tabana_uzaklik_52h_yuzde} yukarıda (Kanal: %${bt.kanal_konumu_52h_yuzde})</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">3 Aylık Dolar Tavan / Taban</div>
+          <div class="val">$${bt.tavan_3a_usd} / $${bt.taban_3a_usd}</div>
+          <div class="sub">Tavana: %${bt.tavana_uzaklik_3a_yuzde} • Tabana: +%${bt.tabana_uzaklik_3a_yuzde}</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">Son Swing Tavan / Taban (Pivot)</div>
+          <div class="val">$${bt.son_swing_tavan_usd} / $${bt.son_swing_taban_usd}</div>
+          <div class="sub">Yerel Tepe: %${bt.swing_tavana_uzaklik_yuzde} • Dip: +%${bt.swing_tabana_uzaklik_yuzde}</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">Fibonacci Düzeltme Seviyeleri</div>
+          <div class="val">%61.8: $${bt.fib_618_usd}</div>
+          <div class="sub">%50: $${bt.fib_500_usd} • %38.2: $${bt.fib_382_usd}</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">Hareketli Ortalamalar & RSI(14)</div>
+          <div class="val">MA200: $${bt.ma200_usd}</div>
+          <div class="sub">MA50: $${bt.ma50_usd} • RSI(14): ${bt.rsi14_usd}</div>
+        </div>
+      `;
+      document.getElementById("bist-tech-note").textContent = bt.teknik_ozet_yorum || "";
+
+      // ABD Endeksler
+      document.getElementById("table-abd").innerHTML = renderMultiPeriodTable(r.abd_ve_kuresel_endeksler || []);
+
+      // Altın & Gümüş
+      document.getElementById("table-metals").innerHTML = renderMultiPeriodTable(r.altin_ve_gumus_usd || []);
+      const gs = r.altin_gumus_ozet || {};
+      document.getElementById("metals-summary-grid").innerHTML = `
+        <div class="tech-box">
+          <div class="lbl">Gram Altın (Sadece Günlük TL)</div>
+          <div class="val">${fmtNum(gs.gram_altin_tl, "TL")}</div>
+          <div class="sub">Günlük: ${gs.gram_altin_degisim_1g > 0 ? '+' : ''}${gs.gram_altin_degisim_1g}%</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">Gram Gümüş (Sadece Günlük TL)</div>
+          <div class="val">${fmtNum(gs.gram_gumus_tl, "TL")}</div>
+          <div class="sub">Günlük: ${gs.gram_gumus_degisim_1g > 0 ? '+' : ''}${gs.gram_gumus_degisim_1g}%</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">Altın / Gümüş Oranı (XAU/XAG)</div>
+          <div class="val">${fmtNum(gs.altin_gumus_rasyosu, "Kat")}</div>
+          <div class="sub">1G: %${gs.rasyo_degisim_1g} • 1H: %${gs.rasyo_degisim_1h} • 1A: %${gs.rasyo_degisim_1a} • 1Y: %${gs.rasyo_degisim_1y}</div>
+        </div>
+      `;
+      document.getElementById("metals-ratio-note").textContent = gs.rasyo_yorum || "";
+
+      // TEFAS
+      renderTefasTab("gunluk");
+
+      // Kripto
+      const cp = r.kripto_piyasa_ozeti || {};
+      document.getElementById("crypto-global-grid").innerHTML = `
+        <div class="tech-box">
+          <div class="lbl">Kripto Toplam Piyasa Değeri (Total Market Cap)</div>
+          <div class="val">$${cp.total_mcap_trilyon_usd ?? '-'} Trilyon</div>
+          <div class="sub">1G: %${cp.total_mcap_degisim_1g} • 1H: %${cp.total_mcap_degisim_1h} • 1A: %${cp.total_mcap_degisim_1a} • YTD: %${cp.total_mcap_degisim_ytd} • 1Y: %${cp.total_mcap_degisim_1y}</div>
+        </div>
+        <div class="tech-box">
+          <div class="lbl">Bitcoin Dominance (BTC.D)</div>
+          <div class="val">%${cp.btc_dominance_yuzde ?? '-'}</div>
+          <div class="sub">Ethereum Dominance: %${cp.eth_dominance_yuzde ?? '-'}</div>
+        </div>
+      `;
+      document.getElementById("table-crypto").innerHTML = renderMultiPeriodTable(r.kripto_varliklar || []);
+
+      // FX, Bonds, Commodities
+      document.getElementById("table-fx").innerHTML = renderMultiPeriodTable(r.doviz_ve_dxy || []);
+      document.getElementById("table-bonds").innerHTML = renderMultiPeriodTable(r.tahvil_ve_cds || []);
+      document.getElementById("table-commodities").innerHTML = renderMultiPeriodTable(r.petrol_ve_emtia || []);
+
+      // Calendar
+      renderCalendarTab("bugun");
+
+      // Headlines
+      document.getElementById("list-authorities").innerHTML = (r.otorite_ve_banka_haberleri || []).map(h => `
+        <li>
+          <strong>${h.baslik}</strong> <span style="color:var(--muted)">— (${h.kaynak})</span>
+          ${(h.etiketler || []).map(t => `<span class="tag">#${t}</span>`).join("")}
+        </li>
+      `).join("");
+
+      document.getElementById("list-housing-auto").innerHTML = (r.konut_ve_arac_istatistikleri || []).map(h => `
+        <li>
+          <span>${h.kategori === 'konut' ? '🏠 <strong>Konut:</strong>' : '🚗 <strong>Otomotiv:</strong>'}</span>
+          ${h.baslik} <span style="color:var(--muted)">— (${h.kaynak})</span>
+        </li>
+      `).join("");
+
+      document.getElementById("speaker-text-box").textContent = payload.spiker_metni || payload.tts_tam_metin || "";
+    }
+
+    // Tarayıcı Üzerinden Türkçe Sesli Okuma (Web Speech API)
+    function toggleSpeech() {
+      if (!("speechSynthesis" in window)) {
+        alert("Tarayıcınız sesli okumayı desteklemiyor.");
+        return;
+      }
+      if (window.speechSynthesis.speaking) {
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+          document.getElementById("btn-tts-play").textContent = "⏸️ Duraklat";
+        } else {
+          window.speechSynthesis.pause();
+          document.getElementById("btn-tts-play").textContent = "▶️ Devam Et";
+        }
+        return;
+      }
+      const text = (GLOBAL_PAYLOAD && GLOBAL_PAYLOAD.tts_tam_metin) || document.getElementById("speaker-text-box").textContent;
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.lang = "tr-TR";
+      utter.rate = 1.05;
+      utter.onend = () => {
+        document.getElementById("btn-tts-play").textContent = "🎙️ Sesli Bülteni Oku (TTS)";
+      };
+      document.getElementById("btn-tts-play").textContent = "⏸️ Duraklat";
+      window.speechSynthesis.speak(utter);
+    }
+
+    function stopSpeech() {
+      if ("speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+        document.getElementById("btn-tts-play").textContent = "🎙️ Sesli Bülteni Oku (TTS)";
+      }
+    }
+
+    async function init() {
+      if (window.LATEST_FINANCE_REPORT) {
+        renderDashboard(window.LATEST_FINANCE_REPORT);
+        return;
+      }
+      try {
+        const res = await fetch("./latest_report.json");
+        const data = await res.json();
+        renderDashboard(data);
+      } catch (e) {
+        document.getElementById("bulten-meta").textContent = "Veri dosyası henüz oluşturulmadı. Lütfen 'python main.py' çalıştırın.";
+      }
+    }
+    init();
+  </script>
+</body>
+</html>

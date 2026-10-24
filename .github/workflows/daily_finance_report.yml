@@ -1,0 +1,47 @@
+name: Günlük Finans Raporu, Excel ve Supabase Otomasyonu
+
+on:
+  schedule:
+    # Her gün Türkiye saati ile 18:35'te (BIST kapanışı sonrası - 15:35 UTC) otomatik çalışır
+    - cron: "35 15 * * *"
+  workflow_dispatch: # GitHub Actions sekmesinden tek tıkla manuel çalıştırma imkanı
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-sync-report:
+    runs-on: ubuntu-latest
+    env:
+      TZ: "Europe/Istanbul"
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+    steps:
+      - name: Depoyu İndir (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Python 3.12 Kurulumu
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerekli Kütüphaneleri Yükle
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Günlük Finans Raporunu, Excel'i ve Supabase Kaydını Üret
+        run: |
+          python main.py
+
+      - name: Güncel Raporları, Excel'i ve Web Dashboard Verisini GitHub'a Kaydet
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add raporlar/ docs/
+          git diff --staged --quiet || git commit -m "📊 Otomatik Günlük Finans Raporu ve Excel Güncellemesi ($(date +'%Y-%m-%d'))"
+          git push

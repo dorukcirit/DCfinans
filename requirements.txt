@@ -1,0 +1,5 @@
+requests>=2.31.0
+openpyxl>=3.1.2
+
+# İleride doğrudan MP3 üretimi için opsiyonel (Ücretsiz Microsoft Türkçe Nöral TTS):
+# edge-tts>=6.1.12

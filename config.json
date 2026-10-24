@@ -1,0 +1,92 @@
+{
+  "rapor_ayarlari": {
+    "cikti_klasoru": "raporlar",
+    "excel_dosya_adi": "Finans_Veri_Tabani.xlsx",
+    "web_dashboard_json": "docs/latest_report.json",
+    "bulten_adi": "Günlük Küresel ve Yerel Finans Bülteni",
+    "spiker_modu": "hibrit",
+    "tefas_lider_sayisi": 4,
+    "maksimum_haber_basligi": 10
+  },
+  "piyasa_varliklari": {
+    "bist_endeksleri": [
+      {"kod": "XU100.IS", "ad": "BIST 100", "okunus": "Borsa İstanbul yüz endeksi", "birim": "puan"},
+      {"kod": "XU030.IS", "ad": "BIST 30", "okunus": "Borsa İstanbul otuz endeksi", "birim": "puan"},
+      {"kod": "XBANK.IS", "ad": "BIST Bankacılık", "okunus": "Borsa İstanbul bankacılık endeksi", "birim": "puan"},
+      {"kod": "XUSIN.IS", "ad": "BIST Sınai", "okunus": "Borsa İstanbul sınai endeksi", "birim": "puan"}
+    ],
+    "abd_ve_kuresel_endeksler": [
+      {"kod": "^GSPC", "ad": "S&P 500", "okunus": "Es end Pi beş yüz endeksi", "birim": "puan"},
+      {"kod": "^IXIC", "ad": "Nasdaq", "okunus": "Nazdak teknoloji endeksi", "birim": "puan"},
+      {"kod": "^DJI", "ad": "Dow Jones", "okunus": "umumi Dav Cons endeksi", "birim": "puan"},
+      {"kod": "^VIX", "ad": "VIX Volatilite Endeksi", "okunus": "Viks korku endeksi", "birim": "puan"}
+    ],
+    "altin_ve_gumus_usd": [
+      {"kod": "GC=F", "ad": "Ons Altın (USD)", "okunus": "Ons altın", "birim": "USD"},
+      {"kod": "SI=F", "ad": "Ons Gümüş (USD)", "okunus": "Ons gümüş", "birim": "USD"}
+    ],
+    "doviz_ve_dxy": [
+      {"kod": "USDTRY=X", "ad": "Dolar / TL", "okunus": "Dolar Türk Lirası kuru", "birim": "TL"},
+      {"kod": "EURTRY=X", "ad": "Euro / TL", "okunus": "Euro Türk Lirası kuru", "birim": "TL"},
+      {"kod": "EURUSD=X", "ad": "EUR / USD Paritesi", "okunus": "Euro Dolar paritesi", "birim": "USD"},
+      {"kod": "DX-Y.NYB", "ad": "DXY Dolar Endeksi", "okunus": "Küresel Dolar Endeksi Diksiy", "birim": "puan"}
+    ],
+    "tahvil_ve_cds": [
+      {"kod": "^FVX", "ad": "ABD 5 Yıllık Tahvil", "okunus": "Amerika beş yıllık tahvil faizi", "birim": "%"},
+      {"kod": "^TNX", "ad": "ABD 10 Yıllık Tahvil", "okunus": "Amerika on yıllık tahvil faizi", "birim": "%"},
+      {"kod": "^TYX", "ad": "ABD 30 Yıllık Tahvil", "okunus": "Amerika otuz yıllık tahvil faizi", "birim": "%"},
+      {"kod": "TR2Y", "ad": "Türkiye 2 Yıllık Tahvil", "okunus": "Türkiye iki yıllık gösterge tahvil faizi", "birim": "%"},
+      {"kod": "TR10Y", "ad": "Türkiye 10 Yıllık Tahvil", "okunus": "Türkiye on yıllık tahvil faizi", "birim": "%"},
+      {"kod": "TR_CDS_5Y", "ad": "Türkiye 5 Yıllık CDS", "okunus": "Türkiye beş yıllık Si Di Es risk primi", "birim": "bp"}
+    ],
+    "petrol_ve_emtia": [
+      {"kod": "BZ=F", "ad": "Brent Petrol", "okunus": "Brent petrol", "birim": "USD", "not": "Enerji"},
+      {"kod": "CL=F", "ad": "Ham Petrol (WTI)", "okunus": "Batı Teksas türü ham petrol", "birim": "USD", "not": "Enerji"},
+      {"kod": "NG=F", "ad": "Doğalgaz", "okunus": "Doğalgaz vadeli kontratı", "birim": "USD", "not": "Enerji"},
+      {"kod": "HG=F", "ad": "Bakır (Dr. Copper)", "okunus": "Bakır", "birim": "USD", "not": "Sanayi Metali"},
+      {"kod": "ZW=F", "ad": "Buğday", "okunus": "Buğday", "birim": "cent", "not": "Tarım Emtiası"},
+      {"kod": "KC=F", "ad": "Kahve", "okunus": "Kahve", "birim": "cent", "not": "Tarım Emtiası"}
+    ],
+    "kripto_varliklar": [
+      {"kod": "BTC-USD", "ad": "Bitcoin (BTC)", "okunus": "Bitkoin", "birim": "USD"},
+      {"kod": "ETH-USD", "ad": "Ethereum (ETH)", "okunus": "Eteryum", "birim": "USD"},
+      {"kod": "XRP-USD", "ad": "Ripple (XRP)", "okunus": "Ripıl İks Ar Pi", "birim": "USD"}
+    ]
+  },
+  "tefas_fonlari": [
+    {"kod": "TI2", "ad": "İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu", "kapsam": "Hisse Senedi Şemsiye Fonu"},
+    {"kod": "TTE", "ad": "İş Portföy BIST Teknoloji Endeksi Hisse Senedi Fonu", "kapsam": "Hisse Senedi Şemsiye Fonu"},
+    {"kod": "MAC", "ad": "Marmara Capital Portföy Hisse Senedi Fonu", "kapsam": "Hisse Senedi Şemsiye Fonu"},
+    {"kod": "IPB", "ad": "İstanbul Portföy Birinci Değişken Fon", "kapsam": "Değişken Şemsiye Fonu"},
+    {"kod": "AFT", "ad": "Ak Portföy Yeni Teknolojiler Yabancı Hisse Senedi Fonu", "kapsam": "Hisse Senedi Şemsiye Fonu"},
+    {"kod": "KZL", "ad": "Kuveyt Türk Portföy Altın Katılım Fonu", "kapsam": "Katılım Şemsiye Fonu (Altın)"},
+    {"kod": "PPN", "ad": "Nurol Portföy Para Piyasası Fonu", "kapsam": "Para Piyasası Şemsiye Fonu"}
+  ],
+  "haber_filtreleri": {
+    "otorite_ve_banka_anahtar_kelimeler": [
+      "TCMB", "Merkez Bankası", "Fed", "ECB", "Avrupa Merkez Bankası",
+      "Faiz", "Enflasyon", "TÜFE", "PPK", "Powell", "Lagarde", "Karahan", "Şimşek",
+      "BofA", "Bank of America", "Goldman Sachs", "JPMorgan", "Morgan Stanley",
+      "Citi", "Citigroup", "HSBC", "Deutsche Bank", "Fitch", "Moody's", "S&P",
+      "BDDK", "SPK", "Hazine", "Tahvil", "Rezerv", "Swap", "CDS"
+    ]
+  },
+  "supabase_ayarlari": {
+    "aktif": true,
+    "url_env": "SUPABASE_URL",
+    "key_env": "SUPABASE_SERVICE_ROLE_KEY",
+    "bucket_adi": "finans-raporlari"
+  },
+  "ai_ayarlari": {
+    "aktif": false,
+    "saglayici": "gemini",
+    "model": "gemini-2.5-flash",
+    "api_key_env": "GEMINI_API_KEY"
+  },
+  "tts_ayarlari": {
+    "aktif": false,
+    "motor": "edge-tts",
+    "ses_kodu": "tr-TR-AhmetNeural",
+    "konusma_hizi": "+5%"
+  }
+}

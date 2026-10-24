@@ -1,0 +1,13 @@
+# Python önbellek ve sanal ortam dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Gizli anahtarlar (ASLA GitHub'a yüklenmemeli)
+.env
+.env.local
+secrets.json
