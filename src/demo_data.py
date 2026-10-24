@@ -32,8 +32,6 @@ def create_demo_report(now: datetime) -> DailyFinanceReport:
     emtia_demo = {}
     for idx, (label, chg_end, p_start) in enumerate([
         ("Brent Petrol", -7.8, 81.2),
-        ("Ham Petrol (WTI)", -8.4, 77.6),
-        ("Doğalgaz", 18.4, 2.13),
         ("Bakır", 6.4, 4.12),
         ("Buğday", 4.6, 547.0),
         ("Kahve", 6.2, 233.9),
@@ -225,8 +223,6 @@ def create_demo_report(now: datetime) -> DailyFinanceReport:
         ],
         petrol_ve_emtia=[
             MultiPeriodAsset("BZ=F", "Brent Petrol", "Brent petrol", "USD", "emtia", 74.90, 75.39, -0.65, 2.40, 1.80, -7.80, -2.80, -15.40, "Enerji", "Yahoo Finance"),
-            MultiPeriodAsset("CL=F", "Ham Petrol (WTI)", "Batı Teksas türü ham petrol", "USD", "emtia", 71.15, 71.60, -0.63, 2.75, 1.95, -8.40, -0.70, -14.80, "Enerji", "Yahoo Finance"),
-            MultiPeriodAsset("NG=F", "Doğalgaz", "Doğalgaz vadeli kontratı", "USD", "emtia", 2.52, 2.46, 2.44, 11.50, -8.20, 18.40, 0.40, -16.20, "Enerji", "Yahoo Finance"),
             MultiPeriodAsset("HG=F", "Bakır (Dr. Copper)", "Bakır", "USD", "emtia", 4.38, 4.35, 0.69, 0.45, -2.10, 6.40, 12.60, 21.80, "Sanayi Metali", "Yahoo Finance"),
             MultiPeriodAsset("ZW=F", "Buğday", "Buğday", "cent", "emtia", 572.50, 578.00, -0.95, -2.80, -1.40, 4.60, -8.90, -1.20, "Tarım Emtiası", "Yahoo Finance"),
             MultiPeriodAsset("KC=F", "Kahve", "Kahve", "cent", "emtia", 248.40, 251.20, -1.11, -3.10, -6.80, 6.20, 31.80, 49.50, "Tarım Emtiası", "Yahoo Finance"),

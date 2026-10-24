@@ -362,7 +362,7 @@
     <!-- 9. PETROL VE EMTİA GRUPLARI (TABLO 8 + ORTAK KARŞILAŞTIRMALI GRAFİK) -->
     <div class="card">
       <h2>
-        <span>🛢️ 8. Petrol, Doğalgaz, Sanayi Metalleri (Bakır) ve Tarım Emtiaları</span>
+        <span>🛢️ 8. Brent Petrol, Sanayi Metalleri (Bakır) ve Tarım Emtiaları (Buğday, Kahve)</span>
         <div class="tabs" style="margin-bottom:0;">
           <button class="tab-btn active" id="btn-emtia-60g" onclick="switchCommodityChart('line60')">📈 60 Günlük Ortak % Trend Grafiği</button>
           <button class="tab-btn" id="btn-emtia-bars" onclick="switchCommodityChart('periods')">📊 Çoklu Dönem (1G-1Y) Karşılaştırma Grafiği</button>
@@ -416,12 +416,10 @@
 
     const COMMODITY_COLORS = {
       "Brent Petrol": "#0284c7",
-      "Ham Petrol (WTI)": "#7c3aed",
-      "Doğalgaz": "#ea580c",
-      "Bakır": "#16a34a",
-      "Bakır (Dr. Copper)": "#16a34a",
-      "Buğday": "#ca8a04",
-      "Kahve": "#dc2626"
+      "Bakır": "#d97706",
+      "Bakır (Dr. Copper)": "#d97706",
+      "Buğday": "#16a34a",
+      "Kahve": "#7c3aed"
     };
 
     function fmtNum(v, unit = "") {

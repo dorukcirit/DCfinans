@@ -41,8 +41,6 @@
     ],
     "petrol_ve_emtia": [
       {"kod": "BZ=F", "ad": "Brent Petrol", "okunus": "Brent petrol", "birim": "USD", "not": "Enerji"},
-      {"kod": "CL=F", "ad": "Ham Petrol (WTI)", "okunus": "Batı Teksas türü ham petrol", "birim": "USD", "not": "Enerji"},
-      {"kod": "NG=F", "ad": "Doğalgaz", "okunus": "Doğalgaz vadeli kontratı", "birim": "USD", "not": "Enerji"},
       {"kod": "HG=F", "ad": "Bakır (Dr. Copper)", "okunus": "Bakır", "birim": "USD", "not": "Sanayi Metali"},
       {"kod": "ZW=F", "ad": "Buğday", "okunus": "Buğday", "birim": "cent", "not": "Tarım Emtiası"},
       {"kod": "KC=F", "ad": "Kahve", "okunus": "Kahve", "birim": "cent", "not": "Tarım Emtiası"}

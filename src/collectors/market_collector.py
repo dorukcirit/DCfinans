@@ -673,11 +673,9 @@ class MarketCollector:
             if btc_dom_series:
                 btc_dom_series[-1]["v"] = round(dom_base, 2)
 
-        # 8. Tablo Emtiaları (Brent, WTI, Doğalgaz, Bakır, Buğday, Kahve) 60 Günlük % Değişim Serileri
+        # 8. Tablo Emtiaları (Brent, Bakır, Buğday, Kahve) 60 Günlük % Değişim Serileri
         emtia_kodlar = [
             ("BZ=F", "Brent Petrol"),
-            ("CL=F", "Ham Petrol (WTI)"),
-            ("NG=F", "Doğalgaz"),
             ("HG=F", "Bakır"),
             ("ZW=F", "Buğday"),
             ("KC=F", "Kahve"),
