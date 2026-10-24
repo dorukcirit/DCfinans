@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Günlük Küresel ve Yerel Finans Bülteni — Dashboard</title>
+  <title>DCfinans — Günlük Küresel ve Yerel Finans Bülteni</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --card-alt: #263349;
-      --border: #334155;
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --green: #22c55e;
-      --green-bg: rgba(34, 197, 94, 0.14);
-      --red: #ef4444;
-      --red-bg: rgba(239, 68, 68, 0.14);
-      --neutral: #cbd5e1;
-      --neutral-bg: rgba(148, 163, 184, 0.14);
-      --gold: #f59e0b;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --card-alt: #f8fafc;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #0284c7;
+      --accent-soft: #e0f2fe;
+      --green: #15803d;
+      --green-bg: #dcfce7;
+      --red: #b91c1c;
+      --red-bg: #fee2e2;
+      --neutral: #475569;
+      --neutral-bg: #f1f5f9;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -29,20 +29,21 @@
       line-height: 1.5;
       padding: 20px;
     }
-    .container { max-width: 1380px; margin: 0 auto; }
+    .container { max-width: 1420px; margin: 0 auto; }
     header {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       gap: 16px;
-      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px 24px;
+      background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+      border: 1px solid #bae6fd;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.06);
+      border-radius: 16px;
+      padding: 20px 26px;
       margin-bottom: 22px;
     }
-    .brand h1 { font-size: 1.45rem; font-weight: 700; color: #fff; }
+    .brand h1 { font-size: 1.5rem; font-weight: 800; color: #0f172a; letter-spacing: -0.02em; }
     .brand p { color: var(--muted); font-size: 0.88rem; margin-top: 4px; }
     .actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
     .btn {
@@ -50,110 +51,178 @@
       align-items: center;
       gap: 8px;
       padding: 10px 16px;
-      border-radius: 9px;
-      font-size: 0.88rem;
+      border-radius: 10px;
+      font-size: 0.86rem;
       font-weight: 600;
       cursor: pointer;
       border: 1px solid var(--border);
-      background: var(--card-alt);
+      background: #ffffff;
       color: var(--text);
       text-decoration: none;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
       transition: all 0.15s ease;
     }
-    .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
-    .btn-primary { background: #0284c7; border-color: #38bdf8; color: #fff; }
-    .btn-excel { background: #15803d; border-color: #22c55e; color: #fff; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 16px; margin-bottom: 22px; }
+    .btn:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 4px 8px rgba(2, 132, 199, 0.1); }
+    .btn-primary { background: #0284c7; border-color: #0284c7; color: #fff; }
+    .btn-excel { background: #16a34a; border-color: #15803d; color: #fff; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; margin-bottom: 22px; }
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 18px; margin-bottom: 22px; }
+
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 18px 20px;
+      border-radius: 14px;
+      padding: 20px 22px;
       margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
     }
     .card h2 {
       font-size: 1.08rem;
       font-weight: 700;
+      color: #0f172a;
       margin-bottom: 14px;
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 10px;
     }
-    .fg-score-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
-    .fg-number { font-size: 2rem; font-weight: 800; color: var(--gold); }
-    .fg-bar-bg { width: 100%; height: 10px; background: #0f172a; border-radius: 99px; overflow: hidden; margin: 10px 0; }
-    .fg-bar-fill { height: 100%; background: linear-gradient(90deg, #ef4444 0%, #eab308 50%, #22c55e 100%); border-radius: 99px; }
-    .fg-meta { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--muted); margin-top: 8px; }
+
+    /* İbre (Speedometer Gauge) Kartları */
+    .gauge-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .gauge-svg { width: 210px; height: 118px; overflow: visible; }
+    .gauge-score { font-size: 1.55rem; font-weight: 800; color: #0f172a; margin-top: -4px; }
+    .gauge-meta {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border);
+    }
+
+    /* Grafik Kartları */
+    .chart-card {
+      background: var(--card-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .chart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .chart-title { font-size: 0.9rem; font-weight: 700; color: #0f172a; }
+    .chart-val { font-size: 0.95rem; font-weight: 800; }
+    .chart-canvas-wrap { position: relative; width: 100%; height: 185px; }
+    .chart-canvas-wrap.tall { height: 290px; }
+    canvas { width: 100%; height: 100%; display: block; }
+
+    .legend-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+    .legend-dot { width: 12px; height: 4px; border-radius: 2px; display: inline-block; }
+
+    /* Tablolar */
     .table-wrap { overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
-    th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid rgba(51, 65, 85, 0.65); white-space: nowrap; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid var(--border); white-space: nowrap; }
     th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
-    th { background: rgba(15, 23, 42, 0.6); color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.03em; }
-    tr:hover td { background: rgba(56, 189, 248, 0.04); }
+    th {
+      background: #f8fafc;
+      color: #475569;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.73rem;
+      letter-spacing: 0.03em;
+    }
+    tr:hover td { background: #f0f9ff; }
     .badge {
       display: inline-block;
       padding: 3px 8px;
       border-radius: 6px;
-      font-weight: 600;
-      font-size: 0.78rem;
+      font-weight: 700;
+      font-size: 0.76rem;
     }
     .b-up { background: var(--green-bg); color: var(--green); }
     .b-down { background: var(--red-bg); color: var(--red); }
     .b-flat { background: var(--neutral-bg); color: var(--neutral); }
-    .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 12px; }
-    .tech-box { background: rgba(15, 23, 42, 0.55); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
-    .tech-box .lbl { font-size: 0.76rem; color: var(--muted); }
-    .tech-box .val { font-size: 1.15rem; font-weight: 700; margin-top: 4px; }
-    .tech-box .sub { font-size: 0.78rem; color: var(--accent); margin-top: 3px; }
+
+    .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(205px, 1fr)); gap: 12px; margin-top: 14px; }
+    .tech-box { background: var(--card-alt); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+    .tech-box .lbl { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+    .tech-box .val { font-size: 1.12rem; font-weight: 800; color: #0f172a; margin-top: 3px; }
+    .tech-box .sub { font-size: 0.76rem; color: var(--accent); margin-top: 3px; font-weight: 600; }
+
     .note-box {
       margin-top: 14px;
       padding: 12px 16px;
-      background: rgba(56, 189, 248, 0.08);
+      background: #f0f9ff;
       border-left: 4px solid var(--accent);
-      border-radius: 6px;
+      border-radius: 8px;
       font-size: 0.88rem;
-      color: #e2e8f0;
+      color: #0c4a6e;
     }
+
     .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
     .tab-btn {
       padding: 7px 14px;
       border-radius: 8px;
       border: 1px solid var(--border);
-      background: #0f172a;
+      background: var(--card-alt);
       color: var(--muted);
       cursor: pointer;
       font-size: 0.82rem;
       font-weight: 600;
+      transition: all 0.12s;
     }
-    .tab-btn.active { background: var(--accent); color: #0f172a; border-color: var(--accent); }
+    .tab-btn.active { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+
     .headline-list { list-style: none; }
     .headline-list li {
       padding: 10px 0;
-      border-bottom: 1px solid rgba(51, 65, 85, 0.5);
-      font-size: 0.9rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.89rem;
     }
     .headline-list li:last-child { border-bottom: none; }
     .tag {
       display: inline-block;
-      background: rgba(56, 189, 248, 0.12);
+      background: var(--accent-soft);
       color: var(--accent);
       font-size: 0.72rem;
+      font-weight: 600;
       padding: 2px 7px;
-      border-radius: 4px;
+      border-radius: 5px;
       margin-left: 6px;
     }
     .speaker-box {
       white-space: pre-wrap;
-      background: #0f172a;
+      background: var(--card-alt);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 16px;
       font-size: 0.9rem;
-      color: #e2e8f0;
-      max-height: 420px;
+      color: #1e293b;
+      max-height: 400px;
       overflow-y: auto;
     }
     @media (max-width: 768px) {
@@ -166,7 +235,7 @@
   <div class="container">
     <header>
       <div class="brand">
-        <h1 id="bulten-baslik">📊 Günlük Küresel ve Yerel Finans Bülteni</h1>
+        <h1 id="bulten-baslik">📊 DCfinans — Günlük Küresel ve Yerel Finans Bülteni</h1>
         <p id="bulten-meta">Yükleniyor...</p>
       </div>
       <div class="actions">
@@ -176,27 +245,79 @@
       </div>
     </header>
 
-    <!-- 1. FEAR & GREED ENDEKSLERİ (S&P 500, ALTIN, KRİPTO) -->
+    <!-- 1. İBRELİ FEAR & GREED ENDEKSLERİ (S&P 500, ALTIN, KRİPTO) -->
     <div class="grid-3" id="fg-container"></div>
 
-    <!-- 2. BIST 100 TL VE DOLAR BAZLI HİBRİT TEKNİK ANALİZ -->
+    <!-- 2. ANA PİYASA GRAFİKLERİ PANELİ (BIST 100 TL, BIST 100 USD, S&P 500, ONS ALTIN, BTC, BTC DOMINANCE) -->
+    <div class="card">
+      <h2>
+        <span>📈 Piyasa Trend Grafikleri (Son 60 İşlem Günü)</span>
+        <span style="font-size:0.8rem;color:var(--muted)">BIST 100 (TL & USD) • S&P 500 • Ons Altın • Bitcoin • BTC Dominance</span>
+      </h2>
+      <div class="grid-3">
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">🇹🇷 BIST 100 (TL Bazlı)</span>
+            <span class="chart-val" id="lbl-c-bist-tl">-</span>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="canvas-bist-tl"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">💵 BIST 100 / USD (Dolar Bazlı)</span>
+            <span class="chart-val" id="lbl-c-bist-usd">-</span>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="canvas-bist-usd"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">🌎 S&P 500 Endeksi</span>
+            <span class="chart-val" id="lbl-c-sp500">-</span>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="canvas-sp500"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">🪙 Ons Altın (USD)</span>
+            <span class="chart-val" id="lbl-c-gold">-</span>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="canvas-gold"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">₿ Bitcoin (BTC / USD)</span>
+            <span class="chart-val" id="lbl-c-btc">-</span>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="canvas-btc"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">📊 Bitcoin Dominance (BTC.D %)</span>
+            <span class="chart-val" id="lbl-c-btcdom">-</span>
+          </div>
+          <div class="chart-canvas-wrap"><canvas id="canvas-btcdom"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. BIST 100 TL VE DOLAR BAZLI HİBRİT TEKNİK ANALİZ -->
     <div class="card">
       <h2>
         <span>🇹🇷 1. BIST 100 & Borsa İstanbul (TL Çoklu Dönem ve Dolar Bazlı Teknik Analiz)</span>
-        <span style="font-size:0.8rem;color:var(--accent)">TL + USD Taban/Tavan & Fibonacci</span>
+        <span style="font-size:0.8rem;color:var(--accent)">Çift Kaynak Doğrulamalı + Fibonacci & Swing Taban/Tavan</span>
       </h2>
       <div class="table-wrap" id="table-bist"></div>
       <div class="tech-grid" id="bist-usd-tech-grid"></div>
       <div class="note-box" id="bist-tech-note"></div>
     </div>
 
-    <!-- 3. S&P 500 VE KÜRESEL ENDEKSLER -->
+    <!-- 4. S&P 500 VE KÜRESEL ENDEKSLER -->
     <div class="card">
       <h2>🌎 2. S&P 500 ve ABD / Küresel Endeksler (1G • 1H • 1A • 3A • YTD • 1Y)</h2>
       <div class="table-wrap" id="table-abd"></div>
     </div>
 
-    <!-- 4. ALTIN, GÜMÜŞ VE ALTIN/GÜMÜŞ ORANI -->
+    <!-- 5. ALTIN, GÜMÜŞ VE ALTIN/GÜMÜŞ ORANI -->
     <div class="card">
       <h2>🪙 3. Altın ve Gümüş (Döviz Çoklu Dönem • Günlük TL • Altın/Gümüş Rasyosu)</h2>
       <div class="table-wrap" id="table-metals"></div>
@@ -204,7 +325,7 @@
       <div class="note-box" id="metals-ratio-note"></div>
     </div>
 
-    <!-- 5. TEFAS FONLARINDA DÖNEMSEL ŞAMPİYONLAR -->
+    <!-- 6. TEFAS FONLARINDA DÖNEMSEL ŞAMPİYONLAR -->
     <div class="card">
       <h2>🏆 4. TEFAS Fonları: Dönemsel En Çok Kazandıranlar ve Kapsamları</h2>
       <div class="tabs" id="tefas-tabs">
@@ -218,14 +339,14 @@
       <div class="table-wrap" id="table-tefas"></div>
     </div>
 
-    <!-- 6. KRİPTO PİYASASI & BTC DOMINANCE -->
+    <!-- 7. KRİPTO PİYASASI & BTC DOMINANCE -->
     <div class="card">
       <h2>₿ 5. Kripto Varlıklar (BTC • ETH • XRP), Total Market Cap ve Bitcoin Dominance</h2>
       <div class="tech-grid" id="crypto-global-grid" style="margin-bottom:14px;"></div>
       <div class="table-wrap" id="table-crypto"></div>
     </div>
 
-    <!-- 7. TAHVİL, CDS, EURO, DOLAR VE DXY -->
+    <!-- 8. TAHVİL, CDS, EURO, DOLAR VE DXY -->
     <div class="grid-2">
       <div class="card" style="margin-bottom:0;">
         <h2>💵 6. Dolar, Euro, EUR/USD ve Küresel DXY Endeksi</h2>
@@ -238,13 +359,27 @@
     </div>
     <div style="height:20px;"></div>
 
-    <!-- 8. PETROL VE EMTİA GRUPLARI -->
+    <!-- 9. PETROL VE EMTİA GRUPLARI (TABLO 8 + ORTAK KARŞILAŞTIRMALI GRAFİK) -->
     <div class="card">
-      <h2>🛢️ 8. Petrol, Doğalgaz, Sanayi Metalleri (Bakır) ve Tarım Emtiaları</h2>
+      <h2>
+        <span>🛢️ 8. Petrol, Doğalgaz, Sanayi Metalleri (Bakır) ve Tarım Emtiaları</span>
+        <div class="tabs" style="margin-bottom:0;">
+          <button class="tab-btn active" id="btn-emtia-60g" onclick="switchCommodityChart('line60')">📈 60 Günlük Ortak % Trend Grafiği</button>
+          <button class="tab-btn" id="btn-emtia-bars" onclick="switchCommodityChart('periods')">📊 Çoklu Dönem (1G-1Y) Karşılaştırma Grafiği</button>
+        </div>
+      </h2>
+      <div class="chart-card" style="margin-bottom:16px;">
+        <div class="chart-header">
+          <span class="chart-title" id="emtia-chart-subtitle">8. Tablodaki Tüm Emtiaların Birlikte Karşılaştırmalı Performansı (Son 60 Gün % Değişim)</span>
+          <span style="font-size:0.78rem;color:var(--muted)">0% Başlangıç Noktasına Göre Göreceli Güç</span>
+        </div>
+        <div class="chart-canvas-wrap tall"><canvas id="canvas-commodities-all"></canvas></div>
+        <div class="legend-row" id="commodities-legend"></div>
+      </div>
       <div class="table-wrap" id="table-commodities"></div>
     </div>
 
-    <!-- 9. EKONOMİK TAKVİM (BUGÜN, BU HAFTA, GELECEK HAFTA) -->
+    <!-- 10. EKONOMİK TAKVİM (BUGÜN, BU HAFTA, GELECEK HAFTA) -->
     <div class="card">
       <h2>🗓️ 9. ABD ve Türkiye Ekonomik Takvimi (Bugün • Bu Hafta • Gelecek Hafta)</h2>
       <div class="tabs">
@@ -255,7 +390,7 @@
       <div class="table-wrap" id="table-calendar"></div>
     </div>
 
-    <!-- 10. OTORİTE/BANKA AÇIKLAMALARI VE KONUT/ARAÇ İSTATİSTİKLERİ -->
+    <!-- 11. OTORİTE/BANKA AÇIKLAMALARI VE KONUT/ARAÇ İSTATİSTİKLERİ -->
     <div class="grid-2">
       <div class="card">
         <h2>🏦 10. Finans Otoriteleri ve Banka Açıklamaları</h2>
@@ -267,7 +402,7 @@
       </div>
     </div>
 
-    <!-- 11. HABER SPİKERİ VE TTS METNİ -->
+    <!-- 12. HABER SPİKERİ VE TTS METNİ -->
     <div class="card">
       <h2>🎙️ 12. Haber Spikeri Bülten Metni (Yazılı & Sesli Okuma Kaynağı)</h2>
       <div class="speaker-box" id="speaker-text-box"></div>
@@ -277,6 +412,17 @@
   <script src="./latest_report_data.js"></script>
   <script>
     let GLOBAL_PAYLOAD = null;
+    let COMMODITY_CHART_MODE = "line60";
+
+    const COMMODITY_COLORS = {
+      "Brent Petrol": "#0284c7",
+      "Ham Petrol (WTI)": "#7c3aed",
+      "Doğalgaz": "#ea580c",
+      "Bakır": "#16a34a",
+      "Bakır (Dr. Copper)": "#16a34a",
+      "Buğday": "#ca8a04",
+      "Kahve": "#dc2626"
+    };
 
     function fmtNum(v, unit = "") {
       if (v === null || v === undefined) return "-";
@@ -299,6 +445,288 @@
       return `<span class="badge ${t.cls}">${s} (${t.label})</span>`;
     }
 
+    /* SVG Yarım Daire İbre (Speedometer Gauge) Üreticisi */
+    function createGaugeSVG(score) {
+      const clamped = Math.max(0, Math.min(100, Number(score) || 50));
+      // 0 -> -90 deg (sol), 50 -> 0 deg (dik), 100 -> +90 deg (sağ)
+      const angleDeg = -90 + (clamped / 100) * 180;
+      const rad = ((angleDeg - 90) * Math.PI) / 180;
+      const cx = 105, cy = 96, r = 74;
+      const nx = cx + (r - 12) * Math.cos(rad);
+      const ny = cy + (r - 12) * Math.sin(rad);
+
+      return `
+        <svg class="gauge-svg" viewBox="0 0 210 115">
+          <defs>
+            <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#dc2626" />
+              <stop offset="25%" stop-color="#f97316" />
+              <stop offset="50%" stop-color="#eab308" />
+              <stop offset="75%" stop-color="#22c55e" />
+              <stop offset="100%" stop-color="#15803d" />
+            </linearGradient>
+          </defs>
+          <!-- Arka Plan Yay -->
+          <path d="M 25 96 A 80 80 0 0 1 185 96" fill="none" stroke="#e2e8f0" stroke-width="16" stroke-linecap="round" />
+          <!-- Renkli Korku/Açgözlülük Yayı -->
+          <path d="M 25 96 A 80 80 0 0 1 185 96" fill="none" stroke="url(#gaugeGrad)" stroke-width="14" stroke-linecap="round" />
+          <!-- Ölçek Etiketleri -->
+          <text x="16" y="112" font-size="10" fill="#64748b" font-weight="600">0 Korku</text>
+          <text x="95" y="11" font-size="10" fill="#64748b" font-weight="600">50</text>
+          <text x="148" y="112" font-size="10" fill="#64748b" font-weight="600">100 İştah</text>
+          <!-- İbre (Needle) -->
+          <line x1="${cx}" y1="${cy}" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round" />
+          <circle cx="${cx}" cy="${cy}" r="6.5" fill="#0f172a" />
+          <circle cx="${cx}" cy="${cy}" r="2.5" fill="#ffffff" />
+        </svg>
+      `;
+    }
+
+    /* Tekli Alan/Çizgi Grafiği Çizici (Canvas) */
+    function drawAreaLineChart(canvasId, series, colorHex, unit = "") {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas || !series || !series.length) return;
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      const w = rect.width || 340;
+      const h = rect.height || 185;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      const ctx = canvas.getContext("2d");
+      ctx.scale(dpr, dpr);
+
+      const vals = series.map(p => Number(p.v));
+      const minV = Math.min(...vals);
+      const maxV = Math.max(...vals);
+      const padV = (maxV - minV) * 0.12 || 1;
+      const low = minV - padV;
+      const high = maxV + padV;
+
+      const padLeft = 48, padRight = 12, padTop = 12, padBottom = 24;
+      const plotW = w - padLeft - padRight;
+      const plotH = h - padTop - padBottom;
+
+      ctx.clearRect(0, 0, w, h);
+
+      // Yatay Kılavuz Çizgileri
+      ctx.strokeStyle = "#e2e8f0";
+      ctx.lineWidth = 1;
+      ctx.fillStyle = "#64748b";
+      ctx.font = "10px Inter, sans-serif";
+      ctx.textAlign = "right";
+      for (let i = 0; i <= 3; i++) {
+        const y = padTop + (plotH * i) / 3;
+        const vLabel = high - ((high - low) * i) / 3;
+        ctx.beginPath();
+        ctx.moveTo(padLeft, y);
+        ctx.lineTo(w - padRight, y);
+        ctx.stroke();
+        ctx.fillText(vLabel >= 1000 ? Math.round(vLabel).toLocaleString("tr-TR") : vLabel.toFixed(1), padLeft - 6, y + 3);
+      }
+
+      // Koordinat hesaplama
+      const pts = series.map((p, idx) => {
+        const x = padLeft + (idx / Math.max(1, series.length - 1)) * plotW;
+        const y = padTop + (1 - (p.v - low) / (high - low)) * plotH;
+        return { x, y, d: p.d, v: p.v };
+      });
+
+      // Dolgu (Gradient)
+      const grad = ctx.createLinearGradient(0, padTop, 0, padTop + plotH);
+      grad.addColorStop(0, colorHex + "38");
+      grad.addColorStop(1, colorHex + "03");
+      ctx.beginPath();
+      ctx.moveTo(pts[0].x, padTop + plotH);
+      pts.forEach(p => ctx.lineTo(p.x, p.y));
+      ctx.lineTo(pts[pts.length - 1].x, padTop + plotH);
+      ctx.closePath();
+      ctx.fillStyle = grad;
+      ctx.fill();
+
+      // Ana Çizgi
+      ctx.beginPath();
+      pts.forEach((p, idx) => (idx === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y)));
+      ctx.strokeStyle = colorHex;
+      ctx.lineWidth = 2.4;
+      ctx.stroke();
+
+      // Son Nokta Vurgusu
+      const last = pts[pts.length - 1];
+      ctx.beginPath();
+      ctx.arc(last.x, last.y, 4, 0, Math.PI * 2);
+      ctx.fillStyle = colorHex;
+      ctx.fill();
+
+      // Tarih Etiketleri (Başlangıç, Orta, Son)
+      ctx.fillStyle = "#64748b";
+      ctx.textAlign = "left";
+      ctx.fillText(series[0].d.slice(5), padLeft, h - 6);
+      ctx.textAlign = "center";
+      ctx.fillText(series[Math.floor(series.length / 2)].d.slice(5), padLeft + plotW / 2, h - 6);
+      ctx.textAlign = "right";
+      ctx.fillText(series[series.length - 1].d.slice(5), w - padRight, h - 6);
+    }
+
+    /* 8. Tablo Emtialarının Hepsini Bir Arada Gösteren Çoklu Grafik Çizici */
+    function drawAllCommoditiesChart() {
+      const canvas = document.getElementById("canvas-commodities-all");
+      if (!canvas || !GLOBAL_PAYLOAD) return;
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      const w = rect.width || 900;
+      const h = rect.height || 290;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      const ctx = canvas.getContext("2d");
+      ctx.scale(dpr, dpr);
+      ctx.clearRect(0, 0, w, h);
+
+      const r = GLOBAL_PAYLOAD.ham_veriler || {};
+      const charts = r.grafik_verileri || {};
+      const multiMap = charts.emtia_normalize_60g || {};
+      const assets = r.petrol_ve_emtia || [];
+
+      const padLeft = 52, padRight = 18, padTop = 16, padBottom = 30;
+      const plotW = w - padLeft - padRight;
+      const plotH = h - padTop - padBottom;
+
+      if (COMMODITY_CHART_MODE === "line60" && Object.keys(multiMap).length > 0) {
+        let allVals = [0];
+        Object.values(multiMap).forEach(arr => arr.forEach(p => allVals.push(Number(p.v))));
+        const minV = Math.min(...allVals) - 2;
+        const maxV = Math.max(...allVals) + 2;
+
+        // Kılavuz Çizgileri + %0 Referans Çizgisi
+        ctx.font = "11px Inter, sans-serif";
+        ctx.textAlign = "right";
+        for (let i = 0; i <= 4; i++) {
+          const y = padTop + (plotH * i) / 4;
+          const v = maxV - ((maxV - minV) * i) / 4;
+          ctx.beginPath();
+          ctx.moveTo(padLeft, y);
+          ctx.lineTo(w - padRight, y);
+          ctx.strokeStyle = "#e2e8f0";
+          ctx.lineWidth = 1;
+          ctx.stroke();
+          ctx.fillStyle = "#64748b";
+          ctx.fillText(`${v > 0 ? '+' : ''}${v.toFixed(1)}%`, padLeft - 8, y + 4);
+        }
+
+        // %0 Başlangıç Çizgisi
+        if (minV < 0 && maxV > 0) {
+          const yZero = padTop + (1 - (0 - minV) / (maxV - minV)) * plotH;
+          ctx.beginPath();
+          ctx.setLineDash([4, 4]);
+          ctx.moveTo(padLeft, yZero);
+          ctx.lineTo(w - padRight, yZero);
+          ctx.strokeStyle = "#94a3b8";
+          ctx.lineWidth = 1.4;
+          ctx.stroke();
+          ctx.setLineDash([]);
+        }
+
+        let sampleDates = [];
+        Object.entries(multiMap).forEach(([name, series]) => {
+          if (!series || !series.length) return;
+          sampleDates = series;
+          const color = COMMODITY_COLORS[name] || "#0284c7";
+          ctx.beginPath();
+          series.forEach((p, idx) => {
+            const x = padLeft + (idx / Math.max(1, series.length - 1)) * plotW;
+            const y = padTop + (1 - (p.v - minV) / (maxV - minV)) * plotH;
+            if (idx === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          });
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 2.4;
+          ctx.stroke();
+        });
+
+        if (sampleDates.length > 1) {
+          ctx.fillStyle = "#64748b";
+          ctx.textAlign = "left";
+          ctx.fillText(sampleDates[0].d, padLeft, h - 8);
+          ctx.textAlign = "center";
+          ctx.fillText(sampleDates[Math.floor(sampleDates.length / 2)].d, padLeft + plotW / 2, h - 8);
+          ctx.textAlign = "right";
+          ctx.fillText(sampleDates[sampleDates.length - 1].d, w - padRight, h - 8);
+        }
+      } else {
+        // Çoklu Dönem (1G, 1H, 1A, 3A, YTD, 1Y) Gruplandırılmış Çubuk Grafiği
+        const periods = [
+          { key: "degisim_1g", label: "Günlük (1G)" },
+          { key: "degisim_1h", label: "1 Hafta (1H)" },
+          { key: "degisim_1a", label: "1 Ay (1A)" },
+          { key: "degisim_3a", label: "3 Ay (3A)" },
+          { key: "degisim_ytd", label: "Yılbaşı (YTD)" },
+          { key: "degisim_1y", label: "1 Yıl (1Y)" },
+        ];
+        let vals = [0];
+        assets.forEach(a => periods.forEach(p => { if (a[p.key] !== null && a[p.key] !== undefined) vals.push(Number(a[p.key])); }));
+        const minV = Math.min(...vals, -10) * 1.1;
+        const maxV = Math.max(...vals, 10) * 1.1;
+
+        for (let i = 0; i <= 4; i++) {
+          const y = padTop + (plotH * i) / 4;
+          const v = maxV - ((maxV - minV) * i) / 4;
+          ctx.beginPath();
+          ctx.moveTo(padLeft, y);
+          ctx.lineTo(w - padRight, y);
+          ctx.strokeStyle = "#e2e8f0";
+          ctx.stroke();
+          ctx.fillStyle = "#64748b";
+          ctx.font = "11px Inter, sans-serif";
+          ctx.textAlign = "right";
+          ctx.fillText(`${v > 0 ? '+' : ''}${v.toFixed(0)}%`, padLeft - 8, y + 4);
+        }
+
+        const yZero = padTop + (1 - (0 - minV) / (maxV - minV)) * plotH;
+        ctx.beginPath();
+        ctx.moveTo(padLeft, yZero);
+        ctx.lineTo(w - padRight, yZero);
+        ctx.strokeStyle = "#64748b";
+        ctx.stroke();
+
+        const groupW = plotW / periods.length;
+        const barW = Math.min(18, (groupW - 24) / Math.max(1, assets.length));
+
+        periods.forEach((p, gIdx) => {
+          const groupStart = padLeft + gIdx * groupW + 12;
+          assets.forEach((a, aIdx) => {
+            const val = Number(a[p.key] || 0);
+            const x = groupStart + aIdx * barW;
+            const yVal = padTop + (1 - (val - minV) / (maxV - minV)) * plotH;
+            const topY = Math.min(yZero, yVal);
+            const barH = Math.max(2, Math.abs(yVal - yZero));
+            ctx.fillStyle = COMMODITY_COLORS[a.ad] || "#0284c7";
+            ctx.fillRect(x, topY, barW - 2, barH);
+          });
+          ctx.fillStyle = "#0f172a";
+          ctx.font = "600 11px Inter, sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText(p.label, padLeft + (gIdx + 0.5) * groupW, h - 8);
+        });
+      }
+
+      // Lejant
+      const legItems = (assets || []).map(a => {
+        const c = COMMODITY_COLORS[a.ad] || "#0284c7";
+        return `<span class="legend-item"><span class="legend-dot" style="background:${c}"></span>${a.ad} (${fmtNum(a.fiyat, a.birim)})</span>`;
+      });
+      document.getElementById("commodities-legend").innerHTML = legItems.join("");
+    }
+
+    function switchCommodityChart(mode) {
+      COMMODITY_CHART_MODE = mode;
+      document.getElementById("btn-emtia-60g").classList.toggle("active", mode === "line60");
+      document.getElementById("btn-emtia-bars").classList.toggle("active", mode === "periods");
+      document.getElementById("emtia-chart-subtitle").textContent =
+        mode === "line60"
+          ? "8. Tablodaki Tüm Emtiaların Birlikte Karşılaştırmalı Performansı (Son 60 Gün % Değişim)"
+          : "8. Tablodaki Tüm Emtiaların Çoklu Dönem (Günlük, Haftalık, Aylık, 3 Ay, YTD, 1 Yıl) % Karşılaştırması";
+      drawAllCommoditiesChart();
+    }
+
     function renderMultiPeriodTable(assets) {
       if (!assets || !assets.length) return "<p>Veri bulunamadı.</p>";
       let html = `<table><thead><tr>
@@ -317,7 +745,7 @@
           <td>${fmtPctBadge(a.degisim_3a, 0.75)}</td>
           <td>${fmtPctBadge(a.degisim_ytd, 0.75)}</td>
           <td>${fmtPctBadge(a.degisim_1y, 1.0)}</td>
-          <td style="font-size:0.78rem;color:var(--accent)">${a.kaynak || 'Çift Kaynak'}</td>
+          <td style="font-size:0.76rem;color:var(--accent);font-weight:600;">${a.kaynak || 'Çift Kaynak'}</td>
         </tr>`;
       }
       html += `</tbody></table>`;
@@ -347,7 +775,7 @@
           <td>${f.sira}</td>
           <td><strong>${f.kod}</strong></td>
           <td style="white-space:normal;max-width:340px;">${f.ad}</td>
-          <td style="color:var(--accent);white-space:normal;">${f.kapsam_turu}</td>
+          <td style="color:var(--accent);font-weight:600;white-space:normal;">${f.kapsam_turu}</td>
           <td>${fmtPctBadge(f.getiri_1g, 0.1)}</td>
           <td>${fmtPctBadge(f.getiri_1h, 0.25)}</td>
           <td>${fmtPctBadge(f.getiri_1a, 0.5)}</td>
@@ -397,6 +825,20 @@
       document.getElementById("table-calendar").innerHTML = html;
     }
 
+    function drawAllCharts() {
+      if (!GLOBAL_PAYLOAD) return;
+      const r = GLOBAL_PAYLOAD.ham_veriler || {};
+      const ch = r.grafik_verileri || {};
+
+      drawAreaLineChart("canvas-bist-tl", ch.bist100_tl, "#0284c7");
+      drawAreaLineChart("canvas-bist-usd", ch.bist100_usd, "#0d9488");
+      drawAreaLineChart("canvas-sp500", ch.sp500, "#4f46e5");
+      drawAreaLineChart("canvas-gold", ch.ons_altin, "#d97706");
+      drawAreaLineChart("canvas-btc", ch.btc_usd, "#ea580c");
+      drawAreaLineChart("canvas-btcdom", ch.btc_dominance, "#7c3aed");
+      drawAllCommoditiesChart();
+    }
+
     function renderDashboard(payload) {
       GLOBAL_PAYLOAD = payload;
       const meta = payload.meta || {};
@@ -404,29 +846,45 @@
 
       document.getElementById("bulten-baslik").textContent = `📊 ${meta.bulten_adi || "Günlük Finans Bülteni"} — ${meta.tarih || ""}`;
       document.getElementById("bulten-meta").textContent =
-        `Son Güncelleme: ${meta.olusturulma_zamani || ""} • Tahmini Sesli Okuma Süresi: ~${meta.tahmini_okuma_suresi_dakika || 5} dk`;
+        `Son Güncelleme: ${meta.olusturulma_zamani || ""} • Çift Kaynak Doğrulamalı • Tahmini Sesli Süre: ~${meta.tahmini_okuma_suresi_dakika || 5} dk`;
 
-      // Fear & Greed
+      // 1. İbreli (Speedometer Gauge) Fear & Greed Kartları
       const fgList = r.korku_acgozluluk_endeksleri || [];
       document.getElementById("fg-container").innerHTML = fgList.map(fg => `
         <div class="card" style="margin-bottom:0;">
-          <div class="fg-score-row">
-            <strong>🧭 ${fg.piyasa}</strong>
-            <span class="fg-number">${fg.skor}<span style="font-size:0.9rem;color:var(--muted)">/100</span></span>
-          </div>
-          <div><span class="badge ${fg.skor >= 55 ? 'b-up' : (fg.skor <= 44 ? 'b-down' : 'b-flat')}">${fg.durum_tr}</span></div>
-          <div class="fg-bar-bg"><div class="fg-bar-fill" style="width:${fg.skor}%"></div></div>
-          <p style="font-size:0.8rem;color:var(--muted)">${fg.aciklama}</p>
-          <div class="fg-meta">
-            <span>Dün: <strong>${fg.onceki_gun ?? '-'}</strong></span>
-            <span>Geçen Hafta: <strong>${fg.onceki_hafta ?? '-'}</strong></span>
-            <span>Geçen Ay: <strong>${fg.onceki_ay ?? '-'}</strong></span>
+          <div class="gauge-wrap">
+            <strong style="font-size:0.95rem;color:#0f172a;margin-bottom:4px;">🧭 ${fg.piyasa}</strong>
+            ${createGaugeSVG(fg.skor)}
+            <div class="gauge-score">${fg.skor} <span style="font-size:0.85rem;color:var(--muted);font-weight:600;">/ 100</span></div>
+            <div style="margin-top:4px;">
+              <span class="badge ${fg.skor >= 55 ? 'b-up' : (fg.skor <= 44 ? 'b-down' : 'b-flat')}">${fg.durum_tr}</span>
+            </div>
+            <p style="font-size:0.78rem;color:var(--muted);margin-top:8px;">${fg.aciklama}</p>
+            <div class="gauge-meta">
+              <span>Dün: <strong>${fg.onceki_gun ?? '-'}</strong></span>
+              <span>Geçen Hafta: <strong>${fg.onceki_hafta ?? '-'}</strong></span>
+              <span>Geçen Ay: <strong>${fg.onceki_ay ?? '-'}</strong></span>
+            </div>
           </div>
         </div>
       `).join("");
 
-      // BIST Tablosu + USD Satırı
+      // Grafik Üst Değer Etiketleri
+      const bist100Obj = (r.bist_endeksleri || [])[0] || {};
       const bt = r.bist100_dolar_teknik || {};
+      const spObj = (r.abd_ve_kuresel_endeksler || [])[0] || {};
+      const goldObj = (r.altin_ve_gumus_usd || [])[0] || {};
+      const btcObj = (r.kripto_varliklar || [])[0] || {};
+      const cp = r.kripto_piyasa_ozeti || {};
+
+      document.getElementById("lbl-c-bist-tl").textContent = fmtNum(bist100Obj.fiyat, "puan");
+      document.getElementById("lbl-c-bist-usd").textContent = fmtNum(bt.guncel_usd, "USD");
+      document.getElementById("lbl-c-sp500").textContent = fmtNum(spObj.fiyat, "puan");
+      document.getElementById("lbl-c-gold").textContent = fmtNum(goldObj.fiyat, "USD");
+      document.getElementById("lbl-c-btc").textContent = fmtNum(btcObj.fiyat, "USD");
+      document.getElementById("lbl-c-btcdom").textContent = `%${cp.btc_dominance_yuzde ?? '-'}`;
+
+      // BIST Tablosu + USD Satırı
       const bistRows = [...(r.bist_endeksleri || [])];
       if (bt.guncel_usd) {
         bistRows.push({
@@ -440,6 +898,7 @@
           degisim_3a: bt.degisim_3a_usd,
           degisim_ytd: bt.degisim_ytd_usd,
           degisim_1y: bt.degisim_1y_usd,
+          kaynak: "Hesaplanan (XU100 ÷ USD/TRY)"
         });
       }
       document.getElementById("table-bist").innerHTML = renderMultiPeriodTable(bistRows);
@@ -478,10 +937,8 @@
       `;
       document.getElementById("bist-tech-note").textContent = bt.teknik_ozet_yorum || "";
 
-      // ABD Endeksler
+      // ABD Endeksler, Altın & Gümüş
       document.getElementById("table-abd").innerHTML = renderMultiPeriodTable(r.abd_ve_kuresel_endeksler || []);
-
-      // Altın & Gümüş
       document.getElementById("table-metals").innerHTML = renderMultiPeriodTable(r.altin_ve_gumus_usd || []);
       const gs = r.altin_gumus_ozet || {};
       document.getElementById("metals-summary-grid").innerHTML = `
@@ -507,7 +964,6 @@
       renderTefasTab("gunluk");
 
       // Kripto
-      const cp = r.kripto_piyasa_ozeti || {};
       document.getElementById("crypto-global-grid").innerHTML = `
         <div class="tech-box">
           <div class="lbl">Kripto Toplam Piyasa Değeri (Total Market Cap)</div>
@@ -527,10 +983,8 @@
       document.getElementById("table-bonds").innerHTML = renderMultiPeriodTable(r.tahvil_ve_cds || []);
       document.getElementById("table-commodities").innerHTML = renderMultiPeriodTable(r.petrol_ve_emtia || []);
 
-      // Calendar
+      // Calendar & Headlines
       renderCalendarTab("bugun");
-
-      // Headlines
       document.getElementById("list-authorities").innerHTML = (r.otorite_ve_banka_haberleri || []).map(h => `
         <li>
           <strong>${h.baslik}</strong> <span style="color:var(--muted)">— (${h.kaynak})</span>
@@ -546,9 +1000,15 @@
       `).join("");
 
       document.getElementById("speaker-text-box").textContent = payload.spiker_metni || payload.tts_tam_metin || "";
+
+      // Tüm Grafikleri Çiz
+      setTimeout(drawAllCharts, 40);
     }
 
-    // Tarayıcı Üzerinden Türkçe Sesli Okuma (Web Speech API)
+    window.addEventListener("resize", () => {
+      if (GLOBAL_PAYLOAD) drawAllCharts();
+    });
+
     function toggleSpeech() {
       if (!("speechSynthesis" in window)) {
         alert("Tarayıcınız sesli okumayı desteklemiyor.");
@@ -592,7 +1052,7 @@
         const data = await res.json();
         renderDashboard(data);
       } catch (e) {
-        document.getElementById("bulten-meta").textContent = "Veri dosyası henüz oluşturulmadı. Lütfen 'python main.py' çalıştırın.";
+        document.getElementById("bulten-meta").textContent = "Veri dosyası henüz oluşturulmadı.";
       }
     }
     init();

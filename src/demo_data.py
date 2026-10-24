@@ -1,4 +1,5 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+import math
 from src.models import (
     BistUsdTechnicalAnalysis,
     CryptoGlobalSummary,
@@ -12,9 +13,45 @@ from src.models import (
 )
 
 
+def _make_demo_curve(now: datetime, start_val: float, end_val: float, volatility: float, phase: float = 0.0):
+    pts = []
+    for i in range(60):
+        dt = (now - timedelta(days=59 - i)).strftime("%Y-%m-%d")
+        t = i / 59.0
+        wave = math.sin(t * 9.0 + phase) * volatility + math.cos(t * 4.5 + phase) * (volatility * 0.6)
+        val = start_val + (end_val - start_val) * t + wave * (1.0 - 0.3 * t)
+        if i == 59:
+            val = end_val
+        pts.append({"d": dt, "v": round(val, 2)})
+    return pts
+
+
 def create_demo_report(now: datetime) -> DailyFinanceReport:
     """Tüm V2 çoklu dönem, teknik analiz, TEFAS liderleri ve takvim verilerini içeren zengin örnek rapor."""
     d_str = now.strftime("%Y-%m-%d")
+    emtia_demo = {}
+    for idx, (label, chg_end, p_start) in enumerate([
+        ("Brent Petrol", -7.8, 81.2),
+        ("Ham Petrol (WTI)", -8.4, 77.6),
+        ("Doğalgaz", 18.4, 2.13),
+        ("Bakır", 6.4, 4.12),
+        ("Buğday", 4.6, 547.0),
+        ("Kahve", 6.2, 233.9),
+    ]):
+        c_pts = _make_demo_curve(now, 0.0, chg_end, 3.2, phase=idx * 1.1)
+        for p in c_pts:
+            p["raw"] = round(p_start * (1.0 + p["v"] / 100.0), 2)
+        emtia_demo[label] = c_pts
+
+    demo_charts = {
+        "bist100_tl": _make_demo_curve(now, 10820.0, 9685.40, 210.0, 0.2),
+        "bist100_usd": _make_demo_curve(now, 327.80, 282.54, 6.5, 0.5),
+        "sp500": _make_demo_curve(now, 5430.0, 5842.50, 55.0, 1.0),
+        "ons_altin": _make_demo_curve(now, 2398.0, 2738.50, 28.0, 1.5),
+        "btc_usd": _make_demo_curve(now, 65600.0, 68450.0, 2100.0, 2.1),
+        "btc_dominance": _make_demo_curve(now, 55.20, 57.45, 0.65, 0.8),
+        "emtia_normalize_60g": emtia_demo,
+    }
     return DailyFinanceReport(
         tarih=d_str,
         olusturulma_zamani=now.strftime("%Y-%m-%d %H:%M:%S") + " (Örnek/Demo Veri)",
@@ -271,4 +308,5 @@ def create_demo_report(now: datetime) -> DailyFinanceReport:
                 etiketler=["Otomotiv Pazarı", "ODMD"],
             ),
         ],
+        grafik_verileri=demo_charts,
     )

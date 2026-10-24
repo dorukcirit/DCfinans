@@ -100,6 +100,7 @@ def collect_live_report(cfg: dict, now: datetime) -> DailyFinanceReport:
 
     print("[7/7] Türkiye konut (TÜİK) ve araç (ODMD) satış istatistikleri taranıyor...")
     konut_arac = news_col.collect_housing_and_auto_stats(max_per_topic=2)
+    grafik_verileri = market_col.export_chart_series(kripto_ozet.btc_dominance_yuzde)
 
     return DailyFinanceReport(
         tarih=now.strftime("%Y-%m-%d"),
@@ -122,6 +123,7 @@ def collect_live_report(cfg: dict, now: datetime) -> DailyFinanceReport:
         ekonomik_takvim_gelecek_hafta=cal_next_w,
         otorite_ve_banka_haberleri=otorite_haberleri,
         konut_ve_arac_istatistikleri=konut_arac,
+        grafik_verileri=grafik_verileri,
     )
 
 

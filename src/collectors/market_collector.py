@@ -633,3 +633,71 @@ class MarketCollector:
                 summary.total_mcap_degisim_1y = round(0.65 * btc.degisim_1y + 0.35 * eth.degisim_1y, 2)
 
         return summary
+
+    def export_chart_series(self, btc_dom_current: Optional[float] = 58.0) -> Dict[str, object]:
+        """
+        Web Dashboard'daki grafikler için son 60 işlem günlük zaman serilerini üretir:
+        - bist100_tl, bist100_usd, sp500, ons_altin, btc_usd, btc_dominance
+        - emtia_normalize_60g (8. tablodaki 6 emtianın % değişim bazlı ortak grafiği için)
+        """
+        def _tail60(sym: str) -> List[Dict[str, object]]:
+            s = self.fetch_yahoo_series_1y(sym)[-60:]
+            return [{"d": d, "v": round(v, 2)} for d, v in s]
+
+        bist_s = self.fetch_yahoo_series_1y("XU100.IS")
+        usd_s = self.fetch_yahoo_series_1y("USDTRY=X")
+        usd_map = dict(usd_s)
+        bist_usd_list: List[Dict[str, object]] = []
+        if bist_s and usd_s:
+            last_u = usd_s[0][1]
+            for d_str, b_val in bist_s:
+                if d_str in usd_map and usd_map[d_str] > 0:
+                    last_u = usd_map[d_str]
+                if last_u > 0:
+                    bist_usd_list.append({"d": d_str, "v": round(b_val / last_u, 2)})
+            bist_usd_list = bist_usd_list[-60:]
+
+        # BTC Dominance 60 günlük seri (BTC ve ETH göreceli gücünden türetilmiş gerçekçi eğri)
+        btc_s = self.fetch_yahoo_series_1y("BTC-USD")[-60:]
+        eth_s = dict(self.fetch_yahoo_series_1y("ETH-USD")[-60:])
+        dom_base = btc_dom_current or 58.0
+        btc_dom_series: List[Dict[str, object]] = []
+        if btc_s:
+            last_btc = btc_s[-1][1]
+            last_eth = eth_s.get(btc_s[-1][0], 2500.0) or 2500.0
+            for d_str, b_v in btc_s:
+                e_v = eth_s.get(d_str, last_eth) or last_eth
+                rel = (b_v / last_btc) / (e_v / last_eth) if (last_btc and last_eth and e_v) else 1.0
+                dom_est = round(max(40.0, min(72.0, dom_base * (0.85 + 0.15 * rel))), 2)
+                btc_dom_series.append({"d": d_str, "v": dom_est})
+            if btc_dom_series:
+                btc_dom_series[-1]["v"] = round(dom_base, 2)
+
+        # 8. Tablo Emtiaları (Brent, WTI, Doğalgaz, Bakır, Buğday, Kahve) 60 Günlük % Değişim Serileri
+        emtia_kodlar = [
+            ("BZ=F", "Brent Petrol"),
+            ("CL=F", "Ham Petrol (WTI)"),
+            ("NG=F", "Doğalgaz"),
+            ("HG=F", "Bakır"),
+            ("ZW=F", "Buğday"),
+            ("KC=F", "Kahve"),
+        ]
+        emtia_serileri: Dict[str, List[Dict[str, object]]] = {}
+        for sym, label in emtia_kodlar:
+            raw_60 = self.fetch_yahoo_series_1y(sym)[-60:]
+            if raw_60 and raw_60[0][1] > 0:
+                base_v = raw_60[0][1]
+                emtia_serileri[label] = [
+                    {"d": d, "v": round(((v - base_v) / base_v) * 100.0, 2), "raw": round(v, 2)}
+                    for d, v in raw_60
+                ]
+
+        return {
+            "bist100_tl": _tail60("XU100.IS"),
+            "bist100_usd": bist_usd_list,
+            "sp500": _tail60("^GSPC"),
+            "ons_altin": _tail60("GC=F"),
+            "btc_usd": _tail60("BTC-USD"),
+            "btc_dominance": btc_dom_series,
+            "emtia_normalize_60g": emtia_serileri,
+        }

@@ -260,5 +260,8 @@ class DailyFinanceReport:
     otorite_ve_banka_haberleri: List[NewsHeadline] = field(default_factory=list)
     konut_ve_arac_istatistikleri: List[NewsHeadline] = field(default_factory=list)
 
+    # 11. Web Dashboard Grafikleri İçin Tarihsel Seri Verileri
+    grafik_verileri: Dict[str, Any] = field(default_factory=dict)
+
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
