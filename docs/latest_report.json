@@ -1003,33 +1003,11 @@
       },
       {
         "donem_grubu": "bu_hafta",
-        "tarih": "2026-10-29",
-        "saat": "10:00",
-        "ulke": "Türkiye (TÜİK)",
-        "onem": "Orta",
-        "baslik": "TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi",
-        "gerceklesen": "-",
-        "beklenti": "-",
-        "onceki": "-"
-      },
-      {
-        "donem_grubu": "bu_hafta",
-        "tarih": "2026-10-30",
-        "saat": "10:00",
-        "ulke": "Türkiye (TÜİK)",
-        "onem": "Orta",
-        "baslik": "TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi",
-        "gerceklesen": "-",
-        "beklenti": "-",
-        "onceki": "-"
-      },
-      {
-        "donem_grubu": "bu_hafta",
         "tarih": "2026-10-27",
         "saat": "12:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Durable Goods Orders MoM",
+        "baslik": "Dayanıklı Mal Siparişleri (Aylık)",
         "gerceklesen": "-",
         "beklenti": "0.6",
         "onceki": "0"
@@ -1040,7 +1018,7 @@
         "saat": "18:00",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Fed Interest Rate Decision",
+        "baslik": "Fed Faiz Kararı",
         "gerceklesen": "-",
         "beklenti": "4",
         "onceki": "4"
@@ -1051,7 +1029,7 @@
         "saat": "18:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Fed Press Conference",
+        "baslik": "Fed Başkanı Basın Toplantısı",
         "gerceklesen": "-",
         "beklenti": "-",
         "onceki": "-"
@@ -1062,7 +1040,7 @@
         "saat": "12:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Personal Income MoM",
+        "baslik": "Kişisel Gelirler (Aylık)",
         "gerceklesen": "-",
         "beklenti": "0.3",
         "onceki": "0.2"
@@ -1073,7 +1051,7 @@
         "saat": "12:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Personal Spending MoM",
+        "baslik": "Kişisel Harcamalar (Aylık)",
         "gerceklesen": "-",
         "beklenti": "0.3",
         "onceki": "0.9"
@@ -1084,7 +1062,7 @@
         "saat": "12:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Core PCE Price Index MoM",
+        "baslik": "Çekirdek PCE Enflasyon Endeksi (Aylık)",
         "gerceklesen": "-",
         "beklenti": "0.3",
         "onceki": "0.2"
@@ -1095,7 +1073,7 @@
         "saat": "12:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "GDP Growth Rate QoQ Adv",
+        "baslik": "Öncü GSYH Büyüme Oranı (Çeyreklik)",
         "gerceklesen": "-",
         "beklenti": "3.2",
         "onceki": "2.2"
@@ -1106,7 +1084,7 @@
         "saat": "13:15",
         "ulke": "Euro Bölgesi (ECB)",
         "onem": "Yüksek",
-        "baslik": "ECB Interest Rate Decision",
+        "baslik": "Avrupa Merkez Bankası (ECB) Faiz Kararı",
         "gerceklesen": "-",
         "beklenti": "2.65",
         "onceki": "2.65"
@@ -1117,7 +1095,7 @@
         "saat": "13:15",
         "ulke": "Euro Bölgesi (ECB)",
         "onem": "Yüksek",
-        "baslik": "Deposit Facility Rate",
+        "baslik": "ECB Mevduat Faizi Kararı",
         "gerceklesen": "-",
         "beklenti": "2.5",
         "onceki": "2.5"
@@ -1127,17 +1105,6 @@
       {
         "donem_grubu": "gelecek_hafta",
         "tarih": "2026-11-03",
-        "saat": "10:00",
-        "ulke": "Türkiye (TÜİK)",
-        "onem": "Yüksek",
-        "baslik": "TÜİK Aylık ve Yıllık TÜFE (Enflasyon) Verileri",
-        "gerceklesen": "-",
-        "beklenti": "-",
-        "onceki": "-"
-      },
-      {
-        "donem_grubu": "gelecek_hafta",
-        "tarih": "2026-11-04",
         "saat": "10:00",
         "ulke": "Türkiye (TÜİK)",
         "onem": "Yüksek",
@@ -1229,7 +1196,7 @@
         "saat": "13:30",
         "ulke": "ABD (Fed/Makro)",
         "onem": "Yüksek",
-        "baslik": "Non Farm Payrolls",
+        "baslik": "Tarım Dışı İstihdam Değişimi (NFP)",
         "gerceklesen": "-",
         "beklenti": "-",
         "onceki": "29"

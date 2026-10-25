@@ -234,13 +234,11 @@ def create_demo_report(now: datetime) -> DailyFinanceReport:
             EconomicEvent("bugun", d_str, "17:00", "ABD (Fed/Makro)", "Yüksek", "Michigan Tüketici Güven Endeksi ve Enflasyon Beklentisi", "70.5", "69.0", "68.9"),
         ],
         ekonomik_takvim_bu_hafta=[
-            EconomicEvent("bu_hafta", "2026-10-25", "10:00", "Türkiye (TCMB)", "Orta", "Reel Kesim Güven Endeksi ve İmalat Sanayi Kapasite Kullanım Oranı", "-", "100.2", "99.8"),
             EconomicEvent("bu_hafta", "2026-10-26", "15:30", "ABD (Fed/Makro)", "Yüksek", "Haftalık İşsizlik Maaşı Başvuruları", "-", "240K", "227K"),
             EconomicEvent("bu_hafta", "2026-10-26", "16:45", "ABD (Fed/Makro)", "Yüksek", "Öncü İmalat ve Hizmetler PMI Verileri", "-", "47.5", "47.3"),
         ],
         ekonomik_takvim_gelecek_hafta=[
             EconomicEvent("gelecek_hafta", "2026-10-30", "15:30", "ABD (Fed/Makro)", "Yüksek", "ABD 3. Çeyrek Öncü GSYH Büyüme Oranı (Çeyreklik)", "-", "%3,0", "%3,0"),
-            EconomicEvent("gelecek_hafta", "2026-10-31", "10:00", "Türkiye (TÜİK)", "Orta", "TÜİK Dış Ticaret Dengesi ve Ekonomik Güven Endeksi", "-", "-", "-"),
             EconomicEvent("gelecek_hafta", "2026-10-31", "14:30", "Türkiye (TCMB)", "Yüksek", "TCMB Haftalık Döviz Rezervleri ve Yabancı Menkul Kıymet İstatistikleri", "-", "-", "-"),
             EconomicEvent("gelecek_hafta", "2026-10-31", "15:30", "ABD (Fed/Makro)", "Yüksek", "Fed'in Favori Enflasyon Göstergesi: Çekirdek PCE Fiyat Endeksi", "-", "%0,3", "%0,1"),
             EconomicEvent("gelecek_hafta", "2026-11-01", "15:30", "ABD (Fed/Makro)", "Yüksek", "ABD Tarım Dışı İstihdam (NFP) ve İşsizlik Oranı", "-", "115K / %4,1", "254K / %4,1"),

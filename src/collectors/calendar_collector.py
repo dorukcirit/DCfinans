@@ -10,23 +10,35 @@ TR_INDICATOR_TRANSLATIONS: Dict[str, str] = {
     "Core CPI m/m": "Aylık Çekirdek TÜFE",
     "Core CPI y/y": "Yıllık Çekirdek TÜFE",
     "Core PCE Price Index m/m": "Çekirdek PCE Enflasyon Endeksi (Aylık)",
+    "Core PCE Price Index MoM": "Çekirdek PCE Enflasyon Endeksi (Aylık)",
     "PPI m/m": "Aylık ÜFE (Üretici Enflasyonu)",
     "Non-Farm Employment Change": "Tarım Dışı İstihdam Değişimi (NFP)",
+    "Non Farm Payrolls": "Tarım Dışı İstihdam Değişimi (NFP)",
     "Unemployment Rate": "İşsizlik Oranı",
     "Unemployment Claims": "Haftalık İşsizlik Maaşı Başvuruları",
+    "Initial Jobless Claims": "Haftalık İşsizlik Maaşı Başvuruları",
     "Federal Funds Rate": "Fed Faiz Kararı",
+    "Fed Interest Rate Decision": "Fed Faiz Kararı",
     "FOMC Statement": "Fed (FOMC) Para Politikası Açıklaması",
     "FOMC Press Conference": "Fed Başkanı Basın Toplantısı",
+    "Fed Press Conference": "Fed Başkanı Basın Toplantısı",
     "FOMC Meeting Minutes": "Fed FOMC Toplantı Tutanakları",
     "Fed Chair Powell Speaks": "Fed Başkanı Powell'ın Konuşması",
     "Main Refinancing Rate": "Avrupa Merkez Bankası (ECB) Faiz Kararı",
+    "ECB Interest Rate Decision": "Avrupa Merkez Bankası (ECB) Faiz Kararı",
+    "Deposit Facility Rate": "ECB Mevduat Faizi Kararı",
     "Monetary Policy Statement": "ECB Para Politikası Açıklaması",
     "ECB Press Conference": "ECB Başkanı Basın Toplantısı",
     "Advance GDP q/q": "Öncü GSYH Büyüme Oranı (Çeyreklik)",
+    "GDP Growth Rate QoQ Adv": "Öncü GSYH Büyüme Oranı (Çeyreklik)",
+    "GDP Growth Rate QoQ": "GSYH Büyüme Oranı (Çeyreklik)",
     "Preliminary GDP q/q": "Öncü GSYH Büyüme Oranı (Çeyreklik)",
     "Final GDP q/q": "GSYH Büyüme Oranı (Çeyreklik)",
     "Retail Sales m/m": "Perakende Satışlar (Aylık)",
+    "Retail Sales MoM": "Perakende Satışlar (Aylık)",
     "Core Retail Sales m/m": "Çekirdek Perakende Satışlar (Aylık)",
+    "Personal Income MoM": "Kişisel Gelirler (Aylık)",
+    "Personal Spending MoM": "Kişisel Harcamalar (Aylık)",
     "ISM Manufacturing PMI": "ISM İmalat PMI",
     "ISM Services PMI": "ISM Hizmetler PMI",
     "Flash Manufacturing PMI": "Öncü İmalat PMI",
@@ -36,6 +48,7 @@ TR_INDICATOR_TRANSLATIONS: Dict[str, str] = {
     "Consumer Confidence": "Tüketici Güven Endeksi",
     "Prelim UoM Consumer Sentiment": "Michigan Tüketici Güven Endeksi",
     "Durable Goods Orders m/m": "Dayanıklı Mal Siparişleri (Aylık)",
+    "Durable Goods Orders MoM": "Dayanıklı Mal Siparişleri (Aylık)",
     "Core Durable Goods Orders m/m": "Çekirdek Dayanıklı Mal Siparişleri",
 }
 
@@ -47,7 +60,6 @@ COUNTRY_MAP: Dict[str, str] = {
 
 IMPACT_MAP: Dict[str, str] = {
     "High": "Yüksek",
-    "Medium": "Orta",
 }
 
 
@@ -111,8 +123,8 @@ class CalendarCollector:
                     )
                 )
 
-            # Ayın 3'ü (veya hafta sonuna gelirse ilk Pazartesi): TÜİK TÜFE / ÜFE Enflasyon Verisi
-            if dt.day in (3, 4) and dt.weekday() < 5:
+            # Ayın 3'ü: TÜİK TÜFE / ÜFE Enflasyon Verisi (Yüksek Önem)
+            if dt.day == 3 and dt.weekday() < 5:
                 target_list.append(
                     EconomicEvent(
                         donem_grubu=grup,
@@ -124,7 +136,7 @@ class CalendarCollector:
                     )
                 )
 
-            # Ayın 10'u civarı: TÜİK Sanayi Üretimi ve İşgücü (İşsizlik) İstatistikleri
+            # Ayın 10'u: TÜİK Sanayi Üretimi ve İşgücü (İşsizlik) İstatistikleri (Yüksek Önem)
             if dt.day == 10 and dt.weekday() < 5:
                 target_list.append(
                     EconomicEvent(
@@ -134,32 +146,6 @@ class CalendarCollector:
                         ulke="Türkiye (TÜİK)",
                         onem="Yüksek",
                         baslik="TÜİK Sanayi Üretim Endeksi ve İşgücü İstatistikleri",
-                    )
-                )
-
-            # Ayın 22-26'sı arası: Reel Kesim Güven Endeksi ve Kapasite Kullanım Oranı
-            if dt.day == 25 and dt.weekday() < 5:
-                target_list.append(
-                    EconomicEvent(
-                        donem_grubu=grup,
-                        tarih=d_str,
-                        saat="10:00",
-                        ulke="Türkiye (TCMB)",
-                        onem="Orta",
-                        baslik="TCMB Reel Kesim Güven Endeksi ve İmalat Sanayi Kapasite Kullanım Oranı",
-                    )
-                )
-
-            # Ayın son iş günü: TÜİK Dış Ticaret ve Ekonomik Güven Endeksi
-            if dt.day in (29, 30, 31) and dt.weekday() < 5:
-                target_list.append(
-                    EconomicEvent(
-                        donem_grubu=grup,
-                        tarih=d_str,
-                        saat="10:00",
-                        ulke="Türkiye (TÜİK)",
-                        onem="Orta",
-                        baslik="TÜİK Ekonomik Güven Endeksi ve Dış Ticaret Dengesi",
                     )
                 )
 
@@ -244,7 +230,7 @@ class CalendarCollector:
                 for item in resp.json():
                     country = item.get("country", "")
                     impact = item.get("impact", "")
-                    if country not in ("USD", "EUR", "TRY") or impact not in ("High", "Medium"):
+                    if country not in ("USD", "EUR", "TRY") or impact != "High":
                         continue
                     raw_date = item.get("date", "")
                     ev_date = raw_date[:10] if len(raw_date) >= 10 else ""
@@ -256,7 +242,7 @@ class CalendarCollector:
                         tarih=ev_date,
                         saat=saat,
                         ulke=COUNTRY_MAP.get(country, country),
-                        onem=IMPACT_MAP.get(impact, "Orta"),
+                        onem="Yüksek",
                         baslik=self._translate_title(item.get("title", "")),
                         gerceklesen=item.get("actual") or "-",
                         beklenti=item.get("forecast") or "-",
@@ -264,7 +250,7 @@ class CalendarCollector:
                     )
                     if ev_date == today_str:
                         today_events.append(ev)
-                    elif impact == "High":
+                    else:
                         this_week_events.append(ev)
         except Exception:
             pass

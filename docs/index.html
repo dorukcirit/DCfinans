@@ -797,9 +797,9 @@
         bu_hafta: r.ekonomik_takvim_bu_hafta || [],
         gelecek_hafta: r.ekonomik_takvim_gelecek_hafta || [],
       };
-      const events = map[horizon] || [];
+      const events = (map[horizon] || []).filter(ev => ev.onem === "Yüksek");
       if (!events.length) {
-        document.getElementById("table-calendar").innerHTML = "<p style='color:var(--muted)'>Bu dönem için listelenen veri bulunmuyor.</p>";
+        document.getElementById("table-calendar").innerHTML = "<p style='color:var(--muted)'>Bu dönem için yüksek önem dereceli veri bulunmuyor.</p>";
         return;
       }
       let html = `<table><thead><tr>
