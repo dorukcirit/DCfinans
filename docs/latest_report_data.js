@@ -1,32 +1,32 @@
 window.LATEST_FINANCE_REPORT = {
   "meta": {
     "bulten_adi": "Günlük Küresel ve Yerel Finans Bülteni",
-    "tarih": "2026-11-10",
-    "olusturulma_zamani": "2026-11-10 02:50:50",
-    "tahmini_okuma_suresi_saniye": 478,
-    "tahmini_okuma_suresi_dakika": 8.0
+    "tarih": "2026-11-11",
+    "olusturulma_zamani": "2026-11-11 00:24:35",
+    "tahmini_okuma_suresi_saniye": 451,
+    "tahmini_okuma_suresi_dakika": 7.5
   },
-  "spiker_metni": "[AÇILIŞ]\nİyi günler. 2026-11-10 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un TL ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.\n\n[BIST 100 TL VE DOLAR BAZLI TEKNIK ANALIZ]\nBorsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 1 virgül 32 artışla 11483 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 72, aylıkta yüzde 5 virgül 28 (azalış), yılbaşından itibaren yüzde 1 virgül 96 (artış) ve son bir yılda yüzde 6 virgül 43 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 1 virgül 34 artışla 14290 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 1 virgül 94 artışla 16398 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 2 virgül 05 artışla 13745 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 228 virgül 95 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 31 virgül 3 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 6 virgül 3 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 293 virgül 24 dolar, Ar Es Ay göstergesi ise 41 virgül 5 seviyesindedir.\n\n[S&P 500, ALTIN, GÜMÜŞ VE KORKU/AÇGÖZLÜLÜK ENDEKSLERI]\nKüresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 2 virgül 35 artışla 7549 virgül 94 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 11, aylıkta yüzde 3 virgül 35 (azalış), yılbaşından itibaren yüzde 10 virgül 29 (artış) ve son bir yılda yüzde 10 virgül 50 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 2 virgül 74 artışla 25253 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 76 artışla 4146 virgül 50 USD seviyesinde tamamladı. Haftalık bazda yüzde 4 virgül 46, aylıkta yüzde 1 virgül 66 (azalış), yılbaşından itibaren yüzde 4 virgül 48 (azalış) ve son bir yılda yüzde 0 virgül 59 değişim kaydetti. Ons gümüş, günü yüzde 3 virgül 16 artışla 53 virgül 44 USD seviyesinde tamamladı. Haftalık bazda yüzde 5 virgül 36, aylıkta yüzde 11 virgül 92 (azalış), yılbaşından itibaren yüzde 23 virgül 80 (azalış) ve son bir yılda yüzde 6 virgül 50 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6693 virgül 66 Türk Lirası, Gram Gümüş ise 86 virgül 27 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 77 virgül 59 düzeyindedir. Korku ve Açgözlülük endeksleri; S&P 500 (ABD Borsası) için 32 puan ile Korku, Altın (Ons Gold) için 45 puan ile Nötr, Kripto Piyasası (BTC & Genel) için 29 puan ile Korku bölgesine işaret ediyor.\n\n[TEFAS DÖNEMSEL EN ÇOK KAZANDIRAN FONLAR]\nTEFAS yatırım fonlarında dönemsel bazda en çok kazandıran fonlar şöyle: Son bir günde lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 2 virgül 42 getiri ile İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu (TI2) oldu. Son bir haftada lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 6 virgül 80 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Son bir ayda lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 11 virgül 40 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Yılbaşından itibaren lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 58 virgül 40 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu. Son bir yılda lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 74 virgül 50 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu.\n\n[KRIPTO, TAHVIL, DÖVIZ VE EMTIA PIYASALARI]\nKripto para piyasasının toplam büyüklüğü 2 virgül 53 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 71 seviyesinde. Bitkoin, günü yüzde 0 virgül 80 artışla 75183 USD seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 50, aylıkta yüzde 8 virgül 15 (azalış), yılbaşından itibaren yüzde 14 virgül 09 (azalış) ve son bir yılda yüzde 28 virgül 21 değişim kaydetti. Eteryum, günü yüzde 0 virgül 43 artışla 2130 virgül 15 USD seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 1 virgül 04 düşüşle 1 virgül 10 USD seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 11 artışla 50 virgül 21 TL seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 01 yatay seyirle 56 virgül 35 TL seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 02 yatay seyirle 1 virgül 12 USD seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 61 düşüşle 101 virgül 68 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 0 virgül 24 artışla 4 virgül 66 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 0 virgül 10 yatay seyirle 4 virgül 86 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 0 virgül 08 yatay seyirle 5 virgül 26 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 6 virgül 11 düşüşle 92 virgül 31 USD seviyesinde tamamladı. Bakır, günü yüzde 2 virgül 61 artışla 6 virgül 38 USD seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 63 düşüşle 587 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 4 virgül 75 düşüşle 266 virgül 70 cent seviyesinde tamamladı.\n\n[EKONOMIK TAKVIM (BUGÜN, BU HAFTA VE GELECEK HAFTA)]\nABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bugün Türkiye (TÜİK) tarafında TÜİK Sanayi Üretim Endeksi ve İşgücü İstatistikleri takip edildi; açıklanan veri -, beklenti -. Bugün ABD (Fed/Makro) tarafında Aylık Çekirdek TÜFE takip edildi; açıklanan veri -, beklenti 0.2%. Bugün ABD (Fed/Makro) tarafında Aylık TÜFE (Enflasyon) takip edildi; açıklanan veri -, beklenti 0.3%. Bu haftanın kalanında Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Fed/Makro) Aylık ÜFE (Üretici Enflasyonu) (Core PPI m/m), ABD (Fed/Makro) Aylık ÜFE (Üretici Enflasyonu) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.\n\n[OTORITE AÇIKLAMALARI, KONUT/ARAÇ İSTATISTIKLERI VE KAPANIŞ]\nFinans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Bigpara: TCMB Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. Investing.com Türkiye: İsveç Merkez Bankası enflasyon endişeleriyle faizi %2’ye çıkardı. Ekonomim: Dev bankadan TCMB faiz tahmini: Finansal sıkılaşma büyümeyi azaltabilir. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30,84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de %30.8 daraldı-ODMD. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
+  "spiker_metni": "[AÇILIŞ]\nİyi günler. 2026-11-11 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un TL ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.\n\n[BIST 100 TL VE DOLAR BAZLI TEKNIK ANALIZ]\nBorsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 2 artışla 11713 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 85, aylıkta yüzde 4 virgül 10 (azalış), yılbaşından itibaren yüzde 4 virgül 01 (artış) ve son bir yılda yüzde 8 virgül 56 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 2 virgül 24 artışla 14611 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 3 virgül 80 artışla 17022 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 1 virgül 20 artışla 13910 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 233 virgül 68 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 29 virgül 9 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 8 virgül 5 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 292 virgül 93 dolar, Ar Es Ay göstergesi ise 46 virgül 6 seviyesindedir.\n\n[S&P 500, ALTIN, GÜMÜŞ VE KORKU/AÇGÖZLÜLÜK ENDEKSLERI]\nKüresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 0 virgül 38 düşüşle 7520 virgül 93 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 63, aylıkta yüzde 3 virgül 67 (azalış), yılbaşından itibaren yüzde 9 virgül 87 (artış) ve son bir yılda yüzde 9 virgül 85 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 0 virgül 74 düşüşle 25066 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 84 düşüşle 4038 virgül 60 USD seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 49, aylıkta yüzde 3 virgül 63 (azalış), yılbaşından itibaren yüzde 6 virgül 97 (azalış) ve son bir yılda yüzde 2 virgül 02 değişim kaydetti. Ons gümüş, günü yüzde 2 virgül 03 düşüşle 51 virgül 49 USD seviyesinde tamamladı. Haftalık bazda yüzde 3 virgül 85, aylıkta yüzde 14 virgül 38 (azalış), yılbaşından itibaren yüzde 26 virgül 58 (azalış) ve son bir yılda yüzde 2 virgül 63 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6521 virgül 79 Türk Lirası, Gram Gümüş ise 83 virgül 16 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 78 virgül 43 düzeyindedir. Korku ve Açgözlülük endeksleri; S&P 500 (ABD Borsası) için 33 puan ile Korku, Altın (Ons Gold) için 38 puan ile Korku, Kripto Piyasası (BTC & Genel) için 32 puan ile Korku bölgesine işaret ediyor.\n\n[TEFAS DÖNEMSEL EN ÇOK KAZANDIRAN FONLAR]\nTEFAS yatırım fonlarında dönemsel bazda en çok kazandıran fonlar şöyle: Son bir günde lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 2 virgül 42 getiri ile İş Portföy BIST Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu (TI2) oldu. Son bir haftada lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 6 virgül 80 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Son bir ayda lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 11 virgül 40 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Yılbaşından itibaren lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 58 virgül 40 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu. Son bir yılda lider fon, Yerli Hisse Senedi (BIST) Kapsamı içinden yüzde 74 virgül 50 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu.\n\n[KRIPTO, TAHVIL, DÖVIZ VE EMTIA PIYASALARI]\nKripto para piyasasının toplam büyüklüğü 2 virgül 48 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 79 seviyesinde. Bitkoin, günü yüzde 1 virgül 81 düşüşle 73859 USD seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 74, aylıkta yüzde 10 virgül 95 (azalış), yılbaşından itibaren yüzde 15 virgül 60 (azalış) ve son bir yılda yüzde 30 virgül 32 değişim kaydetti. Eteryum, günü yüzde 3 virgül 46 düşüşle 2057 virgül 82 USD seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 3 virgül 42 düşüşle 1 virgül 06 USD seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 21 artışla 50 virgül 23 TL seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 26 artışla 56 virgül 08 TL seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 19 artışla 1 virgül 12 USD seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 60 artışla 102 virgül 26 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 3 virgül 18 artışla 4 virgül 81 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 2 virgül 45 artışla 4 virgül 98 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 1 virgül 79 artışla 5 virgül 35 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 0 virgül 66 düşüşle 91 virgül 96 USD seviyesinde tamamladı. Bakır, günü yüzde 0 virgül 92 düşüşle 6 virgül 27 USD seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 60 artışla 591 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 2 virgül 50 düşüşle 266 virgül 75 cent seviyesinde tamamladı.\n\n[EKONOMIK TAKVIM (BUGÜN, BU HAFTA VE GELECEK HAFTA)]\nABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bu haftanın kalanında Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Fed/Makro) Aylık Çekirdek TÜFE, ABD (Fed/Makro) Aylık TÜFE (Enflasyon) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.\n\n[OTORITE AÇIKLAMALARI, KONUT/ARAÇ İSTATISTIKLERI VE KAPANIŞ]\nFinans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Uzmanpara: Piyasalarda gözler TCMB'nin faiz kararında. Bigpara: TCMB Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. EKOTÜRK: Merkez Bankası faiz kararı ne zaman açıklanacak? TCMB toplantı tarihi. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30,84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de %30.8 daraldı-ODMD. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
   "tts_bolumleri": [
     {
       "bolum_id": "01_giris",
       "bolum_basligi": "Açılış",
-      "ham_metin": "İyi günler. 2026-11-10 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un TL ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.",
-      "tts_okunus_metni": "İyi günler. 2026-11-10 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un Türk Lirası ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.",
+      "ham_metin": "İyi günler. 2026-11-11 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un TL ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.",
+      "tts_okunus_metni": "İyi günler. 2026-11-11 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un Türk Lirası ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.",
       "tahmini_sure_saniye": 17
     },
     {
       "bolum_id": "02_bist_ve_teknik",
       "bolum_basligi": "BIST 100 TL ve Dolar Bazlı Teknik Analiz",
-      "ham_metin": "Borsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 1 virgül 32 artışla 11483 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 72, aylıkta yüzde 5 virgül 28 (azalış), yılbaşından itibaren yüzde 1 virgül 96 (artış) ve son bir yılda yüzde 6 virgül 43 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 1 virgül 34 artışla 14290 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 1 virgül 94 artışla 16398 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 2 virgül 05 artışla 13745 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 228 virgül 95 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 31 virgül 3 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 6 virgül 3 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 293 virgül 24 dolar, Ar Es Ay göstergesi ise 41 virgül 5 seviyesindedir.",
-      "tts_okunus_metni": "Borsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 1 virgül 32 artışla 11483 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 72, aylıkta yüzde 5 virgül 28 (azalış), yılbaşından itibaren yüzde 1 virgül 96 (artış) ve son bir yılda yüzde 6 virgül 43 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 1 virgül 34 artışla 14290 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 1 virgül 94 artışla 16398 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 2 virgül 05 artışla 13745 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 228 virgül 95 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 31 virgül 3 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 6 virgül 3 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 293 virgül 24 dolar, Ar Es Ay göstergesi ise 41 virgül 5 seviyesindedir.",
-      "tahmini_sure_saniye": 68
+      "ham_metin": "Borsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 2 artışla 11713 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 85, aylıkta yüzde 4 virgül 10 (azalış), yılbaşından itibaren yüzde 4 virgül 01 (artış) ve son bir yılda yüzde 8 virgül 56 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 2 virgül 24 artışla 14611 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 3 virgül 80 artışla 17022 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 1 virgül 20 artışla 13910 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 233 virgül 68 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 29 virgül 9 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 8 virgül 5 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 292 virgül 93 dolar, Ar Es Ay göstergesi ise 46 virgül 6 seviyesindedir.",
+      "tts_okunus_metni": "Borsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 2 artışla 11713 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 85, aylıkta yüzde 4 virgül 10 (azalış), yılbaşından itibaren yüzde 4 virgül 01 (artış) ve son bir yılda yüzde 8 virgül 56 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 2 virgül 24 artışla 14611 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 3 virgül 80 artışla 17022 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 1 virgül 20 artışla 13910 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 233 virgül 68 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 29 virgül 9 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 8 virgül 5 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 292 virgül 93 dolar, Ar Es Ay göstergesi ise 46 virgül 6 seviyesindedir.",
+      "tahmini_sure_saniye": 67
     },
     {
       "bolum_id": "03_sp500_altin_duyarlilik",
       "bolum_basligi": "S&P 500, Altın, Gümüş ve Korku/Açgözlülük Endeksleri",
-      "ham_metin": "Küresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 2 virgül 35 artışla 7549 virgül 94 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 11, aylıkta yüzde 3 virgül 35 (azalış), yılbaşından itibaren yüzde 10 virgül 29 (artış) ve son bir yılda yüzde 10 virgül 50 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 2 virgül 74 artışla 25253 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 76 artışla 4146 virgül 50 USD seviyesinde tamamladı. Haftalık bazda yüzde 4 virgül 46, aylıkta yüzde 1 virgül 66 (azalış), yılbaşından itibaren yüzde 4 virgül 48 (azalış) ve son bir yılda yüzde 0 virgül 59 değişim kaydetti. Ons gümüş, günü yüzde 3 virgül 16 artışla 53 virgül 44 USD seviyesinde tamamladı. Haftalık bazda yüzde 5 virgül 36, aylıkta yüzde 11 virgül 92 (azalış), yılbaşından itibaren yüzde 23 virgül 80 (azalış) ve son bir yılda yüzde 6 virgül 50 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6693 virgül 66 Türk Lirası, Gram Gümüş ise 86 virgül 27 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 77 virgül 59 düzeyindedir. Korku ve Açgözlülük endeksleri; S&P 500 (ABD Borsası) için 32 puan ile Korku, Altın (Ons Gold) için 45 puan ile Nötr, Kripto Piyasası (BTC & Genel) için 29 puan ile Korku bölgesine işaret ediyor.",
-      "tts_okunus_metni": "Küresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 2 virgül 35 artışla 7549 virgül 94 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 11, aylıkta yüzde 3 virgül 35 (azalış), yılbaşından itibaren yüzde 10 virgül 29 (artış) ve son bir yılda yüzde 10 virgül 50 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 2 virgül 74 artışla 25253 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 76 artışla 4146 virgül 50 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 4 virgül 46, aylıkta yüzde 1 virgül 66 (azalış), yılbaşından itibaren yüzde 4 virgül 48 (azalış) ve son bir yılda yüzde 0 virgül 59 değişim kaydetti. Ons gümüş, günü yüzde 3 virgül 16 artışla 53 virgül 44 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 5 virgül 36, aylıkta yüzde 11 virgül 92 (azalış), yılbaşından itibaren yüzde 23 virgül 80 (azalış) ve son bir yılda yüzde 6 virgül 50 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6693 virgül 66 Türk Lirası, Gram Gümüş ise 86 virgül 27 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 77 virgül 59 düzeyindedir. Korku ve Açgözlülük endeksleri; Es end Pi 500 (ABD Borsası) için 32 puan ile Korku, Altın (Ons Gold) için 45 puan ile Nötr, Kripto Piyasası (Bitkoin & Genel) için 29 puan ile Korku bölgesine işaret ediyor.",
+      "ham_metin": "Küresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 0 virgül 38 düşüşle 7520 virgül 93 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 63, aylıkta yüzde 3 virgül 67 (azalış), yılbaşından itibaren yüzde 9 virgül 87 (artış) ve son bir yılda yüzde 9 virgül 85 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 0 virgül 74 düşüşle 25066 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 84 düşüşle 4038 virgül 60 USD seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 49, aylıkta yüzde 3 virgül 63 (azalış), yılbaşından itibaren yüzde 6 virgül 97 (azalış) ve son bir yılda yüzde 2 virgül 02 değişim kaydetti. Ons gümüş, günü yüzde 2 virgül 03 düşüşle 51 virgül 49 USD seviyesinde tamamladı. Haftalık bazda yüzde 3 virgül 85, aylıkta yüzde 14 virgül 38 (azalış), yılbaşından itibaren yüzde 26 virgül 58 (azalış) ve son bir yılda yüzde 2 virgül 63 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6521 virgül 79 Türk Lirası, Gram Gümüş ise 83 virgül 16 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 78 virgül 43 düzeyindedir. Korku ve Açgözlülük endeksleri; S&P 500 (ABD Borsası) için 33 puan ile Korku, Altın (Ons Gold) için 38 puan ile Korku, Kripto Piyasası (BTC & Genel) için 32 puan ile Korku bölgesine işaret ediyor.",
+      "tts_okunus_metni": "Küresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 0 virgül 38 düşüşle 7520 virgül 93 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 63, aylıkta yüzde 3 virgül 67 (azalış), yılbaşından itibaren yüzde 9 virgül 87 (artış) ve son bir yılda yüzde 9 virgül 85 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 0 virgül 74 düşüşle 25066 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 84 düşüşle 4038 virgül 60 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 49, aylıkta yüzde 3 virgül 63 (azalış), yılbaşından itibaren yüzde 6 virgül 97 (azalış) ve son bir yılda yüzde 2 virgül 02 değişim kaydetti. Ons gümüş, günü yüzde 2 virgül 03 düşüşle 51 virgül 49 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 3 virgül 85, aylıkta yüzde 14 virgül 38 (azalış), yılbaşından itibaren yüzde 26 virgül 58 (azalış) ve son bir yılda yüzde 2 virgül 63 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6521 virgül 79 Türk Lirası, Gram Gümüş ise 83 virgül 16 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 78 virgül 43 düzeyindedir. Korku ve Açgözlülük endeksleri; Es end Pi 500 (ABD Borsası) için 33 puan ile Korku, Altın (Ons Gold) için 38 puan ile Korku, Kripto Piyasası (Bitkoin & Genel) için 32 puan ile Korku bölgesine işaret ediyor.",
       "tahmini_sure_saniye": 96
     },
     {
@@ -39,29 +39,29 @@ window.LATEST_FINANCE_REPORT = {
     {
       "bolum_id": "05_kripto_tahvil_emtia",
       "bolum_basligi": "Kripto, Tahvil, Döviz ve Emtia Piyasaları",
-      "ham_metin": "Kripto para piyasasının toplam büyüklüğü 2 virgül 53 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 71 seviyesinde. Bitkoin, günü yüzde 0 virgül 80 artışla 75183 USD seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 50, aylıkta yüzde 8 virgül 15 (azalış), yılbaşından itibaren yüzde 14 virgül 09 (azalış) ve son bir yılda yüzde 28 virgül 21 değişim kaydetti. Eteryum, günü yüzde 0 virgül 43 artışla 2130 virgül 15 USD seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 1 virgül 04 düşüşle 1 virgül 10 USD seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 11 artışla 50 virgül 21 TL seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 01 yatay seyirle 56 virgül 35 TL seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 02 yatay seyirle 1 virgül 12 USD seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 61 düşüşle 101 virgül 68 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 0 virgül 24 artışla 4 virgül 66 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 0 virgül 10 yatay seyirle 4 virgül 86 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 0 virgül 08 yatay seyirle 5 virgül 26 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 6 virgül 11 düşüşle 92 virgül 31 USD seviyesinde tamamladı. Bakır, günü yüzde 2 virgül 61 artışla 6 virgül 38 USD seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 63 düşüşle 587 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 4 virgül 75 düşüşle 266 virgül 70 cent seviyesinde tamamladı.",
-      "tts_okunus_metni": "Kripto para piyasasının toplam büyüklüğü 2 virgül 53 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 71 seviyesinde. Bitkoin, günü yüzde 0 virgül 80 artışla 75183 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 50, aylıkta yüzde 8 virgül 15 (azalış), yılbaşından itibaren yüzde 14 virgül 09 (azalış) ve son bir yılda yüzde 28 virgül 21 değişim kaydetti. Eteryum, günü yüzde 0 virgül 43 artışla 2130 virgül 15 Dolar seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 1 virgül 04 düşüşle 1 virgül 10 Dolar seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 11 artışla 50 virgül 21 Türk Lirası seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 01 yatay seyirle 56 virgül 35 Türk Lirası seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 02 yatay seyirle 1 virgül 12 Dolar seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 61 düşüşle 101 virgül 68 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 0 virgül 24 artışla 4 virgül 66 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 0 virgül 10 yatay seyirle 4 virgül 86 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 0 virgül 08 yatay seyirle 5 virgül 26 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 6 virgül 11 düşüşle 92 virgül 31 Dolar seviyesinde tamamladı. Bakır, günü yüzde 2 virgül 61 artışla 6 virgül 38 Dolar seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 63 düşüşle 587 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 4 virgül 75 düşüşle 266 virgül 70 cent seviyesinde tamamladı.",
-      "tahmini_sure_saniye": 139
+      "ham_metin": "Kripto para piyasasının toplam büyüklüğü 2 virgül 48 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 79 seviyesinde. Bitkoin, günü yüzde 1 virgül 81 düşüşle 73859 USD seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 74, aylıkta yüzde 10 virgül 95 (azalış), yılbaşından itibaren yüzde 15 virgül 60 (azalış) ve son bir yılda yüzde 30 virgül 32 değişim kaydetti. Eteryum, günü yüzde 3 virgül 46 düşüşle 2057 virgül 82 USD seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 3 virgül 42 düşüşle 1 virgül 06 USD seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 21 artışla 50 virgül 23 TL seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 26 artışla 56 virgül 08 TL seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 19 artışla 1 virgül 12 USD seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 60 artışla 102 virgül 26 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 3 virgül 18 artışla 4 virgül 81 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 2 virgül 45 artışla 4 virgül 98 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 1 virgül 79 artışla 5 virgül 35 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 0 virgül 66 düşüşle 91 virgül 96 USD seviyesinde tamamladı. Bakır, günü yüzde 0 virgül 92 düşüşle 6 virgül 27 USD seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 60 artışla 591 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 2 virgül 50 düşüşle 266 virgül 75 cent seviyesinde tamamladı.",
+      "tts_okunus_metni": "Kripto para piyasasının toplam büyüklüğü 2 virgül 48 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 79 seviyesinde. Bitkoin, günü yüzde 1 virgül 81 düşüşle 73859 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 74, aylıkta yüzde 10 virgül 95 (azalış), yılbaşından itibaren yüzde 15 virgül 60 (azalış) ve son bir yılda yüzde 30 virgül 32 değişim kaydetti. Eteryum, günü yüzde 3 virgül 46 düşüşle 2057 virgül 82 Dolar seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 3 virgül 42 düşüşle 1 virgül 06 Dolar seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 21 artışla 50 virgül 23 Türk Lirası seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 26 artışla 56 virgül 08 Türk Lirası seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 19 artışla 1 virgül 12 Dolar seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 60 artışla 102 virgül 26 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 3 virgül 18 artışla 4 virgül 81 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 2 virgül 45 artışla 4 virgül 98 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 1 virgül 79 artışla 5 virgül 35 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 0 virgül 66 düşüşle 91 virgül 96 Dolar seviyesinde tamamladı. Bakır, günü yüzde 0 virgül 92 düşüşle 6 virgül 27 Dolar seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 60 artışla 591 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 2 virgül 50 düşüşle 266 virgül 75 cent seviyesinde tamamladı.",
+      "tahmini_sure_saniye": 137
     },
     {
       "bolum_id": "06_ekonomik_takvim",
       "bolum_basligi": "Ekonomik Takvim (Bugün, Bu Hafta ve Gelecek Hafta)",
-      "ham_metin": "ABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bugün Türkiye (TÜİK) tarafında TÜİK Sanayi Üretim Endeksi ve İşgücü İstatistikleri takip edildi; açıklanan veri -, beklenti -. Bugün ABD (Fed/Makro) tarafında Aylık Çekirdek TÜFE takip edildi; açıklanan veri -, beklenti 0.2%. Bugün ABD (Fed/Makro) tarafında Aylık TÜFE (Enflasyon) takip edildi; açıklanan veri -, beklenti 0.3%. Bu haftanın kalanında Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Fed/Makro) Aylık ÜFE (Üretici Enflasyonu) (Core PPI m/m), ABD (Fed/Makro) Aylık ÜFE (Üretici Enflasyonu) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.",
-      "tts_okunus_metni": "ABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bugün Türkiye (TÜİK) tarafında TÜİK Sanayi Üretim Endeksi ve İşgücü İstatistikleri takip edildi; açıklanan veri -, beklenti -. Bugün ABD (Amerikan Merkez Bankası Fed/Makro) tarafında Aylık Çekirdek Tüketici Fiyat Endeksi takip edildi; açıklanan veri -, beklenti 0 virgül 2%. Bugün ABD (Amerikan Merkez Bankası Fed/Makro) tarafında Aylık Tüketici Fiyat Endeksi (Enflasyon) takip edildi; açıklanan veri -, beklenti 0 virgül 3%. Bu haftanın kalanında Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Üretici Fiyat Endeksi (Üretici Enflasyonu) (Core PPI m/m), ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Üretici Fiyat Endeksi (Üretici Enflasyonu) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.",
-      "tahmini_sure_saniye": 47
+      "ham_metin": "ABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bu haftanın kalanında Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Fed/Makro) Aylık Çekirdek TÜFE, ABD (Fed/Makro) Aylık TÜFE (Enflasyon) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (TCMB) TCMB Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.",
+      "tts_okunus_metni": "ABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bu haftanın kalanında Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Çekirdek Tüketici Fiyat Endeksi, ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Tüketici Fiyat Endeksi (Enflasyon) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.",
+      "tahmini_sure_saniye": 24
     },
     {
       "bolum_id": "07_haberler_ve_kapanis",
       "bolum_basligi": "Otorite Açıklamaları, Konut/Araç İstatistikleri ve Kapanış",
-      "ham_metin": "Finans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Bigpara: TCMB Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. Investing.com Türkiye: İsveç Merkez Bankası enflasyon endişeleriyle faizi %2’ye çıkardı. Ekonomim: Dev bankadan TCMB faiz tahmini: Finansal sıkılaşma büyümeyi azaltabilir. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30,84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de %30.8 daraldı-ODMD. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
-      "tts_okunus_metni": "Finans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Bigpara: Türkiye Cumhuriyet Merkez Bankası Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. Investing.com Türkiye: İsveç Merkez Bankası enflasyon endişeleriyle faizi yüzde 2’ye çıkardı. Ekonomim: Dev bankadan Türkiye Cumhuriyet Merkez Bankası faiz tahmini: Finansal sıkılaşma büyümeyi azaltabilir. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30 virgül 84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de yüzde 30 virgül 8 daraldı-Otomotiv Distribütörleri ve Mobilite Derneği. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
-      "tahmini_sure_saniye": 48
+      "ham_metin": "Finans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Uzmanpara: Piyasalarda gözler TCMB'nin faiz kararında. Bigpara: TCMB Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. EKOTÜRK: Merkez Bankası faiz kararı ne zaman açıklanacak? TCMB toplantı tarihi. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30,84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de %30.8 daraldı-ODMD. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
+      "tts_okunus_metni": "Finans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Uzmanpara: Piyasalarda gözler Türkiye Cumhuriyet Merkez Bankası'nin faiz kararında. Bigpara: Türkiye Cumhuriyet Merkez Bankası Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. EKOTÜRK: Merkez Bankası faiz kararı ne zaman açıklanacak? Türkiye Cumhuriyet Merkez Bankası toplantı tarihi. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30 virgül 84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de yüzde 30 virgül 8 daraldı-Otomotiv Distribütörleri ve Mobilite Derneği. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
+      "tahmini_sure_saniye": 47
     }
   ],
-  "tts_tam_metin": "İyi günler. 2026-11-10 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un Türk Lirası ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.\n\nBorsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 1 virgül 32 artışla 11483 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 72, aylıkta yüzde 5 virgül 28 (azalış), yılbaşından itibaren yüzde 1 virgül 96 (artış) ve son bir yılda yüzde 6 virgül 43 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 1 virgül 34 artışla 14290 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 1 virgül 94 artışla 16398 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 2 virgül 05 artışla 13745 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 228 virgül 95 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 31 virgül 3 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 6 virgül 3 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 293 virgül 24 dolar, Ar Es Ay göstergesi ise 41 virgül 5 seviyesindedir.\n\nKüresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 2 virgül 35 artışla 7549 virgül 94 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 11, aylıkta yüzde 3 virgül 35 (azalış), yılbaşından itibaren yüzde 10 virgül 29 (artış) ve son bir yılda yüzde 10 virgül 50 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 2 virgül 74 artışla 25253 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 76 artışla 4146 virgül 50 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 4 virgül 46, aylıkta yüzde 1 virgül 66 (azalış), yılbaşından itibaren yüzde 4 virgül 48 (azalış) ve son bir yılda yüzde 0 virgül 59 değişim kaydetti. Ons gümüş, günü yüzde 3 virgül 16 artışla 53 virgül 44 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 5 virgül 36, aylıkta yüzde 11 virgül 92 (azalış), yılbaşından itibaren yüzde 23 virgül 80 (azalış) ve son bir yılda yüzde 6 virgül 50 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6693 virgül 66 Türk Lirası, Gram Gümüş ise 86 virgül 27 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 77 virgül 59 düzeyindedir. Korku ve Açgözlülük endeksleri; Es end Pi 500 (ABD Borsası) için 32 puan ile Korku, Altın (Ons Gold) için 45 puan ile Nötr, Kripto Piyasası (Bitkoin & Genel) için 29 puan ile Korku bölgesine işaret ediyor.\n\nTEFAS yatırım fonlarında dönemsel bazda en çok kazandıran fonlar şöyle: Son bir günde lider fon, Yerli Hisse Senedi (Borsa İstanbul) Kapsamı içinden yüzde 2 virgül 42 getiri ile İş Portföy Borsa İstanbul Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu (TI2) oldu. Son bir haftada lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 6 virgül 80 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Son bir ayda lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 11 virgül 40 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Yılbaşından itibaren lider fon, Yerli Hisse Senedi (Borsa İstanbul) Kapsamı içinden yüzde 58 virgül 40 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu. Son bir yılda lider fon, Yerli Hisse Senedi (Borsa İstanbul) Kapsamı içinden yüzde 74 virgül 50 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu.\n\nKripto para piyasasının toplam büyüklüğü 2 virgül 53 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 71 seviyesinde. Bitkoin, günü yüzde 0 virgül 80 artışla 75183 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 50, aylıkta yüzde 8 virgül 15 (azalış), yılbaşından itibaren yüzde 14 virgül 09 (azalış) ve son bir yılda yüzde 28 virgül 21 değişim kaydetti. Eteryum, günü yüzde 0 virgül 43 artışla 2130 virgül 15 Dolar seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 1 virgül 04 düşüşle 1 virgül 10 Dolar seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 11 artışla 50 virgül 21 Türk Lirası seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 01 yatay seyirle 56 virgül 35 Türk Lirası seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 02 yatay seyirle 1 virgül 12 Dolar seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 61 düşüşle 101 virgül 68 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 0 virgül 24 artışla 4 virgül 66 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 0 virgül 10 yatay seyirle 4 virgül 86 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 0 virgül 08 yatay seyirle 5 virgül 26 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 6 virgül 11 düşüşle 92 virgül 31 Dolar seviyesinde tamamladı. Bakır, günü yüzde 2 virgül 61 artışla 6 virgül 38 Dolar seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 63 düşüşle 587 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 4 virgül 75 düşüşle 266 virgül 70 cent seviyesinde tamamladı.\n\nABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bugün Türkiye (TÜİK) tarafında TÜİK Sanayi Üretim Endeksi ve İşgücü İstatistikleri takip edildi; açıklanan veri -, beklenti -. Bugün ABD (Amerikan Merkez Bankası Fed/Makro) tarafında Aylık Çekirdek Tüketici Fiyat Endeksi takip edildi; açıklanan veri -, beklenti 0 virgül 2%. Bugün ABD (Amerikan Merkez Bankası Fed/Makro) tarafında Aylık Tüketici Fiyat Endeksi (Enflasyon) takip edildi; açıklanan veri -, beklenti 0 virgül 3%. Bu haftanın kalanında Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Üretici Fiyat Endeksi (Üretici Enflasyonu) (Core PPI m/m), ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Üretici Fiyat Endeksi (Üretici Enflasyonu) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.\n\nFinans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Bigpara: Türkiye Cumhuriyet Merkez Bankası Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. Investing.com Türkiye: İsveç Merkez Bankası enflasyon endişeleriyle faizi yüzde 2’ye çıkardı. Ekonomim: Dev bankadan Türkiye Cumhuriyet Merkez Bankası faiz tahmini: Finansal sıkılaşma büyümeyi azaltabilir. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30 virgül 84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de yüzde 30 virgül 8 daraldı-Otomotiv Distribütörleri ve Mobilite Derneği. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
+  "tts_tam_metin": "İyi günler. 2026-11-11 tarihli Günlük Küresel ve Yerel Finans Bültenine hoş geldiniz. Bugün Borsa İstanbul'un Türk Lirası ve Dolar bazlı teknik görünümünü, Es end Pi 500, altın, gümüş, TEFAS şampiyon fonları, kripto piyasasını ve iki haftalık ekonomik takvimi aktarıyoruz.\n\nBorsa İstanbul ile başlıyoruz. Borsa İstanbul yüz endeksi, günü yüzde 2 artışla 11713 puan seviyesinde tamamladı. Haftalık bazda yüzde 6 virgül 85, aylıkta yüzde 4 virgül 10 (azalış), yılbaşından itibaren yüzde 4 virgül 01 (artış) ve son bir yılda yüzde 8 virgül 56 değişim kaydetti. Borsa İstanbul otuz endeksi, günü yüzde 2 virgül 24 artışla 14611 puan seviyesinde tamamladı. Borsa İstanbul bankacılık endeksi, günü yüzde 3 virgül 80 artışla 17022 puan seviyesinde tamamladı. Borsa İstanbul sınai endeksi, günü yüzde 1 virgül 20 artışla 13910 puan seviyesinde tamamladı. Dolar bazında Borsa İstanbul yüz endeksi 233 virgül 68 dolar seviyesindedir. Teknik analizde son bir yılın dolar zirvesi olan 333 virgül 44 dolardan yüzde 29 virgül 9 aşağıda, bir yıllık dolar tabanı olan 215 virgül 44 dolardan ise yüzde 8 virgül 5 yukarıda işlem görüyor. İki yüz günlük dolar ortalaması 292 virgül 93 dolar, Ar Es Ay göstergesi ise 46 virgül 6 seviyesindedir.\n\nKüresel endeksler ve kıymetli madenler cephesine geçiyoruz. Es end Pi beş yüz endeksi, günü yüzde 0 virgül 38 düşüşle 7520 virgül 93 puan seviyesinde tamamladı. Haftalık bazda yüzde 0 virgül 63, aylıkta yüzde 3 virgül 67 (azalış), yılbaşından itibaren yüzde 9 virgül 87 (artış) ve son bir yılda yüzde 9 virgül 85 değişim kaydetti. Nazdak teknoloji endeksi, günü yüzde 0 virgül 74 düşüşle 25066 puan seviyesinde tamamladı. Ons altın, günü yüzde 1 virgül 84 düşüşle 4038 virgül 60 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 49, aylıkta yüzde 3 virgül 63 (azalış), yılbaşından itibaren yüzde 6 virgül 97 (azalış) ve son bir yılda yüzde 2 virgül 02 değişim kaydetti. Ons gümüş, günü yüzde 2 virgül 03 düşüşle 51 virgül 49 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 3 virgül 85, aylıkta yüzde 14 virgül 38 (azalış), yılbaşından itibaren yüzde 26 virgül 58 (azalış) ve son bir yılda yüzde 2 virgül 63 değişim kaydetti. Türk Lirası bazında günlük fiyatlarda Gram Altın 6521 virgül 79 Türk Lirası, Gram Gümüş ise 83 virgül 16 Türk Lirası seviyesindedir. Altın Gümüş oranı ise 78 virgül 43 düzeyindedir. Korku ve Açgözlülük endeksleri; Es end Pi 500 (ABD Borsası) için 33 puan ile Korku, Altın (Ons Gold) için 38 puan ile Korku, Kripto Piyasası (Bitkoin & Genel) için 32 puan ile Korku bölgesine işaret ediyor.\n\nTEFAS yatırım fonlarında dönemsel bazda en çok kazandıran fonlar şöyle: Son bir günde lider fon, Yerli Hisse Senedi (Borsa İstanbul) Kapsamı içinden yüzde 2 virgül 42 getiri ile İş Portföy Borsa İstanbul Teknoloji Ağırlıklı Sınırlamalı Endeks Hisse Senedi Fonu (TI2) oldu. Son bir haftada lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 6 virgül 80 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Son bir ayda lider fon, Altın & Kıymetli Madenler Kapsamı içinden yüzde 11 virgül 40 getiri ile Ak Portföy Gümüş Fon Sepeti Fonu (GUM) oldu. Yılbaşından itibaren lider fon, Yerli Hisse Senedi (Borsa İstanbul) Kapsamı içinden yüzde 58 virgül 40 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu. Son bir yılda lider fon, Yerli Hisse Senedi (Borsa İstanbul) Kapsamı içinden yüzde 74 virgül 50 getiri ile İstanbul Portföy Üçüncü Hisse Senedi Fonu (Hisse Yoğun) (IIH) oldu.\n\nKripto para piyasasının toplam büyüklüğü 2 virgül 48 trilyon dolar, Bitkoin dominansı ise yüzde 59 virgül 79 seviyesinde. Bitkoin, günü yüzde 1 virgül 81 düşüşle 73859 Dolar seviyesinde tamamladı. Haftalık bazda yüzde 2 virgül 74, aylıkta yüzde 10 virgül 95 (azalış), yılbaşından itibaren yüzde 15 virgül 60 (azalış) ve son bir yılda yüzde 30 virgül 32 değişim kaydetti. Eteryum, günü yüzde 3 virgül 46 düşüşle 2057 virgül 82 Dolar seviyesinde tamamladı. Ripıl İks Ar Pi, günü yüzde 3 virgül 42 düşüşle 1 virgül 06 Dolar seviyesinde tamamladı. Dolar Türk Lirası kuru, günü yüzde 0 virgül 21 artışla 50 virgül 23 Türk Lirası seviyesinde tamamladı. Euro Türk Lirası kuru, günü yüzde 0 virgül 26 artışla 56 virgül 08 Türk Lirası seviyesinde tamamladı. Euro Dolar paritesi, günü yüzde 0 virgül 19 artışla 1 virgül 12 Dolar seviyesinde tamamladı. Küresel Dolar Endeksi Diksiy, günü yüzde 0 virgül 60 artışla 102 virgül 26 puan seviyesinde tamamladı. Amerika beş yıllık tahvil faizi, günü yüzde 3 virgül 18 artışla 4 virgül 81 % seviyesinde tamamladı. Amerika on yıllık tahvil faizi, günü yüzde 2 virgül 45 artışla 4 virgül 98 % seviyesinde tamamladı. Amerika otuz yıllık tahvil faizi, günü yüzde 1 virgül 79 artışla 5 virgül 35 % seviyesinde tamamladı. Türkiye iki yıllık gösterge tahvil faizi, günü yüzde 0 virgül 25 düşüşle 38 virgül 45 % seviyesinde tamamladı. Türkiye on yıllık tahvil faizi, günü yüzde 0 virgül 15 düşüşle 28 virgül 15 % seviyesinde tamamladı. Türkiye beş yıllık Si Di Es risk primi, günü yüzde 0 virgül 40 düşüşle 258 virgül 40 bp seviyesinde tamamladı. Brent petrol, günü yüzde 0 virgül 66 düşüşle 91 virgül 96 Dolar seviyesinde tamamladı. Bakır, günü yüzde 0 virgül 92 düşüşle 6 virgül 27 Dolar seviyesinde tamamladı. Buğday, günü yüzde 0 virgül 60 artışla 591 virgül 50 cent seviyesinde tamamladı. Kahve, günü yüzde 2 virgül 50 düşüşle 266 virgül 75 cent seviyesinde tamamladı.\n\nABD ve Türkiye ekonomik takviminde öne çıkan başlıklar: Bu haftanın kalanında Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri, ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Çekirdek Tüketici Fiyat Endeksi, ABD (Amerikan Merkez Bankası Fed/Makro) Aylık Tüketici Fiyat Endeksi (Enflasyon) verileri izlenecek. Gelecek haftanın kritik gündeminde ise 2026-11-19 tarihinde Türkiye (Türkiye Cumhuriyet Merkez Bankası) Türkiye Cumhuriyet Merkez Bankası Haftalık Uluslararası Rezervler ve Yabancı Menkul Kıymet İstatistikleri yer alıyor.\n\nFinans otoriteleri, bankalar ve reel sektör istatistiklerinden son başlıklar: Cumhuriyet: Yurttaşın enflasyon beklentisi kırılmıyor: Merkez'den 'ihtiyatlı' faiz mesajı. Uzmanpara: Piyasalarda gözler Türkiye Cumhuriyet Merkez Bankası'nin faiz kararında. Bigpara: Türkiye Cumhuriyet Merkez Bankası Başkanı Karahan’dan enflasyon ve faiz açıklaması. CNBC-e: 16 kurumun enflasyon ve faiz beklentisi belli oldu: Aralıkta iki farklı senaryo. EKOTÜRK: Merkez Bankası faiz kararı ne zaman açıklanacak? Türkiye Cumhuriyet Merkez Bankası toplantı tarihi. TÜİK eylül ayı konut satış rakamlarını açıkladı - Antalya Haberleri. TÜİK verilerine göre Uşak'ta konut satışları Eylül'de 52 artarak 770'e yükseldi. Ekim ayında otomobil ve hafif ticari araç satışları yüzde 30 virgül 84 düştü. Otomobil ve hafif ticari araç pazarı Ekim'de yüzde 30 virgül 8 daraldı-Otomotiv Distribütörleri ve Mobilite Derneği. Bültenimizin sonuna geldik. İyi ve kazançlı günler dileriz.",
   "ham_veriler": {
-    "tarih": "2026-11-10",
-    "olusturulma_zamani": "2026-11-10 02:50:50",
+    "tarih": "2026-11-11",
+    "olusturulma_zamani": "2026-11-11 00:24:35",
     "bist_endeksleri": [
       {
         "kod": "XU100.IS",
@@ -69,14 +69,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Borsa İstanbul yüz endeksi",
         "birim": "puan",
         "kategori": "bist",
-        "fiyat": 11482.6,
-        "onceki_kapanis": 11333.3,
-        "degisim_1g": 1.32,
-        "degisim_1h": 6.72,
-        "degisim_1a": -5.28,
-        "degisim_3a": -16.86,
-        "degisim_ytd": 1.96,
-        "degisim_1y": 6.43,
+        "fiyat": 11712.7,
+        "onceki_kapanis": 11482.6,
+        "degisim_1g": 2.0,
+        "degisim_1h": 6.85,
+        "degisim_1a": -4.1,
+        "degisim_3a": -14.53,
+        "degisim_ytd": 4.01,
+        "degisim_1y": 8.56,
         "not_bilgisi": "",
         "kaynak": "Yahoo + TradingView (✓ Doğrulandı)"
       },
@@ -86,14 +86,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Borsa İstanbul otuz endeksi",
         "birim": "puan",
         "kategori": "bist",
-        "fiyat": 14290.2,
-        "onceki_kapanis": 14101.0,
-        "degisim_1g": 1.34,
-        "degisim_1h": 6.49,
-        "degisim_1a": -4.82,
-        "degisim_3a": -8.43,
-        "degisim_ytd": 16.91,
-        "degisim_1y": 22.67,
+        "fiyat": 14611.0,
+        "onceki_kapanis": 14290.2,
+        "degisim_1g": 2.24,
+        "degisim_1h": 6.68,
+        "degisim_1a": -3.48,
+        "degisim_3a": -5.49,
+        "degisim_ytd": 19.53,
+        "degisim_1y": 25.42,
         "not_bilgisi": "",
         "kaynak": "Yahoo + TradingView (✓ Doğrulandı)"
       },
@@ -103,16 +103,16 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Borsa İstanbul bankacılık endeksi",
         "birim": "puan",
         "kategori": "bist",
-        "fiyat": 16398.3,
-        "onceki_kapanis": 16085.5,
-        "degisim_1g": 1.94,
-        "degisim_1h": 12.26,
-        "degisim_1a": 1.47,
-        "degisim_3a": 7.24,
-        "degisim_ytd": -0.86,
-        "degisim_1y": 11.92,
+        "fiyat": 17021.7,
+        "onceki_kapanis": 16398.3,
+        "degisim_1g": 3.8,
+        "degisim_1h": 11.78,
+        "degisim_1a": 6.97,
+        "degisim_3a": 12.06,
+        "degisim_ytd": 2.91,
+        "degisim_1y": 16.17,
         "not_bilgisi": "",
-        "kaynak": "Yahoo Finance (Birincil)"
+        "kaynak": "Yahoo + TradingView (✓ Doğrulandı)"
       },
       {
         "kod": "XUSIN.IS",
@@ -120,53 +120,53 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Borsa İstanbul sınai endeksi",
         "birim": "puan",
         "kategori": "bist",
-        "fiyat": 13745.2,
-        "onceki_kapanis": 13469.4,
-        "degisim_1g": 2.05,
-        "degisim_1h": 5.87,
-        "degisim_1a": -11.84,
-        "degisim_3a": -28.07,
-        "degisim_ytd": -1.91,
-        "degisim_1y": -1.77,
+        "fiyat": 13909.5,
+        "onceki_kapanis": 13745.2,
+        "degisim_1g": 1.2,
+        "degisim_1h": 6.45,
+        "degisim_1a": -12.32,
+        "degisim_3a": -26.37,
+        "degisim_ytd": -0.74,
+        "degisim_1y": -0.59,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       }
     ],
     "bist100_dolar_teknik": {
-      "guncel_usd": 228.95,
-      "guncel_tl": 11482.6,
-      "usdtry_kuru": 50.21,
-      "degisim_1g_usd": 1.08,
-      "degisim_1h_usd": 6.27,
-      "degisim_1a_usd": -7.06,
-      "degisim_3a_usd": -20.89,
-      "degisim_ytd_usd": -12.68,
-      "degisim_1y_usd": -10.38,
+      "guncel_usd": 233.68,
+      "guncel_tl": 11712.7,
+      "usdtry_kuru": 50.23,
+      "degisim_1g_usd": 2.07,
+      "degisim_1h_usd": 6.52,
+      "degisim_1a_usd": -5.64,
+      "degisim_3a_usd": -18.58,
+      "degisim_ytd_usd": -10.87,
+      "degisim_1y_usd": -8.53,
       "tavan_52h_usd": 333.44,
       "tavan_52h_tarih": "2026-05-11",
-      "tavana_uzaklik_52h_yuzde": -31.34,
+      "tavana_uzaklik_52h_yuzde": -29.92,
       "taban_52h_usd": 215.44,
       "taban_52h_tarih": "2026-10-30",
-      "tabana_uzaklik_52h_yuzde": 6.27,
-      "kanal_konumu_52h_yuzde": 11.4,
+      "tabana_uzaklik_52h_yuzde": 8.47,
+      "kanal_konumu_52h_yuzde": 15.5,
       "tavan_3a_usd": 305.07,
-      "tavana_uzaklik_3a_yuzde": -24.95,
+      "tavana_uzaklik_3a_yuzde": -23.4,
       "taban_3a_usd": 215.44,
-      "tabana_uzaklik_3a_yuzde": 6.27,
+      "tabana_uzaklik_3a_yuzde": 8.47,
       "son_swing_tavan_usd": 299.16,
       "son_swing_tavan_tarih": "2026-09-09",
-      "swing_tavana_uzaklik_yuzde": -23.47,
+      "swing_tavana_uzaklik_yuzde": -21.89,
       "son_swing_taban_usd": 215.44,
       "son_swing_taban_tarih": "2026-10-30",
-      "swing_tabana_uzaklik_yuzde": 6.27,
+      "swing_tabana_uzaklik_yuzde": 8.47,
       "fib_236_usd": 305.59,
       "fib_382_usd": 288.36,
       "fib_500_usd": 274.44,
       "fib_618_usd": 260.52,
-      "ma50_usd": 257.36,
-      "ma200_usd": 293.24,
-      "rsi14_usd": 41.5,
-      "teknik_ozet_yorum": "BIST 100 Dolar bazında 228.95$ seviyesinde olup 1 yıllık dolar kanalının alt (ucuz/destek) bölgesinde (%11.4) yer alıyor. 52 haftalık zirvesinden (333.44$) %31.3 aşağıda, 52 haftalık dibinden (215.44$) ise %6.3 yukarıda bulunuyor. Endeks 200 günlük dolar ortalamasının (293.24$) altında baskı altında seyrederken RSI(14) göstergesi 41.5 seviyesindedir."
+      "ma50_usd": 255.93,
+      "ma200_usd": 292.93,
+      "rsi14_usd": 46.6,
+      "teknik_ozet_yorum": "BIST 100 Dolar bazında 233.68$ seviyesinde olup 1 yıllık dolar kanalının alt (ucuz/destek) bölgesinde (%15.5) yer alıyor. 52 haftalık zirvesinden (333.44$) %29.9 aşağıda, 52 haftalık dibinden (215.44$) ise %8.5 yukarıda bulunuyor. Endeks 200 günlük dolar ortalamasının (292.93$) altında baskı altında seyrederken RSI(14) göstergesi 46.6 seviyesindedir."
     },
     "abd_ve_kuresel_endeksler": [
       {
@@ -175,14 +175,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Es end Pi beş yüz endeksi",
         "birim": "puan",
         "kategori": "abd_endeks",
-        "fiyat": 7549.94,
-        "onceki_kapanis": 7376.86,
-        "degisim_1g": 2.35,
-        "degisim_1h": 0.11,
-        "degisim_1a": -3.35,
-        "degisim_3a": -2.31,
-        "degisim_ytd": 10.29,
-        "degisim_1y": 10.5,
+        "fiyat": 7520.93,
+        "onceki_kapanis": 7549.94,
+        "degisim_1g": -0.38,
+        "degisim_1h": -0.63,
+        "degisim_1a": -3.67,
+        "degisim_3a": -2.94,
+        "degisim_ytd": 9.87,
+        "degisim_1y": 9.85,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -192,14 +192,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Nazdak teknoloji endeksi",
         "birim": "puan",
         "kategori": "abd_endeks",
-        "fiyat": 25253.14,
-        "onceki_kapanis": 24579.43,
-        "degisim_1g": 2.74,
-        "degisim_1h": 0.35,
-        "degisim_1a": -7.72,
-        "degisim_3a": -4.51,
-        "degisim_ytd": 8.65,
-        "degisim_1y": 7.34,
+        "fiyat": 25065.88,
+        "onceki_kapanis": 25253.14,
+        "degisim_1g": -0.74,
+        "degisim_1h": -1.21,
+        "degisim_1a": -8.0,
+        "degisim_3a": -5.73,
+        "degisim_ytd": 7.85,
+        "degisim_1y": 6.81,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -209,14 +209,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "umumi Dav Cons endeksi",
         "birim": "puan",
         "kategori": "abd_endeks",
-        "fiyat": 52389.75,
-        "onceki_kapanis": 51285.73,
-        "degisim_1g": 2.15,
-        "degisim_1h": 0.78,
-        "degisim_1a": 1.42,
-        "degisim_3a": -2.61,
-        "degisim_ytd": 9.0,
-        "degisim_1y": 10.6,
+        "fiyat": 52231.89,
+        "onceki_kapanis": 52389.75,
+        "degisim_1g": -0.3,
+        "degisim_1h": 0.86,
+        "degisim_1a": 0.74,
+        "degisim_3a": -2.86,
+        "degisim_ytd": 8.67,
+        "degisim_1y": 8.98,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -226,14 +226,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Viks korku endeksi",
         "birim": "puan",
         "kategori": "abd_endeks",
-        "fiyat": 19.92,
-        "onceki_kapanis": 25.64,
-        "degisim_1g": -22.31,
-        "degisim_1h": -5.82,
-        "degisim_1a": 34.23,
-        "degisim_3a": 36.91,
-        "degisim_ytd": 33.24,
-        "degisim_1y": 13.18,
+        "fiyat": 19.52,
+        "onceki_kapanis": 19.92,
+        "degisim_1g": -2.01,
+        "degisim_1h": -6.29,
+        "degisim_1a": 28.34,
+        "degisim_3a": 33.42,
+        "degisim_ytd": 30.57,
+        "degisim_1y": 10.91,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       }
@@ -245,14 +245,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Ons altın",
         "birim": "USD",
         "kategori": "altin_gumus_usd",
-        "fiyat": 4146.5,
-        "onceki_kapanis": 4074.9,
-        "degisim_1g": 1.76,
-        "degisim_1h": 4.46,
-        "degisim_1a": -1.66,
-        "degisim_3a": -6.63,
-        "degisim_ytd": -4.48,
-        "degisim_1y": 0.59,
+        "fiyat": 4038.6,
+        "onceki_kapanis": 4114.5,
+        "degisim_1g": -1.84,
+        "degisim_1h": 2.49,
+        "degisim_1a": -3.63,
+        "degisim_3a": -9.6,
+        "degisim_ytd": -6.97,
+        "degisim_1y": -2.02,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -262,57 +262,57 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Ons gümüş",
         "birim": "USD",
         "kategori": "altin_gumus_usd",
-        "fiyat": 53.44,
-        "onceki_kapanis": 51.8,
-        "degisim_1g": 3.16,
-        "degisim_1h": 5.36,
-        "degisim_1a": -11.92,
-        "degisim_3a": -17.49,
-        "degisim_ytd": -23.8,
-        "degisim_1y": 6.5,
+        "fiyat": 51.49,
+        "onceki_kapanis": 52.56,
+        "degisim_1g": -2.03,
+        "degisim_1h": 3.85,
+        "degisim_1a": -14.38,
+        "degisim_3a": -21.45,
+        "degisim_ytd": -26.58,
+        "degisim_1y": 2.63,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       }
     ],
     "altin_gumus_ozet": {
-      "gram_altin_tl": 6693.66,
-      "gram_altin_degisim_1g": 1.87,
-      "gram_gumus_tl": 86.27,
-      "gram_gumus_degisim_1g": 3.28,
-      "altin_gumus_rasyosu": 77.59,
-      "rasyo_degisim_1g": -1.36,
-      "rasyo_degisim_1h": -0.86,
-      "rasyo_degisim_1a": 11.64,
-      "rasyo_degisim_ytd": 25.35,
-      "rasyo_degisim_1y": -5.55,
-      "rasyo_yorum": "Altın/Gümüş oranı 77.59 ile dengeli bantta seyrediyor."
+      "gram_altin_tl": 6521.79,
+      "gram_altin_degisim_1g": -1.64,
+      "gram_gumus_tl": 83.16,
+      "gram_gumus_degisim_1g": -1.83,
+      "altin_gumus_rasyosu": 78.43,
+      "rasyo_degisim_1g": 0.19,
+      "rasyo_degisim_1h": -1.3,
+      "rasyo_degisim_1a": 12.56,
+      "rasyo_degisim_ytd": 26.7,
+      "rasyo_degisim_1y": -4.53,
+      "rasyo_yorum": "Altın/Gümüş oranı 78.43 ile dengeli bantta seyrediyor."
     },
     "korku_acgozluluk_endeksleri": [
       {
         "piyasa": "S&P 500 (ABD Borsası)",
-        "skor": 32,
+        "skor": 33,
         "durum_tr": "Korku",
-        "onceki_gun": 22,
-        "onceki_hafta": 19,
+        "onceki_gun": 32,
+        "onceki_hafta": 24,
         "onceki_ay": 44,
         "aciklama": "S&P 500 fiyat momentumu, VIX volatilitesi ve piyasa genişliği bazlı duyarlılık."
       },
       {
         "piyasa": "Altın (Ons Gold)",
-        "skor": 45,
-        "durum_tr": "Nötr",
-        "onceki_gun": 45,
-        "onceki_hafta": 36,
-        "onceki_ay": 44,
+        "skor": 38,
+        "durum_tr": "Korku",
+        "onceki_gun": 38,
+        "onceki_hafta": 34,
+        "onceki_ay": 41,
         "aciklama": "Ons Altın RSI(14), 50/200 günlük ortalama sapması ve güvenli liman talebi endeksi."
       },
       {
         "piyasa": "Kripto Piyasası (BTC & Genel)",
-        "skor": 29,
+        "skor": 32,
         "durum_tr": "Korku",
-        "onceki_gun": 28,
-        "onceki_hafta": 37,
-        "onceki_ay": 61,
+        "onceki_gun": 29,
+        "onceki_hafta": 26,
+        "onceki_ay": 69,
         "aciklama": "Alternative.me kripto volatilite, hacim ve sosyal duyarlılık endeksi."
       }
     ],
@@ -688,16 +688,16 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Bitkoin",
         "birim": "USD",
         "kategori": "kripto",
-        "fiyat": 75182.8,
-        "onceki_kapanis": 74584.65,
-        "degisim_1g": 0.8,
-        "degisim_1h": -6.5,
-        "degisim_1a": -8.15,
-        "degisim_3a": -4.97,
-        "degisim_ytd": -14.09,
-        "degisim_1y": -28.21,
+        "fiyat": 73859.27,
+        "onceki_kapanis": 75223.15,
+        "degisim_1g": -1.81,
+        "degisim_1h": -2.74,
+        "degisim_1a": -10.95,
+        "degisim_3a": -5.84,
+        "degisim_ytd": -15.6,
+        "degisim_1y": -30.32,
         "not_bilgisi": "",
-        "kaynak": "Yahoo Finance (Birincil)"
+        "kaynak": "Yahoo + Binance (✓ Doğrulandı)"
       },
       {
         "kod": "ETH-USD",
@@ -705,16 +705,16 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Eteryum",
         "birim": "USD",
         "kategori": "kripto",
-        "fiyat": 2130.15,
-        "onceki_kapanis": 2120.98,
-        "degisim_1g": 0.43,
-        "degisim_1h": -12.06,
-        "degisim_1a": -11.42,
-        "degisim_3a": -14.48,
-        "degisim_ytd": -28.21,
-        "degisim_1y": -40.54,
+        "fiyat": 2057.82,
+        "onceki_kapanis": 2131.5,
+        "degisim_1g": -3.46,
+        "degisim_1h": -7.91,
+        "degisim_1a": -15.9,
+        "degisim_3a": -17.19,
+        "degisim_ytd": -30.64,
+        "degisim_1y": -42.33,
         "not_bilgisi": "",
-        "kaynak": "Yahoo Finance (Birincil)"
+        "kaynak": "Yahoo + Binance (✓ Doğrulandı)"
       },
       {
         "kod": "XRP-USD",
@@ -722,27 +722,27 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Ripıl İks Ar Pi",
         "birim": "USD",
         "kategori": "kripto",
-        "fiyat": 1.1,
-        "onceki_kapanis": 1.11,
-        "degisim_1g": -1.04,
-        "degisim_1h": -15.77,
-        "degisim_1a": -15.65,
-        "degisim_3a": -21.38,
-        "degisim_ytd": -40.28,
-        "degisim_1y": -53.59,
+        "fiyat": 1.06,
+        "onceki_kapanis": 1.1,
+        "degisim_1g": -3.42,
+        "degisim_1h": -12.16,
+        "degisim_1a": -20.61,
+        "degisim_3a": -25.2,
+        "degisim_ytd": -42.42,
+        "degisim_1y": -58.07,
         "not_bilgisi": "",
-        "kaynak": "Yahoo Finance (Birincil)"
+        "kaynak": "Yahoo + Binance (✓ Doğrulandı)"
       }
     ],
     "kripto_piyasa_ozeti": {
-      "total_mcap_trilyon_usd": 2.53,
-      "total_mcap_degisim_1g": -0.84,
-      "total_mcap_degisim_1h": -8.45,
-      "total_mcap_degisim_1a": -9.29,
-      "total_mcap_degisim_ytd": -19.03,
-      "total_mcap_degisim_1y": -32.53,
-      "btc_dominance_yuzde": 59.71,
-      "eth_dominance_yuzde": 10.29
+      "total_mcap_trilyon_usd": 2.48,
+      "total_mcap_degisim_1g": -4.12,
+      "total_mcap_degisim_1h": -4.55,
+      "total_mcap_degisim_1a": -12.68,
+      "total_mcap_degisim_ytd": -20.86,
+      "total_mcap_degisim_1y": -34.52,
+      "btc_dominance_yuzde": 59.79,
+      "eth_dominance_yuzde": 10.13
     },
     "tahvil_ve_cds": [
       {
@@ -751,14 +751,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Amerika beş yıllık tahvil faizi",
         "birim": "%",
         "kategori": "tahvil_cds",
-        "fiyat": 4.66,
-        "onceki_kapanis": 4.65,
-        "degisim_1g": 0.24,
-        "degisim_1h": -0.72,
-        "degisim_1a": -7.21,
-        "degisim_3a": 6.25,
-        "degisim_ytd": 25.17,
-        "degisim_1y": 25.58,
+        "fiyat": 4.81,
+        "onceki_kapanis": 4.66,
+        "degisim_1g": 3.18,
+        "degisim_1h": 1.35,
+        "degisim_1a": -4.22,
+        "degisim_3a": 9.87,
+        "degisim_ytd": 29.15,
+        "degisim_1y": 29.57,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -768,14 +768,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Amerika on yıllık tahvil faizi",
         "birim": "%",
         "kategori": "tahvil_cds",
-        "fiyat": 4.86,
+        "fiyat": 4.98,
         "onceki_kapanis": 4.86,
-        "degisim_1g": 0.1,
-        "degisim_1h": -0.61,
-        "degisim_1a": -7.25,
-        "degisim_3a": 3.84,
-        "degisim_ytd": 16.84,
-        "degisim_1y": 18.35,
+        "degisim_1g": 2.45,
+        "degisim_1h": 0.63,
+        "degisim_1a": -4.9,
+        "degisim_3a": 6.43,
+        "degisim_ytd": 19.7,
+        "degisim_1y": 21.24,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -785,14 +785,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Amerika otuz yıllık tahvil faizi",
         "birim": "%",
         "kategori": "tahvil_cds",
-        "fiyat": 5.26,
+        "fiyat": 5.35,
         "onceki_kapanis": 5.26,
-        "degisim_1g": -0.08,
-        "degisim_1h": -0.25,
-        "degisim_1a": -6.14,
-        "degisim_3a": 0.38,
-        "degisim_ytd": 8.6,
-        "degisim_1y": 11.78,
+        "degisim_1g": 1.79,
+        "degisim_1h": 0.49,
+        "degisim_1a": -4.43,
+        "degisim_3a": 1.96,
+        "degisim_ytd": 10.54,
+        "degisim_1y": 13.78,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -855,14 +855,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Dolar Türk Lirası kuru",
         "birim": "TL",
         "kategori": "doviz",
-        "fiyat": 50.21,
-        "onceki_kapanis": 50.15,
-        "degisim_1g": 0.11,
-        "degisim_1h": 0.49,
+        "fiyat": 50.23,
+        "onceki_kapanis": 50.12,
+        "degisim_1g": 0.21,
+        "degisim_1h": 0.48,
         "degisim_1a": 1.81,
-        "degisim_3a": 5.15,
-        "degisim_ytd": 16.9,
-        "degisim_1y": 18.9,
+        "degisim_3a": 5.17,
+        "degisim_ytd": 16.94,
+        "degisim_1y": 18.94,
         "not_bilgisi": "",
         "kaynak": "Yahoo + ER-API (✓ Doğrulandı)"
       },
@@ -872,14 +872,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Euro Türk Lirası kuru",
         "birim": "TL",
         "kategori": "doviz",
-        "fiyat": 56.35,
-        "onceki_kapanis": 56.34,
-        "degisim_1g": 0.01,
-        "degisim_1h": 1.04,
-        "degisim_1a": 1.85,
-        "degisim_3a": 2.18,
-        "degisim_ytd": 11.35,
-        "degisim_1y": 15.59,
+        "fiyat": 56.08,
+        "onceki_kapanis": 55.93,
+        "degisim_1g": 0.26,
+        "degisim_1h": 0.19,
+        "degisim_1a": 1.4,
+        "degisim_3a": 1.83,
+        "degisim_ytd": 10.82,
+        "degisim_1y": 15.04,
         "not_bilgisi": "",
         "kaynak": "Yahoo + ER-API (✓ Doğrulandı)"
       },
@@ -890,13 +890,13 @@ window.LATEST_FINANCE_REPORT = {
         "birim": "USD",
         "kategori": "doviz",
         "fiyat": 1.12,
-        "onceki_kapanis": 1.12,
-        "degisim_1g": -0.02,
-        "degisim_1h": 0.62,
-        "degisim_1a": 0.11,
-        "degisim_3a": -2.75,
-        "degisim_ytd": -4.44,
-        "degisim_1y": -2.75,
+        "onceki_kapanis": 1.11,
+        "degisim_1g": 0.19,
+        "degisim_1h": -0.21,
+        "degisim_1a": -0.33,
+        "degisim_3a": -3.14,
+        "degisim_ytd": -4.93,
+        "degisim_1y": -3.25,
         "not_bilgisi": "",
         "kaynak": "Yahoo + ER-API (✓ Doğrulandı)"
       },
@@ -906,14 +906,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Küresel Dolar Endeksi Diksiy",
         "birim": "puan",
         "kategori": "doviz",
-        "fiyat": 101.68,
-        "onceki_kapanis": 102.3,
-        "degisim_1g": -0.61,
-        "degisim_1h": -0.07,
-        "degisim_1a": -0.52,
-        "degisim_3a": 1.86,
-        "degisim_ytd": 3.46,
-        "degisim_1y": 2.07,
+        "fiyat": 102.26,
+        "onceki_kapanis": 101.65,
+        "degisim_1g": 0.6,
+        "degisim_1h": 0.38,
+        "degisim_1a": -0.31,
+        "degisim_3a": 2.25,
+        "degisim_ytd": 4.05,
+        "degisim_1y": 2.65,
         "not_bilgisi": "",
         "kaynak": "Yahoo Finance (Birincil)"
       }
@@ -925,14 +925,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Brent petrol",
         "birim": "USD",
         "kategori": "emtia",
-        "fiyat": 92.31,
-        "onceki_kapanis": 98.32,
-        "degisim_1g": -6.11,
-        "degisim_1h": -11.89,
-        "degisim_1a": -11.85,
-        "degisim_3a": 3.82,
-        "degisim_ytd": 51.7,
-        "degisim_1y": 44.1,
+        "fiyat": 91.96,
+        "onceki_kapanis": 92.57,
+        "degisim_1g": -0.66,
+        "degisim_1h": -11.24,
+        "degisim_1a": -13.77,
+        "degisim_3a": 3.35,
+        "degisim_ytd": 51.13,
+        "degisim_1y": 43.55,
         "not_bilgisi": "Enerji",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -942,14 +942,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Bakır",
         "birim": "USD",
         "kategori": "emtia",
-        "fiyat": 6.38,
-        "onceki_kapanis": 6.22,
-        "degisim_1g": 2.61,
-        "degisim_1h": -2.49,
-        "degisim_1a": -3.94,
-        "degisim_3a": -3.5,
-        "degisim_ytd": 13.33,
-        "degisim_1y": 25.43,
+        "fiyat": 6.27,
+        "onceki_kapanis": 6.33,
+        "degisim_1g": -0.92,
+        "degisim_1h": -1.7,
+        "degisim_1a": -6.4,
+        "degisim_3a": -4.96,
+        "degisim_ytd": 11.37,
+        "degisim_1y": 23.26,
         "not_bilgisi": "Sanayi Metali",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -959,14 +959,14 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Buğday",
         "birim": "cent",
         "kategori": "emtia",
-        "fiyat": 587.5,
-        "onceki_kapanis": 591.25,
-        "degisim_1g": -0.63,
-        "degisim_1h": -3.13,
-        "degisim_1a": -12.44,
-        "degisim_3a": -6.78,
-        "degisim_ytd": 15.88,
-        "degisim_1y": 9.66,
+        "fiyat": 591.5,
+        "onceki_kapanis": 588.0,
+        "degisim_1g": 0.6,
+        "degisim_1h": -1.38,
+        "degisim_1a": -12.01,
+        "degisim_3a": -9.38,
+        "degisim_ytd": 16.67,
+        "degisim_1y": 10.41,
         "not_bilgisi": "Tarım Emtiası",
         "kaynak": "Yahoo Finance (Birincil)"
       },
@@ -976,53 +976,19 @@ window.LATEST_FINANCE_REPORT = {
         "okunus": "Kahve",
         "birim": "cent",
         "kategori": "emtia",
-        "fiyat": 266.7,
-        "onceki_kapanis": 280.0,
-        "degisim_1g": -4.75,
-        "degisim_1h": -8.7,
-        "degisim_1a": -7.06,
-        "degisim_3a": -20.57,
-        "degisim_ytd": -23.53,
-        "degisim_1y": -35.7,
+        "fiyat": 266.75,
+        "onceki_kapanis": 273.6,
+        "degisim_1g": -2.5,
+        "degisim_1h": -6.06,
+        "degisim_1a": -8.21,
+        "degisim_3a": -21.57,
+        "degisim_ytd": -23.51,
+        "degisim_1y": -35.68,
         "not_bilgisi": "Tarım Emtiası",
         "kaynak": "Yahoo Finance (Birincil)"
       }
     ],
-    "ekonomik_takvim_bugun": [
-      {
-        "donem_grubu": "bugun",
-        "tarih": "2026-11-10",
-        "saat": "10:00",
-        "ulke": "Türkiye (TÜİK)",
-        "onem": "Yüksek",
-        "baslik": "TÜİK Sanayi Üretim Endeksi ve İşgücü İstatistikleri",
-        "gerceklesen": "-",
-        "beklenti": "-",
-        "onceki": "-"
-      },
-      {
-        "donem_grubu": "bugun",
-        "tarih": "2026-11-10",
-        "saat": "08:30",
-        "ulke": "ABD (Fed/Makro)",
-        "onem": "Yüksek",
-        "baslik": "Aylık Çekirdek TÜFE",
-        "gerceklesen": "-",
-        "beklenti": "0.2%",
-        "onceki": "0.3%"
-      },
-      {
-        "donem_grubu": "bugun",
-        "tarih": "2026-11-10",
-        "saat": "08:30",
-        "ulke": "ABD (Fed/Makro)",
-        "onem": "Yüksek",
-        "baslik": "Aylık TÜFE (Enflasyon)",
-        "gerceklesen": "-",
-        "beklenti": "0.3%",
-        "onceki": "0.6%"
-      }
-    ],
+    "ekonomik_takvim_bugun": [],
     "ekonomik_takvim_bu_hafta": [
       {
         "donem_grubu": "bu_hafta",
@@ -1034,6 +1000,28 @@ window.LATEST_FINANCE_REPORT = {
         "gerceklesen": "-",
         "beklenti": "-",
         "onceki": "-"
+      },
+      {
+        "donem_grubu": "bu_hafta",
+        "tarih": "2026-11-10",
+        "saat": "08:30",
+        "ulke": "ABD (Fed/Makro)",
+        "onem": "Yüksek",
+        "baslik": "Aylık Çekirdek TÜFE",
+        "gerceklesen": "-",
+        "beklenti": "0.2%",
+        "onceki": "0.3%"
+      },
+      {
+        "donem_grubu": "bu_hafta",
+        "tarih": "2026-11-10",
+        "saat": "08:30",
+        "ulke": "ABD (Fed/Makro)",
+        "onem": "Yüksek",
+        "baslik": "Aylık TÜFE (Enflasyon)",
+        "gerceklesen": "-",
+        "beklenti": "0.3%",
+        "onceki": "0.6%"
       },
       {
         "donem_grubu": "bu_hafta",
@@ -1084,6 +1072,17 @@ window.LATEST_FINANCE_REPORT = {
         ]
       },
       {
+        "baslik": "Piyasalarda gözler TCMB'nin faiz kararında",
+        "kaynak": "Uzmanpara",
+        "kategori": "otorite_banka",
+        "tarih_saat": "Fri, 06 Nov 2026 02:39:53 GMT",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZlBQZHBBSjZxb1g2azBLcWUtbnR1N2Q4cTViYTB5bU83RjZyc2ZNb3VOd1RXelFiUzRoV1RmeU5pNEZDRXBCUmxsYzltamdUYUhzZEFTUXVRTmRIUDB0SDFKWGQ0M2NtdDBfNWJzVVBtTWFNRlpkc3kxcVJHUHlPbkhQZ2t3NjVBRmxBTDFMckxoUk0ySWtkMw?oc=5",
+        "etiketler": [
+          "TCMB",
+          "Faiz"
+        ]
+      },
+      {
         "baslik": "TCMB Başkanı Karahan’dan enflasyon ve faiz açıklaması",
         "kaynak": "Bigpara",
         "kategori": "otorite_banka",
@@ -1107,58 +1106,57 @@ window.LATEST_FINANCE_REPORT = {
         ]
       },
       {
-        "baslik": "İsveç Merkez Bankası enflasyon endişeleriyle faizi %2’ye çıkardı",
-        "kaynak": "Investing.com Türkiye",
+        "baslik": "Merkez Bankası faiz kararı ne zaman açıklanacak? TCMB toplantı tarihi",
+        "kaynak": "EKOTÜRK",
         "kategori": "otorite_banka",
-        "tarih_saat": "Wed, 04 Nov 2026 08:40:01 GMT",
-        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOV1JOZHdvdnRHMWI3ejhHbWdKNHR2ajVHNS01ajZCeHVWbGM5ZDJBbFc1eEJ0ZTdBaE5fdVNCVTRoWGVIeXdKeUJNeXhVa2Q0MEkwUG4wNEJtZF9zUzRtSnJac3d4RlF0OHdwZFVsQ0xrWjNoOFZzUnBQVUIwQzhxQVVDZnc0U1pMR3NPQmFjWTlPMUhjY1VVTVJQMWhWZ3c1QXZHR25KTk8tV3hNb1dJVzB4MU04WkRLVUhLc3V0Zw?oc=5",
+        "tarih_saat": "Tue, 10 Nov 2026 00:00:15 GMT",
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVWVtTnpOTGNBcWVQLWZaX3UzRU9sSFltMEMxbU90QmppVnBhQzdTbU5FRlNfZFA0Y0xLYkhTTHIyM1ROWnhDUTVkMGZoUDI5elpHSVBXOEZ3cl83Y2NOY3c4WUFIbmh0ek5jOVRkLTgtX0tGazhlQk9UbkVIcFctSUw2UjFDNk4yb0VYTDF3OURWd3F5dkpWVmZyeEJuQnk1Z3Jzdk52RzRpYWVKR3c?oc=5",
         "etiketler": [
+          "TCMB",
           "Merkez Bankası",
-          "Faiz",
-          "Enflasyon"
+          "Faiz"
         ]
       },
       {
-        "baslik": "Dev bankadan TCMB faiz tahmini: Finansal sıkılaşma büyümeyi azaltabilir",
+        "baslik": "TCMB’de yeni faiz senaryosu: Aralıkta indirim, ocakta pas",
         "kaynak": "Ekonomim",
         "kategori": "otorite_banka",
-        "tarih_saat": "Tue, 03 Nov 2026 14:32:00 GMT",
-        "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOR0x1aXFSa0tJMHFwUXdGQW1tMzdrNXh4elBpV1dFQkJxNkFNa08xNy1rODU1VmtLVWtzczZBNWVTWjNWeGU2SGI0MElDV3hEZHYyUVNFYldVV0FwdUZDUkhxS1JHOU1RbzN1aThCUUpPZGwtcXBrbkJ4bjF4dXRTeFExSF91M2xzUnZ5MGdqSXNYWEctS3BkU1RrRkFNUkpvMmYzNEhLSE1jeGMxRllsVHl5dE9VaS1F?oc=5",
+        "tarih_saat": "Fri, 06 Nov 2026 04:30:00 GMT",
+        "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVHhINDduT2pwZTNLMUwxMjd2a2VDaHlfcHJaVGJaVDh5Z3RNeGRpdGZCc25PLWh3TkxhM19rTV9tX2k2N3ROZVZwczZma196WG45akE1NFVJNVJtd0ZjQ3RBZkNfWjktRVhkc2IyUTQ4TWVJbTExT2UwcXNULUhzYnRHLURuTUhZd3dQeTZPVGZJTEd1aFR3RGphTVlIeGxyZWNfOVlHVHZCdWxaSWphUG44QmdCTzNsRzFXbndlcU5UQkhMSy00c0FYUG5zQlRuNmlObQ?oc=5",
         "etiketler": [
           "TCMB",
           "Faiz"
         ]
       },
       {
-        "baslik": "Merkez Bankası faiz kararı ne zaman açıklanacak? TCMB faiz indirecek mi?",
-        "kaynak": "Dünya Gazetesi",
-        "kategori": "otorite_banka",
-        "tarih_saat": "Tue, 03 Nov 2026 07:43:00 GMT",
-        "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWG16cjg3NGhBc0d0VFVCYVZVNExrM3ZzOFlfOXZzSGpiNnBiRW9Jb1pkWDYwdThSbjdWRnJUdFJrRGVDVXdNdHh1T3RqdXNtZzFoaHVlYjRtaG1sdmhPSlBjNERBaWF1cEV2WnNxR01MZHIwTFlYTm83bndMY1BHUVg2YTR4STU2TjMxc0wwODRtUktHc1NkNjhnYVJJb0ptaURSc0xIaUM2UkU1OHh3QUIxUjY?oc=5",
-        "etiketler": [
-          "TCMB",
-          "Merkez Bankası",
-          "Faiz"
-        ]
-      },
-      {
-        "baslik": "Fitch: Türkiye piyasalarındaki dalgalanmadan en çok aracı kurumlar etkileniyor",
+        "baslik": "BofA: Fon krizinin Türkiye'de güven üzerindeki etkisi sürüyor",
         "kaynak": "Bloomberght",
         "kategori": "otorite_banka",
-        "tarih_saat": "Wed, 04 Nov 2026 06:59:27 GMT",
-        "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRHh5NGp5U0lPc3M3dlBIcWJKamtnZUdCeW1GR19LdzBqczBmMTVwRmlUeE13R20zTUxJdlVBRGhhLWZUTFlZZG5haGZMRzJqQnFPN1Awekx0bVJkWnBBMV85UEJvTDJMajI0R05nZ2FfaE1fVVZmbW1HV1NUZ1RvR0NfQXhHZ0RFZmlMaVRqSkhRTGVLRXRJcWJqbXF3R3k3TUlGZ3ZIM0pwYmZDb3JEbENYZw?oc=5",
+        "tarih_saat": "Tue, 10 Nov 2026 08:58:15 GMT",
+        "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxORkJpUDMweHE5M01RTEMtajBiYVZrOFgyYXJjSWNhSzN1TWE0azdvQ19JT2pGdnpqM3hab2ZNOXZiUHFrMWJJb1RNLWtwMHI0b05nUzhUUDF4WVJYcy1tRlh5Z1UxVnFsMXU5WlZzX0tlZ3dqSnJHeEtDajR3SlNuNHlwdmRCUkRhX2p6UUF0YnV0b3FYajlueUhpMno?oc=5",
+        "etiketler": [
+          "BofA"
+        ]
+      },
+      {
+        "baslik": "Fitch: Türkiye'de sukuk likiditesi İran savaşının en düşük seviyesinin de altına geriledi",
+        "kaynak": "Foreks.com",
+        "kategori": "otorite_banka",
+        "tarih_saat": "Tue, 10 Nov 2026 06:25:58 GMT",
+        "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQU2hrMHNGUlJwQXZleXB0MmEwX1ZKeGtUS0g0R3lQekZDaWZGbkU4ZlZNb0JvbXhfV0NsOFhnVUFWSDF2dlYzOFNIT2FMVjNwTUlOeWhpeXduRnlwQUtOQW1UcUc2MVB1UzVHSjhGX3FyU294YzlTbnVKSUZHcEJXZ2lYTHZFVl9tckI1d0Z1bVRPbGk1THlkdEEyM3pRci1wWExQX2FpUE10cFpBZWdVLWhhMmZCR3gyRTFnX216Q2JwM1NUZnU1N0hBcXplWjRicDRFV0RGS2VkT2dGQlhfZjBTNGJ1TWhURmFCanJiR1FqbTIxM3N1VGlib0JqUQ?oc=5",
         "etiketler": [
           "Fitch"
         ]
       },
       {
-        "baslik": "Fitch, Binance saldırısının bitcoin piyasasının dayanıklılığına işaret ettiğini açıkladı",
-        "kaynak": "Anadolu Ajansı",
+        "baslik": "BofA, Türkiye’de güven kaybına dikkat çekti: Faiz indirimi tahmini belli oldu",
+        "kaynak": "Paratic Haber",
         "kategori": "otorite_banka",
-        "tarih_saat": "Mon, 09 Nov 2026 17:38:01 GMT",
-        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVERGRU9ES29CUmRicEdWaV9razl1Y19zSXBEckdmeGR6RmZEV0kweUhReXNNbThJTTdHUllEalQ4Y01jcEhfZ2treDdXUGtTcVRsNzVKVWdUNjQ4TFY3VW5uOWYzQnhidTlzVFhHeXlhN2NhYTZlX0hsMHlKc01Ed2R6bmJTQnp0MEtXdm5FQ3pUcU9FMkVJSmlwMndrbmltWGxNbUVHd2hKbUhXTDZrS1ZJS0l0Y01oV2F4dFRIczFxNFFJYnJF?oc=5",
+        "tarih_saat": "Tue, 10 Nov 2026 09:40:16 GMT",
+        "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUWMxUlJpQXpJT2dUWFJUc3Z4WGlrZ1FqV0UxTjJWMWVoTlliREZ5SWlJVzZiQmRYUXJDcmpIX0FiVE9uRzdWSFNyTEswMGNZS0o1NDlOV1YwMDcxc0F0RDktTGdBV0xub0g0WU9TNi1uM3RqcVljcFZ4b2VybVNtdjlKc3NBaHdfamJwbU8xZXQydS1iZVppbW13RQ?oc=5",
         "etiketler": [
-          "Fitch"
+          "Faiz",
+          "BofA"
         ]
       },
       {
@@ -1169,17 +1167,6 @@ window.LATEST_FINANCE_REPORT = {
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOW5aRW1wd04tUDFCekhNTENkOEtsR2ZZRklNb240RDNjdkh3bnhHQk9wRGg5Rm50cDRCcU9mRzNfRGRyNGZyUVZmdHV4OWptMEo3dUhhbTNsNzZScHBSRDhZYTAtVjhLSVBEcXVlekVueWNJSHF0MVhZNU92ZEo0VHZNdmVIckFGSmlYbGpIUm1ieEcwZ2E5el9leEhUS09mb0xxejNudTVnaXRf?oc=5",
         "etiketler": [
           "Fitch"
-        ]
-      },
-      {
-        "baslik": "Goldman Sachs’tan Türkiye enflasyonu tahmini: Yüzde 29",
-        "kaynak": "Paratic Haber",
-        "kategori": "otorite_banka",
-        "tarih_saat": "Tue, 03 Nov 2026 15:20:18 GMT",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9qYV8xbEYwVEY1MkppNEcwUExwRWVqMkxjUTloWDROX0lxbGl0TFBSNTFnQ0c0YkVzV3dlejQxMjVjVlZVV2Q1YXdEd1JVZWZGR0FwX25wRkl2bG1LYjI2RXZmNWxHN0Ewek1oREtFNkFPN1RjVmhqTnJLd2dTZw?oc=5",
-        "etiketler": [
-          "Enflasyon",
-          "Goldman Sachs"
         ]
       }
     ],
@@ -1221,8 +1208,8 @@ window.LATEST_FINANCE_REPORT = {
         "baslik": "Otomobil ve hafif ticari araç pazarı Ekim'de %30.8 daraldı-ODMD",
         "kaynak": "TradingView",
         "kategori": "arac",
-        "tarih_saat": "Tue, 03 Nov 2026 05:51:00 GMT",
-        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBDZnVIV0VfM0NTcmgtajJKRjVWV3o5Mzl6V3VJZlVUQi0xQTliX0RYNVV0OGNvMHUzbWdENWFuaVZfX21yS21wMTFWX3N6N1MzUmhNT2c1eE9lR013dXlXWUpzXzVPVXZxNWNPRVU1UFJfdC1aVXFTSw?oc=5",
+        "tarih_saat": "Tue, 03 Nov 2026 06:05:00 GMT",
+        "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0tejdKVWhwWW9Kbzh6ZWRYU2ZrTk0xMHJCWmdMajBkSDM5Vk5Cd21PRW5oYnJ5V1B4N3FDZXpwZE94alJ3VGY4ZkkyMWVYeXBZM3hxR194TTM2MG95U21mU1Y4UHdiWjI1Y093MFNkUzQxN1R6X0hDSQ?oc=5",
         "etiketler": [
           "Otomotiv Pazarı",
           "ODMD"
@@ -1231,10 +1218,6 @@ window.LATEST_FINANCE_REPORT = {
     ],
     "grafik_verileri": {
       "bist100_tl": [
-        {
-          "d": "2026-08-14",
-          "v": 14172.3
-        },
         {
           "d": "2026-08-17",
           "v": 14132.1
@@ -1470,13 +1453,13 @@ window.LATEST_FINANCE_REPORT = {
         {
           "d": "2026-11-06",
           "v": 11482.6
+        },
+        {
+          "d": "2026-11-09",
+          "v": 11712.7
         }
       ],
       "bist100_usd": [
-        {
-          "d": "2026-08-14",
-          "v": 296.0
-        },
         {
           "d": "2026-08-17",
           "v": 295.01
@@ -1712,13 +1695,13 @@ window.LATEST_FINANCE_REPORT = {
         {
           "d": "2026-11-06",
           "v": 228.95
+        },
+        {
+          "d": "2026-11-09",
+          "v": 233.68
         }
       ],
       "sp500": [
-        {
-          "d": "2026-08-17",
-          "v": 7745.06
-        },
         {
           "d": "2026-08-18",
           "v": 7691.76
@@ -1954,13 +1937,13 @@ window.LATEST_FINANCE_REPORT = {
         {
           "d": "2026-11-09",
           "v": 7549.94
+        },
+        {
+          "d": "2026-11-10",
+          "v": 7520.93
         }
       ],
       "ons_altin": [
-        {
-          "d": "2026-08-17",
-          "v": 4473.7
-        },
         {
           "d": "2026-08-18",
           "v": 4420.6
@@ -2195,14 +2178,14 @@ window.LATEST_FINANCE_REPORT = {
         },
         {
           "d": "2026-11-09",
-          "v": 4146.5
+          "v": 4114.5
+        },
+        {
+          "d": "2026-11-10",
+          "v": 4038.6
         }
       ],
       "btc_usd": [
-        {
-          "d": "2026-09-11",
-          "v": 77173.8
-        },
         {
           "d": "2026-09-12",
           "v": 77270.47
@@ -2437,1458 +2420,1462 @@ window.LATEST_FINANCE_REPORT = {
         },
         {
           "d": "2026-11-09",
-          "v": 75182.8
+          "v": 75223.15
+        },
+        {
+          "d": "2026-11-10",
+          "v": 73859.27
         }
       ],
       "btc_dominance": [
         {
-          "d": "2026-09-11",
-          "v": 58.54
-        },
-        {
           "d": "2026-09-12",
-          "v": 58.52
+          "v": 58.47
         },
         {
           "d": "2026-09-13",
-          "v": 58.63
+          "v": 58.57
         },
         {
           "d": "2026-09-14",
-          "v": 58.64
-        },
-        {
-          "d": "2026-09-15",
-          "v": 58.75
-        },
-        {
-          "d": "2026-09-16",
-          "v": 58.75
-        },
-        {
-          "d": "2026-09-17",
-          "v": 58.68
-        },
-        {
-          "d": "2026-09-18",
-          "v": 58.62
-        },
-        {
-          "d": "2026-09-19",
           "v": 58.59
         },
         {
+          "d": "2026-09-15",
+          "v": 58.7
+        },
+        {
+          "d": "2026-09-16",
+          "v": 58.7
+        },
+        {
+          "d": "2026-09-17",
+          "v": 58.62
+        },
+        {
+          "d": "2026-09-18",
+          "v": 58.56
+        },
+        {
+          "d": "2026-09-19",
+          "v": 58.53
+        },
+        {
           "d": "2026-09-20",
-          "v": 58.54
+          "v": 58.49
         },
         {
           "d": "2026-09-21",
-          "v": 58.67
+          "v": 58.62
         },
         {
           "d": "2026-09-22",
-          "v": 58.7
+          "v": 58.64
         },
         {
           "d": "2026-09-23",
-          "v": 58.73
+          "v": 58.68
         },
         {
           "d": "2026-09-24",
-          "v": 58.72
+          "v": 58.67
         },
         {
           "d": "2026-09-25",
-          "v": 58.68
-        },
-        {
-          "d": "2026-09-26",
-          "v": 58.7
-        },
-        {
-          "d": "2026-09-27",
-          "v": 58.73
-        },
-        {
-          "d": "2026-09-28",
           "v": 58.63
         },
         {
-          "d": "2026-09-29",
-          "v": 58.68
-        },
-        {
-          "d": "2026-09-30",
+          "d": "2026-09-26",
           "v": 58.65
         },
         {
+          "d": "2026-09-27",
+          "v": 58.68
+        },
+        {
+          "d": "2026-09-28",
+          "v": 58.58
+        },
+        {
+          "d": "2026-09-29",
+          "v": 58.63
+        },
+        {
+          "d": "2026-09-30",
+          "v": 58.6
+        },
+        {
           "d": "2026-10-01",
-          "v": 58.71
+          "v": 58.66
         },
         {
           "d": "2026-10-02",
-          "v": 58.79
+          "v": 58.73
         },
         {
           "d": "2026-10-03",
-          "v": 58.76
+          "v": 58.7
         },
         {
           "d": "2026-10-04",
-          "v": 58.8
+          "v": 58.75
         },
         {
           "d": "2026-10-05",
-          "v": 58.78
+          "v": 58.73
         },
         {
           "d": "2026-10-06",
-          "v": 58.8
+          "v": 58.75
         },
         {
           "d": "2026-10-07",
-          "v": 58.96
+          "v": 58.91
         },
         {
           "d": "2026-10-08",
-          "v": 59.14
+          "v": 59.08
         },
         {
           "d": "2026-10-09",
-          "v": 59.18
+          "v": 59.12
         },
         {
           "d": "2026-10-10",
-          "v": 59.16
+          "v": 59.1
         },
         {
           "d": "2026-10-11",
-          "v": 59.13
+          "v": 59.07
         },
         {
           "d": "2026-10-12",
-          "v": 59.24
-        },
-        {
-          "d": "2026-10-13",
-          "v": 59.2
-        },
-        {
-          "d": "2026-10-14",
-          "v": 59.31
-        },
-        {
-          "d": "2026-10-15",
-          "v": 59.29
-        },
-        {
-          "d": "2026-10-16",
-          "v": 59.3
-        },
-        {
-          "d": "2026-10-17",
-          "v": 59.36
-        },
-        {
-          "d": "2026-10-18",
-          "v": 59.39
-        },
-        {
-          "d": "2026-10-19",
-          "v": 59.39
-        },
-        {
-          "d": "2026-10-20",
-          "v": 59.36
-        },
-        {
-          "d": "2026-10-21",
-          "v": 59.38
-        },
-        {
-          "d": "2026-10-22",
-          "v": 59.4
-        },
-        {
-          "d": "2026-10-23",
-          "v": 59.38
-        },
-        {
-          "d": "2026-10-24",
-          "v": 59.46
-        },
-        {
-          "d": "2026-10-25",
-          "v": 59.48
-        },
-        {
-          "d": "2026-10-26",
-          "v": 59.5
-        },
-        {
-          "d": "2026-10-27",
-          "v": 59.49
-        },
-        {
-          "d": "2026-10-28",
-          "v": 59.5
-        },
-        {
-          "d": "2026-10-29",
-          "v": 59.53
-        },
-        {
-          "d": "2026-10-30",
-          "v": 59.49
-        },
-        {
-          "d": "2026-10-31",
-          "v": 59.48
-        },
-        {
-          "d": "2026-11-01",
-          "v": 59.49
-        },
-        {
-          "d": "2026-11-02",
-          "v": 59.41
-        },
-        {
-          "d": "2026-11-03",
-          "v": 59.39
-        },
-        {
-          "d": "2026-11-04",
           "v": 59.18
         },
         {
+          "d": "2026-10-13",
+          "v": 59.14
+        },
+        {
+          "d": "2026-10-14",
+          "v": 59.25
+        },
+        {
+          "d": "2026-10-15",
+          "v": 59.23
+        },
+        {
+          "d": "2026-10-16",
+          "v": 59.24
+        },
+        {
+          "d": "2026-10-17",
+          "v": 59.3
+        },
+        {
+          "d": "2026-10-18",
+          "v": 59.33
+        },
+        {
+          "d": "2026-10-19",
+          "v": 59.33
+        },
+        {
+          "d": "2026-10-20",
+          "v": 59.29
+        },
+        {
+          "d": "2026-10-21",
+          "v": 59.32
+        },
+        {
+          "d": "2026-10-22",
+          "v": 59.34
+        },
+        {
+          "d": "2026-10-23",
+          "v": 59.32
+        },
+        {
+          "d": "2026-10-24",
+          "v": 59.39
+        },
+        {
+          "d": "2026-10-25",
+          "v": 59.41
+        },
+        {
+          "d": "2026-10-26",
+          "v": 59.44
+        },
+        {
+          "d": "2026-10-27",
+          "v": 59.42
+        },
+        {
+          "d": "2026-10-28",
+          "v": 59.43
+        },
+        {
+          "d": "2026-10-29",
+          "v": 59.46
+        },
+        {
+          "d": "2026-10-30",
+          "v": 59.43
+        },
+        {
+          "d": "2026-10-31",
+          "v": 59.41
+        },
+        {
+          "d": "2026-11-01",
+          "v": 59.42
+        },
+        {
+          "d": "2026-11-02",
+          "v": 59.34
+        },
+        {
+          "d": "2026-11-03",
+          "v": 59.33
+        },
+        {
+          "d": "2026-11-04",
+          "v": 59.12
+        },
+        {
           "d": "2026-11-05",
-          "v": 59.38
+          "v": 59.31
         },
         {
           "d": "2026-11-06",
-          "v": 59.35
+          "v": 59.29
         },
         {
           "d": "2026-11-07",
-          "v": 59.35
+          "v": 59.29
         },
         {
           "d": "2026-11-08",
-          "v": 59.68
+          "v": 59.61
         },
         {
           "d": "2026-11-09",
-          "v": 59.71
+          "v": 59.64
+        },
+        {
+          "d": "2026-11-10",
+          "v": 59.79
         }
       ],
       "emtia_normalize_60g": {
         "Brent Petrol": [
           {
-            "d": "2026-08-17",
-            "v": 0.0,
-            "raw": 90.87
-          },
-          {
             "d": "2026-08-18",
-            "v": 0.17,
+            "v": 0.0,
             "raw": 91.02
           },
           {
             "d": "2026-08-19",
-            "v": 0.83,
+            "v": 0.66,
             "raw": 91.62
           },
           {
             "d": "2026-08-20",
-            "v": 3.2,
+            "v": 3.03,
             "raw": 93.78
           },
           {
             "d": "2026-08-21",
-            "v": 3.87,
+            "v": 3.7,
             "raw": 94.39
           },
           {
             "d": "2026-08-24",
-            "v": 1.43,
+            "v": 1.26,
             "raw": 92.17
           },
           {
             "d": "2026-08-25",
-            "v": -2.52,
+            "v": -2.68,
             "raw": 88.58
           },
           {
             "d": "2026-08-26",
-            "v": -3.33,
+            "v": -3.49,
             "raw": 87.84
           },
           {
             "d": "2026-08-27",
-            "v": -1.29,
+            "v": -1.45,
             "raw": 89.7
           },
           {
             "d": "2026-08-28",
-            "v": -1.72,
+            "v": -1.88,
             "raw": 89.31
           },
           {
             "d": "2026-08-31",
-            "v": -0.42,
+            "v": -0.58,
             "raw": 90.49
           },
           {
             "d": "2026-09-01",
-            "v": 4.16,
+            "v": 3.99,
             "raw": 94.65
           },
           {
             "d": "2026-09-02",
-            "v": 5.24,
+            "v": 5.06,
             "raw": 95.63
           },
           {
             "d": "2026-09-03",
-            "v": 5.12,
+            "v": 4.94,
             "raw": 95.52
           },
           {
             "d": "2026-09-04",
-            "v": 5.95,
+            "v": 5.78,
             "raw": 96.28
           },
           {
             "d": "2026-09-08",
-            "v": 7.76,
+            "v": 7.58,
             "raw": 97.92
           },
           {
             "d": "2026-09-09",
-            "v": 11.38,
+            "v": 11.2,
             "raw": 101.21
           },
           {
             "d": "2026-09-10",
-            "v": 18.44,
+            "v": 18.25,
             "raw": 107.63
           },
           {
             "d": "2026-09-11",
-            "v": 15.12,
+            "v": 14.93,
             "raw": 104.61
           },
           {
             "d": "2026-09-14",
-            "v": 16.3,
+            "v": 16.11,
             "raw": 105.68
           },
           {
             "d": "2026-09-15",
-            "v": 19.68,
+            "v": 19.48,
             "raw": 108.75
           },
           {
             "d": "2026-09-16",
-            "v": 16.46,
+            "v": 16.27,
             "raw": 105.83
           },
           {
             "d": "2026-09-17",
-            "v": 15.35,
+            "v": 15.16,
             "raw": 104.82
           },
           {
             "d": "2026-09-18",
-            "v": 14.31,
+            "v": 14.12,
             "raw": 103.87
           },
           {
             "d": "2026-09-21",
-            "v": 10.42,
+            "v": 10.24,
             "raw": 100.34
           },
           {
             "d": "2026-09-22",
-            "v": 9.22,
+            "v": 9.04,
             "raw": 99.25
           },
           {
             "d": "2026-09-23",
-            "v": 13.44,
+            "v": 13.25,
             "raw": 103.08
           },
           {
             "d": "2026-09-24",
-            "v": 17.31,
+            "v": 17.12,
             "raw": 106.6
           },
           {
             "d": "2026-09-25",
-            "v": 14.8,
+            "v": 14.61,
             "raw": 104.32
           },
           {
             "d": "2026-09-28",
-            "v": 15.86,
+            "v": 15.67,
             "raw": 105.28
           },
           {
             "d": "2026-09-29",
-            "v": 12.9,
+            "v": 12.71,
             "raw": 102.59
           },
           {
             "d": "2026-09-30",
-            "v": 13.93,
+            "v": 13.74,
             "raw": 103.53
           },
           {
             "d": "2026-10-01",
-            "v": 12.59,
+            "v": 12.4,
             "raw": 102.31
           },
           {
             "d": "2026-10-02",
-            "v": 12.52,
+            "v": 12.34,
             "raw": 102.25
           },
           {
             "d": "2026-10-05",
-            "v": 10.4,
+            "v": 10.22,
             "raw": 100.32
           },
           {
             "d": "2026-10-06",
-            "v": 10.69,
+            "v": 10.5,
             "raw": 100.58
           },
           {
             "d": "2026-10-07",
-            "v": 10.27,
+            "v": 10.09,
             "raw": 100.2
           },
           {
             "d": "2026-10-08",
-            "v": 14.76,
+            "v": 14.57,
             "raw": 104.28
           },
           {
             "d": "2026-10-09",
-            "v": 15.24,
+            "v": 15.05,
             "raw": 104.72
           },
           {
             "d": "2026-10-12",
-            "v": 17.37,
+            "v": 17.17,
             "raw": 106.65
           },
           {
             "d": "2026-10-13",
-            "v": 16.31,
+            "v": 16.12,
             "raw": 105.69
           },
           {
             "d": "2026-10-14",
-            "v": 16.72,
+            "v": 16.52,
             "raw": 106.06
           },
           {
             "d": "2026-10-15",
-            "v": 16.56,
+            "v": 16.37,
             "raw": 105.92
           },
           {
             "d": "2026-10-16",
-            "v": 20.9,
+            "v": 20.7,
             "raw": 109.86
           },
           {
             "d": "2026-10-19",
-            "v": 20.56,
+            "v": 20.36,
             "raw": 109.55
           },
           {
             "d": "2026-10-20",
-            "v": 19.72,
+            "v": 19.52,
             "raw": 108.79
           },
           {
             "d": "2026-10-21",
-            "v": 19.75,
+            "v": 19.56,
             "raw": 108.82
           },
           {
             "d": "2026-10-22",
-            "v": 24.54,
+            "v": 24.34,
             "raw": 113.17
           },
           {
             "d": "2026-10-23",
-            "v": 28.45,
+            "v": 28.24,
             "raw": 116.72
           },
           {
             "d": "2026-10-26",
-            "v": 27.45,
+            "v": 27.24,
             "raw": 115.81
           },
           {
             "d": "2026-10-27",
-            "v": 25.32,
+            "v": 25.12,
             "raw": 113.88
           },
           {
             "d": "2026-10-28",
-            "v": 26.91,
+            "v": 26.7,
             "raw": 115.32
           },
           {
             "d": "2026-10-29",
-            "v": 26.42,
+            "v": 26.21,
             "raw": 114.88
           },
           {
             "d": "2026-10-30",
-            "v": 29.46,
+            "v": 29.25,
             "raw": 117.64
           },
           {
             "d": "2026-11-02",
-            "v": 15.3,
+            "v": 15.11,
             "raw": 104.77
           },
           {
             "d": "2026-11-03",
-            "v": 14.01,
+            "v": 13.82,
             "raw": 103.6
           },
           {
             "d": "2026-11-04",
-            "v": 4.13,
+            "v": 3.96,
             "raw": 94.62
           },
           {
             "d": "2026-11-05",
-            "v": 8.17,
+            "v": 7.99,
             "raw": 98.29
           },
           {
             "d": "2026-11-06",
-            "v": 8.2,
+            "v": 8.02,
             "raw": 98.32
           },
           {
             "d": "2026-11-09",
-            "v": 1.58,
-            "raw": 92.31
+            "v": 1.7,
+            "raw": 92.57
+          },
+          {
+            "d": "2026-11-10",
+            "v": 1.03,
+            "raw": 91.96
           }
         ],
         "Bakır": [
           {
-            "d": "2026-08-17",
-            "v": 0.0,
-            "raw": 6.6
-          },
-          {
             "d": "2026-08-18",
-            "v": -1.84,
+            "v": 0.0,
             "raw": 6.48
           },
           {
             "d": "2026-08-19",
-            "v": -1.76,
+            "v": 0.08,
             "raw": 6.49
           },
           {
             "d": "2026-08-20",
-            "v": -2.18,
+            "v": -0.35,
             "raw": 6.46
           },
           {
             "d": "2026-08-21",
-            "v": -0.37,
+            "v": 1.5,
             "raw": 6.58
           },
           {
             "d": "2026-08-24",
-            "v": -0.08,
+            "v": 1.8,
             "raw": 6.6
           },
           {
             "d": "2026-08-25",
-            "v": 1.6,
+            "v": 3.5,
             "raw": 6.71
           },
           {
             "d": "2026-08-26",
-            "v": -0.14,
+            "v": 1.73,
             "raw": 6.59
           },
           {
             "d": "2026-08-27",
-            "v": -0.26,
+            "v": 1.61,
             "raw": 6.59
           },
           {
             "d": "2026-08-28",
-            "v": -0.64,
+            "v": 1.23,
             "raw": 6.56
           },
           {
             "d": "2026-08-31",
-            "v": -0.16,
+            "v": 1.71,
             "raw": 6.59
           },
           {
             "d": "2026-09-01",
-            "v": -1.48,
+            "v": 0.37,
             "raw": 6.51
           },
           {
             "d": "2026-09-02",
-            "v": -1.56,
+            "v": 0.29,
             "raw": 6.5
           },
           {
             "d": "2026-09-03",
-            "v": -0.41,
+            "v": 1.46,
             "raw": 6.58
           },
           {
             "d": "2026-09-04",
-            "v": -0.11,
+            "v": 1.77,
             "raw": 6.6
           },
           {
             "d": "2026-09-08",
-            "v": 2.04,
+            "v": 3.96,
             "raw": 6.74
           },
           {
             "d": "2026-09-09",
-            "v": 3.02,
+            "v": 4.95,
             "raw": 6.8
           },
           {
             "d": "2026-09-10",
-            "v": -2.07,
+            "v": -0.24,
             "raw": 6.47
           },
           {
             "d": "2026-09-11",
-            "v": -2.04,
+            "v": -0.2,
             "raw": 6.47
           },
           {
             "d": "2026-09-14",
-            "v": -4.15,
+            "v": -2.35,
             "raw": 6.33
           },
           {
             "d": "2026-09-15",
-            "v": -3.57,
+            "v": -1.76,
             "raw": 6.37
           },
           {
             "d": "2026-09-16",
-            "v": -2.61,
+            "v": -0.79,
             "raw": 6.43
           },
           {
             "d": "2026-09-17",
-            "v": -0.26,
+            "v": 1.6,
             "raw": 6.59
           },
           {
             "d": "2026-09-18",
-            "v": 0.17,
+            "v": 2.04,
             "raw": 6.61
           },
           {
             "d": "2026-09-21",
-            "v": 1.25,
+            "v": 3.15,
             "raw": 6.69
           },
           {
             "d": "2026-09-22",
-            "v": 2.35,
+            "v": 4.27,
             "raw": 6.76
           },
           {
             "d": "2026-09-23",
-            "v": 1.12,
+            "v": 3.02,
             "raw": 6.68
           },
           {
             "d": "2026-09-24",
-            "v": 1.73,
+            "v": 3.64,
             "raw": 6.72
           },
           {
             "d": "2026-09-25",
-            "v": 1.39,
+            "v": 3.29,
             "raw": 6.7
           },
           {
             "d": "2026-09-28",
-            "v": -0.58,
+            "v": 1.29,
             "raw": 6.57
           },
           {
             "d": "2026-09-29",
-            "v": -0.92,
+            "v": 0.94,
             "raw": 6.54
           },
           {
             "d": "2026-09-30",
-            "v": -0.68,
+            "v": 1.18,
             "raw": 6.56
           },
           {
             "d": "2026-10-01",
-            "v": -1.85,
+            "v": -0.01,
             "raw": 6.48
           },
           {
             "d": "2026-10-02",
-            "v": -1.7,
+            "v": 0.15,
             "raw": 6.49
           },
           {
             "d": "2026-10-05",
-            "v": -0.28,
+            "v": 1.59,
             "raw": 6.59
           },
           {
             "d": "2026-10-06",
-            "v": -0.14,
+            "v": 1.73,
             "raw": 6.59
           },
           {
             "d": "2026-10-07",
-            "v": -0.11,
+            "v": 1.76,
             "raw": 6.6
           },
           {
             "d": "2026-10-08",
-            "v": -1.29,
+            "v": 0.56,
             "raw": 6.52
           },
           {
             "d": "2026-10-09",
-            "v": 0.58,
+            "v": 2.47,
             "raw": 6.64
           },
           {
             "d": "2026-10-12",
-            "v": 1.43,
+            "v": 3.33,
             "raw": 6.7
           },
           {
             "d": "2026-10-13",
-            "v": 1.12,
+            "v": 3.02,
             "raw": 6.68
           },
           {
             "d": "2026-10-14",
-            "v": 0.11,
+            "v": 1.99,
             "raw": 6.61
           },
           {
             "d": "2026-10-15",
-            "v": -1.4,
+            "v": 0.45,
             "raw": 6.51
           },
           {
             "d": "2026-10-16",
-            "v": -1.11,
+            "v": 0.75,
             "raw": 6.53
           },
           {
             "d": "2026-10-19",
-            "v": -1.0,
+            "v": 0.86,
             "raw": 6.54
           },
           {
             "d": "2026-10-20",
-            "v": -0.57,
+            "v": 1.3,
             "raw": 6.57
           },
           {
             "d": "2026-10-21",
-            "v": -0.92,
+            "v": 0.93,
             "raw": 6.54
           },
           {
             "d": "2026-10-22",
-            "v": -3.66,
+            "v": -1.85,
             "raw": 6.36
           },
           {
             "d": "2026-10-23",
-            "v": -1.94,
+            "v": -0.1,
             "raw": 6.48
           },
           {
             "d": "2026-10-26",
-            "v": -1.45,
+            "v": 0.39,
             "raw": 6.51
           },
           {
             "d": "2026-10-27",
-            "v": 0.27,
+            "v": 2.15,
             "raw": 6.62
           },
           {
             "d": "2026-10-28",
-            "v": 0.57,
+            "v": 2.45,
             "raw": 6.64
           },
           {
             "d": "2026-10-29",
-            "v": -0.35,
+            "v": 1.52,
             "raw": 6.58
           },
           {
             "d": "2026-10-30",
-            "v": -2.2,
+            "v": -0.37,
             "raw": 6.46
           },
           {
             "d": "2026-11-02",
-            "v": -0.92,
+            "v": 0.94,
             "raw": 6.54
           },
           {
             "d": "2026-11-03",
-            "v": -3.41,
+            "v": -1.6,
             "raw": 6.38
           },
           {
             "d": "2026-11-04",
-            "v": -3.04,
+            "v": -1.23,
             "raw": 6.4
           },
           {
             "d": "2026-11-05",
-            "v": -5.38,
+            "v": -3.6,
             "raw": 6.25
           },
           {
             "d": "2026-11-06",
-            "v": -5.84,
+            "v": -4.08,
             "raw": 6.22
           },
           {
             "d": "2026-11-09",
-            "v": -3.38,
-            "raw": 6.38
+            "v": -2.38,
+            "raw": 6.33
+          },
+          {
+            "d": "2026-11-10",
+            "v": -3.28,
+            "raw": 6.27
           }
         ],
         "Buğday": [
           {
-            "d": "2026-08-17",
-            "v": 0.0,
-            "raw": 674.75
-          },
-          {
             "d": "2026-08-18",
-            "v": -1.52,
+            "v": 0.0,
             "raw": 664.5
           },
           {
             "d": "2026-08-19",
-            "v": 0.82,
+            "v": 2.37,
             "raw": 680.25
           },
           {
             "d": "2026-08-20",
-            "v": 1.19,
+            "v": 2.75,
             "raw": 682.75
           },
           {
             "d": "2026-08-21",
-            "v": 1.0,
+            "v": 2.56,
             "raw": 681.5
           },
           {
             "d": "2026-08-24",
-            "v": 1.04,
+            "v": 2.6,
             "raw": 681.75
           },
           {
             "d": "2026-08-25",
-            "v": 1.59,
+            "v": 3.16,
             "raw": 685.5
           },
           {
             "d": "2026-08-26",
-            "v": 8.26,
+            "v": 9.93,
             "raw": 730.5
           },
           {
             "d": "2026-08-27",
-            "v": 10.08,
+            "v": 11.78,
             "raw": 742.75
           },
           {
             "d": "2026-08-28",
-            "v": 13.67,
+            "v": 15.43,
             "raw": 767.0
           },
           {
             "d": "2026-08-31",
-            "v": 12.12,
+            "v": 13.84,
             "raw": 756.5
           },
           {
             "d": "2026-09-01",
-            "v": 13.23,
+            "v": 14.97,
             "raw": 764.0
           },
           {
             "d": "2026-09-02",
-            "v": 11.86,
+            "v": 13.58,
             "raw": 754.75
           },
           {
             "d": "2026-09-03",
-            "v": 9.08,
+            "v": 10.76,
             "raw": 736.0
           },
           {
             "d": "2026-09-04",
-            "v": 6.11,
+            "v": 7.75,
             "raw": 716.0
           },
           {
             "d": "2026-09-08",
-            "v": 8.23,
+            "v": 9.89,
             "raw": 730.25
           },
           {
             "d": "2026-09-09",
-            "v": 5.41,
+            "v": 7.04,
             "raw": 711.25
           },
           {
             "d": "2026-09-10",
-            "v": 7.19,
+            "v": 8.84,
             "raw": 723.25
           },
           {
             "d": "2026-09-11",
-            "v": 4.78,
+            "v": 6.4,
             "raw": 707.0
           },
           {
             "d": "2026-09-14",
-            "v": 4.78,
+            "v": 6.4,
             "raw": 707.0
           },
           {
             "d": "2026-09-15",
-            "v": 7.97,
+            "v": 9.63,
             "raw": 728.5
           },
           {
             "d": "2026-09-16",
-            "v": 8.3,
+            "v": 9.97,
             "raw": 730.75
           },
           {
             "d": "2026-09-17",
-            "v": 7.74,
+            "v": 9.41,
             "raw": 727.0
           },
           {
             "d": "2026-09-18",
-            "v": 5.85,
+            "v": 7.49,
             "raw": 714.25
           },
           {
             "d": "2026-09-21",
-            "v": 7.71,
+            "v": 9.37,
             "raw": 726.75
           },
           {
             "d": "2026-09-22",
-            "v": 6.3,
+            "v": 7.94,
             "raw": 717.25
           },
           {
             "d": "2026-09-23",
-            "v": 5.0,
+            "v": 6.62,
             "raw": 708.5
           },
           {
             "d": "2026-09-24",
-            "v": 4.78,
+            "v": 6.4,
             "raw": 707.0
           },
           {
             "d": "2026-09-25",
-            "v": 4.22,
+            "v": 5.83,
             "raw": 703.25
           },
           {
             "d": "2026-09-28",
-            "v": 2.07,
+            "v": 3.65,
             "raw": 688.75
           },
           {
             "d": "2026-09-29",
-            "v": 2.67,
+            "v": 4.25,
             "raw": 692.75
           },
           {
             "d": "2026-09-30",
-            "v": 0.15,
+            "v": 1.69,
             "raw": 675.75
           },
           {
             "d": "2026-10-01",
-            "v": 1.19,
+            "v": 2.75,
             "raw": 682.75
           },
           {
             "d": "2026-10-02",
-            "v": 1.22,
+            "v": 2.78,
             "raw": 683.0
           },
           {
             "d": "2026-10-05",
-            "v": 2.59,
+            "v": 4.18,
             "raw": 692.25
           },
           {
             "d": "2026-10-06",
-            "v": 4.37,
+            "v": 5.98,
             "raw": 704.25
           },
           {
             "d": "2026-10-07",
-            "v": 1.74,
+            "v": 3.31,
             "raw": 686.5
           },
           {
             "d": "2026-10-08",
-            "v": 1.26,
+            "v": 2.82,
             "raw": 683.25
           },
           {
             "d": "2026-10-09",
-            "v": -0.56,
+            "v": 0.98,
             "raw": 671.0
           },
           {
             "d": "2026-10-12",
-            "v": -0.37,
+            "v": 1.17,
             "raw": 672.25
           },
           {
             "d": "2026-10-13",
-            "v": -0.82,
+            "v": 0.71,
             "raw": 669.25
           },
           {
             "d": "2026-10-14",
-            "v": -0.22,
+            "v": 1.32,
             "raw": 673.25
           },
           {
             "d": "2026-10-15",
-            "v": -0.7,
+            "v": 0.83,
             "raw": 670.0
           },
           {
             "d": "2026-10-16",
-            "v": -2.11,
+            "v": -0.6,
             "raw": 660.5
           },
           {
             "d": "2026-10-19",
-            "v": -2.89,
+            "v": -1.39,
             "raw": 655.25
           },
           {
             "d": "2026-10-20",
-            "v": -4.67,
+            "v": -3.2,
             "raw": 643.25
           },
           {
             "d": "2026-10-21",
-            "v": -6.89,
+            "v": -5.46,
             "raw": 628.25
           },
           {
             "d": "2026-10-22",
-            "v": -7.41,
+            "v": -5.98,
             "raw": 624.75
           },
           {
             "d": "2026-10-23",
-            "v": -7.37,
+            "v": -5.94,
             "raw": 625.0
           },
           {
             "d": "2026-10-26",
-            "v": -8.71,
+            "v": -7.3,
             "raw": 616.0
           },
           {
             "d": "2026-10-27",
-            "v": -9.56,
+            "v": -8.16,
             "raw": 610.25
           },
           {
             "d": "2026-10-28",
-            "v": -11.23,
+            "v": -9.86,
             "raw": 599.0
           },
           {
             "d": "2026-10-29",
-            "v": -10.52,
+            "v": -9.14,
             "raw": 603.75
           },
           {
             "d": "2026-10-30",
-            "v": -10.56,
+            "v": -9.18,
             "raw": 603.5
           },
           {
             "d": "2026-11-02",
-            "v": -10.11,
+            "v": -8.73,
             "raw": 606.5
           },
           {
             "d": "2026-11-03",
-            "v": -11.12,
+            "v": -9.74,
             "raw": 599.75
           },
           {
             "d": "2026-11-04",
-            "v": -11.3,
+            "v": -9.93,
             "raw": 598.5
           },
           {
             "d": "2026-11-05",
-            "v": -11.19,
+            "v": -9.82,
             "raw": 599.25
           },
           {
             "d": "2026-11-06",
-            "v": -12.37,
+            "v": -11.02,
             "raw": 591.25
           },
           {
             "d": "2026-11-09",
-            "v": -12.93,
-            "raw": 587.5
+            "v": -11.51,
+            "raw": 588.0
+          },
+          {
+            "d": "2026-11-10",
+            "v": -10.99,
+            "raw": 591.5
           }
         ],
         "Kahve": [
           {
-            "d": "2026-08-17",
-            "v": 0.0,
-            "raw": 345.1
-          },
-          {
             "d": "2026-08-18",
-            "v": 5.3,
+            "v": 0.0,
             "raw": 363.4
           },
           {
             "d": "2026-08-19",
-            "v": 4.17,
+            "v": -1.07,
             "raw": 359.5
           },
           {
             "d": "2026-08-20",
-            "v": 5.36,
+            "v": 0.06,
             "raw": 363.6
           },
           {
             "d": "2026-08-21",
-            "v": 3.96,
+            "v": -1.28,
             "raw": 358.75
           },
           {
             "d": "2026-08-24",
-            "v": 9.46,
+            "v": 3.95,
             "raw": 377.75
           },
           {
             "d": "2026-08-25",
-            "v": 7.62,
+            "v": 2.2,
             "raw": 371.4
           },
           {
             "d": "2026-08-26",
-            "v": 3.62,
+            "v": -1.6,
             "raw": 357.6
           },
           {
             "d": "2026-08-27",
-            "v": -0.93,
+            "v": -5.92,
             "raw": 341.9
           },
           {
             "d": "2026-08-28",
-            "v": 0.22,
+            "v": -4.83,
             "raw": 345.85
           },
           {
             "d": "2026-08-31",
-            "v": -0.35,
+            "v": -5.37,
             "raw": 343.9
           },
           {
             "d": "2026-09-01",
-            "v": -0.83,
+            "v": -5.82,
             "raw": 342.25
           },
           {
             "d": "2026-09-02",
-            "v": -4.84,
+            "v": -9.63,
             "raw": 328.4
           },
           {
             "d": "2026-09-03",
-            "v": -6.01,
+            "v": -10.75,
             "raw": 324.35
           },
           {
             "d": "2026-09-04",
-            "v": -6.04,
+            "v": -10.77,
             "raw": 324.25
           },
           {
             "d": "2026-09-08",
-            "v": -7.72,
+            "v": -12.37,
             "raw": 318.45
           },
           {
             "d": "2026-09-09",
-            "v": -7.51,
+            "v": -12.16,
             "raw": 319.2
           },
           {
             "d": "2026-09-10",
-            "v": -8.64,
+            "v": -13.24,
             "raw": 315.3
           },
           {
             "d": "2026-09-11",
-            "v": -9.11,
+            "v": -13.69,
             "raw": 313.65
           },
           {
             "d": "2026-09-14",
-            "v": -10.94,
+            "v": -15.42,
             "raw": 307.35
           },
           {
             "d": "2026-09-15",
-            "v": -13.17,
+            "v": -17.54,
             "raw": 299.65
           },
           {
             "d": "2026-09-16",
-            "v": -14.27,
+            "v": -18.59,
             "raw": 295.85
           },
           {
             "d": "2026-09-17",
-            "v": -15.81,
+            "v": -20.05,
             "raw": 290.55
           },
           {
             "d": "2026-09-18",
-            "v": -14.65,
+            "v": -18.95,
             "raw": 294.55
           },
           {
             "d": "2026-09-21",
-            "v": -19.91,
+            "v": -23.94,
             "raw": 276.4
           },
           {
             "d": "2026-09-22",
-            "v": -21.1,
+            "v": -25.07,
             "raw": 272.3
           },
           {
             "d": "2026-09-23",
-            "v": -20.05,
+            "v": -24.08,
             "raw": 275.9
           },
           {
             "d": "2026-09-24",
-            "v": -20.21,
+            "v": -24.23,
             "raw": 275.35
           },
           {
             "d": "2026-09-25",
-            "v": -19.27,
+            "v": -23.34,
             "raw": 278.6
           },
           {
             "d": "2026-09-28",
-            "v": -16.33,
+            "v": -20.54,
             "raw": 288.75
           },
           {
             "d": "2026-09-29",
-            "v": -16.13,
+            "v": -20.35,
             "raw": 289.45
           },
           {
             "d": "2026-09-30",
-            "v": -15.76,
+            "v": -20.01,
             "raw": 290.7
           },
           {
             "d": "2026-10-01",
-            "v": -16.47,
+            "v": -20.68,
             "raw": 288.25
           },
           {
             "d": "2026-10-02",
-            "v": -16.33,
+            "v": -20.54,
             "raw": 288.75
           },
           {
             "d": "2026-10-05",
-            "v": -15.23,
+            "v": -19.5,
             "raw": 292.55
           },
           {
             "d": "2026-10-06",
-            "v": -11.78,
+            "v": -16.22,
             "raw": 304.45
           },
           {
             "d": "2026-10-07",
-            "v": -15.18,
+            "v": -19.46,
             "raw": 292.7
           },
           {
             "d": "2026-10-08",
-            "v": -16.24,
+            "v": -20.46,
             "raw": 289.05
           },
           {
             "d": "2026-10-09",
-            "v": -16.85,
+            "v": -21.04,
             "raw": 286.95
           },
           {
             "d": "2026-10-12",
-            "v": -15.79,
+            "v": -20.03,
             "raw": 290.6
           },
           {
             "d": "2026-10-13",
-            "v": -15.18,
+            "v": -19.46,
             "raw": 292.7
           },
           {
             "d": "2026-10-14",
-            "v": -13.63,
+            "v": -17.98,
             "raw": 298.05
           },
           {
             "d": "2026-10-15",
-            "v": -14.58,
+            "v": -18.88,
             "raw": 294.8
           },
           {
             "d": "2026-10-16",
-            "v": -11.45,
+            "v": -15.91,
             "raw": 305.6
           },
           {
             "d": "2026-10-19",
-            "v": -8.52,
+            "v": -13.13,
             "raw": 315.7
           },
           {
             "d": "2026-10-20",
-            "v": -9.79,
+            "v": -14.34,
             "raw": 311.3
           },
           {
             "d": "2026-10-21",
-            "v": -8.39,
+            "v": -13.0,
             "raw": 316.15
           },
           {
             "d": "2026-10-22",
-            "v": -9.46,
+            "v": -14.02,
             "raw": 312.45
           },
           {
             "d": "2026-10-23",
-            "v": -10.91,
+            "v": -15.4,
             "raw": 307.45
           },
           {
             "d": "2026-10-26",
-            "v": -12.79,
+            "v": -17.18,
             "raw": 300.95
           },
           {
             "d": "2026-10-27",
-            "v": -14.88,
+            "v": -19.17,
             "raw": 293.75
           },
           {
             "d": "2026-10-28",
-            "v": -16.91,
+            "v": -21.09,
             "raw": 286.75
           },
           {
             "d": "2026-10-29",
-            "v": -17.28,
+            "v": -21.45,
             "raw": 285.45
           },
           {
             "d": "2026-10-30",
-            "v": -16.78,
+            "v": -20.97,
             "raw": 287.2
           },
           {
             "d": "2026-11-02",
-            "v": -15.36,
+            "v": -19.62,
             "raw": 292.1
           },
           {
             "d": "2026-11-03",
-            "v": -17.72,
+            "v": -21.86,
             "raw": 283.95
           },
           {
             "d": "2026-11-04",
-            "v": -18.94,
+            "v": -23.02,
             "raw": 279.75
           },
           {
             "d": "2026-11-05",
-            "v": -19.69,
+            "v": -23.73,
             "raw": 277.15
           },
           {
             "d": "2026-11-06",
-            "v": -18.86,
+            "v": -22.95,
             "raw": 280.0
           },
           {
             "d": "2026-11-09",
-            "v": -22.72,
-            "raw": 266.7
+            "v": -24.71,
+            "raw": 273.6
+          },
+          {
+            "d": "2026-11-10",
+            "v": -26.6,
+            "raw": 266.75
           }
         ]
       }
