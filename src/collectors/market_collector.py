@@ -606,7 +606,11 @@ class MarketCollector:
                     onceki_gun=sp_prev_day,
                     onceki_hafta=sp_prev_week,
                     onceki_ay=sp_prev_month,
-                    aciklama="S&P 500 fiyat momentumu, VIX volatilitesi ve piyasa genişliği bazlı duyarlılık.",
+                    aciklama=(
+                        "CNN Fear & Greed endeksi."
+                        if sp_prev_day is not None
+                        else "Yedek hesaplama (CNN'e ulaşılamadı): S&P 500 RSI(14), 125 günlük momentum ve VIX."
+                    ),
                 )
             )
 
@@ -614,24 +618,30 @@ class MarketCollector:
         gold_series = self.fetch_yahoo_series_1y("GC=F")
         if gold_series:
             g_vals = [v for _, v in gold_series]
-            g_rsi = _compute_rsi(g_vals, 14) or 55.0
-            g_ma50 = sum(g_vals[-50:]) / min(len(g_vals), 50)
-            g_ma200 = sum(g_vals[-200:]) / min(len(g_vals), 200)
-            g_mom = min(100.0, max(0.0, 50.0 + ((g_vals[-1] - g_ma50) / g_ma50) * 400.0))
-            g_trend = min(100.0, max(0.0, 50.0 + ((g_vals[-1] - g_ma200) / g_ma200) * 200.0))
-            gold_fg = int(round(0.45 * g_rsi + 0.30 * g_mom + 0.25 * g_trend))
-            # 1 hafta ve 1 ay önceki altın duyarlılığı
-            g_fg_1w = int(round(_compute_rsi(g_vals[:-5], 14) or gold_fg)) if len(g_vals) > 25 else gold_fg
-            g_fg_1m = int(round(_compute_rsi(g_vals[:-21], 14) or gold_fg)) if len(g_vals) > 40 else gold_fg
+
+            def _gold_score(vals: List[float]) -> int:
+                # Kendi hesaplamamız (resmi bir altın F&G endeksi yok): RSI14 + MA50 momentum + MA200 trend
+                rsi = _compute_rsi(vals, 14) or 50.0
+                ma50 = sum(vals[-50:]) / min(len(vals), 50)
+                ma200 = sum(vals[-200:]) / min(len(vals), 200)
+                mom = min(100.0, max(0.0, 50.0 + ((vals[-1] - ma50) / ma50) * 400.0))
+                trend = min(100.0, max(0.0, 50.0 + ((vals[-1] - ma200) / ma200) * 200.0))
+                return int(round(0.45 * rsi + 0.30 * mom + 0.25 * trend))
+
+            gold_fg = _gold_score(g_vals)
+            # Önceki gün / hafta / ay: aynı formül, serinin o güne kadar olan kısmıyla
+            g_fg_1d = _gold_score(g_vals[:-1]) if len(g_vals) > 20 else None
+            g_fg_1w = _gold_score(g_vals[:-5]) if len(g_vals) > 25 else None
+            g_fg_1m = _gold_score(g_vals[:-21]) if len(g_vals) > 40 else None
             items.append(
                 FearGreedItem(
                     piyasa="Altın (Ons Gold)",
                     skor=gold_fg,
                     durum_tr=_fear_greed_label_tr(gold_fg),
-                    onceki_gun=gold_fg,
+                    onceki_gun=g_fg_1d,
                     onceki_hafta=g_fg_1w,
                     onceki_ay=g_fg_1m,
-                    aciklama="Ons Altın RSI(14), 50/200 günlük ortalama sapması ve güvenli liman talebi endeksi.",
+                    aciklama="Kendi hesaplamamız: ons altın RSI(14), 50 günlük momentum ve 200 günlük trend sapması.",
                 )
             )
 
