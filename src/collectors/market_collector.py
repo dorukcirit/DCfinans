@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 import math
 import re
 from typing import Dict, List, Optional, Tuple
@@ -11,7 +11,7 @@ from src.models import (
     GoldSilverSummary,
     MultiPeriodAsset,
 )
-from src.collectors.backup_validators import BackupDataValidator
+from src.collectors.backup_validators import BackupDataValidator, TRADINGVIEW_LEVEL_MAP
 
 DEFAULT_HEADERS = {
     "User-Agent": (
@@ -82,6 +82,28 @@ class MarketCollector:
         # symbol -> list of (date_str 'YYYY-MM-DD', close_float)
         self._series_cache: Dict[str, List[Tuple[str, float]]] = {}
         self._source_status: Dict[str, str] = {}
+        # yahoo_symbol -> TradingView seviye/performans verisi (tek toplu istekle doldurulur)
+        self._tv_levels: Optional[Dict[str, Dict[str, Optional[float]]]] = None
+
+    def _get_tv_levels(self, symbol: str) -> Dict[str, Optional[float]]:
+        if self._tv_levels is None:
+            self._tv_levels = self.validator.fetch_tradingview_levels(list(TRADINGVIEW_LEVEL_MAP))
+        return self._tv_levels.get(symbol, {})
+
+    def _enrich_with_levels(self, asset: MultiPeriodAsset) -> None:
+        """Varlığa tüm zamanlar / 52 hafta zirvesi, zirveye uzaklık ve 5Y değişimini ekler."""
+        lv = self._get_tv_levels(asset.kod)
+        close = lv.get("close")
+        ath = lv.get("High.All")
+        h52 = lv.get("price_52_week_high")
+        if close is None:
+            return
+        asset.zirve_tum_zamanlar = round(ath, 4) if ath else None
+        asset.zirveye_uzaklik_yuzde = _pct_change(close, ath)
+        asset.zirve_52h = round(h52, 4) if h52 else None
+        asset.zirve_52h_uzaklik_yuzde = _pct_change(close, h52)
+        p5 = lv.get("Perf.5Y")
+        asset.degisim_5y = round(p5, 2) if p5 is not None else None
 
     def fetch_yahoo_series_1y(self, symbol: str) -> List[Tuple[str, float]]:
         """
@@ -116,7 +138,7 @@ class MarketCollector:
                 series: List[Tuple[str, float]] = []
                 for ts, cl in zip(timestamps, closes):
                     if ts is not None and cl is not None and not math.isnan(float(cl)):
-                        dt_str = datetime.utcfromtimestamp(int(ts)).strftime("%Y-%m-%d")
+                        dt_str = datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%d")
                         series.append((dt_str, float(cl)))
 
                 dedup: Dict[str, float] = {}
@@ -187,28 +209,27 @@ class MarketCollector:
         }
 
     def fetch_tr_bonds_and_cds(self) -> Dict[str, Dict[str, Optional[float]]]:
-        """Türkiye 2Y, 10Y Tahvil Faizi ve 5 Yıllık CDS primini çoklu kaynaktan çeker."""
-        out: Dict[str, Dict[str, Optional[float]]] = {
-            "TR2Y": {"fiyat": 38.45, "1g": -0.25, "1h": -0.80, "1a": -2.40, "3a": -4.10, "ytd": -6.50, "1y": -8.20},
-            "TR10Y": {"fiyat": 28.15, "1g": -0.15, "1h": -0.45, "1a": -1.20, "3a": -2.30, "ytd": -3.10, "1y": -4.50},
-            "TR_CDS_5Y": {"fiyat": 258.40, "1g": -0.40, "1h": -1.60, "1a": -3.20, "3a": -4.80, "ytd": -8.40, "1y": -18.50},
-        }
-        try:
-            resp = self.session.get("https://www.bloomberght.com/tahvil", timeout=self.timeout)
-            if resp.status_code == 200:
-                html = resp.text
-                m2 = re.search(r"2\s*Yıllık.*?(\d{2}[,\.]\d{2})", html, re.IGNORECASE | re.DOTALL)
-                if m2:
-                    val2 = float(m2.group(1).replace(",", "."))
-                    if 15.0 <= val2 <= 65.0:
-                        out["TR2Y"]["fiyat"] = val2
-                m10 = re.search(r"10\s*Yıllık.*?(\d{2}[,\.]\d{2})", html, re.IGNORECASE | re.DOTALL)
-                if m10:
-                    val10 = float(m10.group(1).replace(",", "."))
-                    if 15.0 <= val10 <= 55.0:
-                        out["TR10Y"]["fiyat"] = val10
-        except Exception:
-            pass
+        """
+        Türkiye 2Y ve 10Y gösterge tahvil faizlerini TradingView'dan (TVC:TR02Y, TVC:TR10Y) çeker.
+        Dönemsel değişimler faiz seviyesinin yüzdesel değişimidir (diğer varlıklarla tutarlı).
+        5Y CDS için şu an erişilebilir ücretsiz bir kaynak yok: sahte değer üretmek yerine boş bırakılır.
+        """
+        out: Dict[str, Dict[str, Optional[float]]] = {}
+        for kod in ("TR2Y", "TR10Y"):
+            lv = self._get_tv_levels(kod)
+            if lv.get("close") is None:
+                out[kod] = {}
+                continue
+            out[kod] = {
+                "fiyat": round(lv["close"], 2),
+                "1g": round(lv["change"], 2) if lv.get("change") is not None else None,
+                "1h": round(lv["Perf.W"], 2) if lv.get("Perf.W") is not None else None,
+                "1a": round(lv["Perf.1M"], 2) if lv.get("Perf.1M") is not None else None,
+                "3a": round(lv["Perf.3M"], 2) if lv.get("Perf.3M") is not None else None,
+                "ytd": round(lv["Perf.YTD"], 2) if lv.get("Perf.YTD") is not None else None,
+                "1y": round(lv["Perf.Y"], 2) if lv.get("Perf.Y") is not None else None,
+            }
+        out["TR_CDS_5Y"] = {}
         return out
 
     def collect_multi_period_category(
@@ -228,24 +249,25 @@ class MarketCollector:
                 if tr_special is None:
                     tr_special = self.fetch_tr_bonds_and_cds()
                 info = tr_special.get(kod, {})
-                assets.append(
-                    MultiPeriodAsset(
-                        kod=kod,
-                        ad=ad,
-                        okunus=okunus,
-                        birim=birim,
-                        kategori=category_name,
-                        fiyat=info.get("fiyat"),
-                        degisim_1g=info.get("1g"),
-                        degisim_1h=info.get("1h"),
-                        degisim_1a=info.get("1a"),
-                        degisim_3a=info.get("3a"),
-                        degisim_ytd=info.get("ytd"),
-                        degisim_1y=info.get("1y"),
-                        not_bilgisi=not_bilgisi,
-                        kaynak="Tahvil / CDS Piyasası",
-                    )
+                tr_asset = MultiPeriodAsset(
+                    kod=kod,
+                    ad=ad,
+                    okunus=okunus,
+                    birim=birim,
+                    kategori=category_name,
+                    fiyat=info.get("fiyat"),
+                    degisim_1g=info.get("1g"),
+                    degisim_1h=info.get("1h"),
+                    degisim_1a=info.get("1a"),
+                    degisim_3a=info.get("3a"),
+                    degisim_ytd=info.get("ytd"),
+                    degisim_1y=info.get("1y"),
+                    not_bilgisi=not_bilgisi,
+                    kaynak="TradingView" if info else "Veri Yok",
                 )
+                if info:
+                    self._enrich_with_levels(tr_asset)
+                assets.append(tr_asset)
                 continue
 
             series = self.fetch_yahoo_series_1y(kod)
@@ -254,8 +276,7 @@ class MarketCollector:
             onceki = metrics["onceki_kapanis"]
             kaynak_etiketi = self._source_status.get(kod, "Yahoo Finance")
 
-            assets.append(
-                MultiPeriodAsset(
+            asset = MultiPeriodAsset(
                     kod=kod,
                     ad=ad,
                     okunus=okunus,
@@ -272,9 +293,63 @@ class MarketCollector:
                     not_bilgisi=not_bilgisi,
                     kaynak=kaynak_etiketi,
                 )
-            )
+            self._enrich_with_levels(asset)
+            assets.append(asset)
 
         return assets
+
+    def _fetch_yahoo_raw(self, symbol: str, rng: str = "5y") -> List[Tuple[str, float]]:
+        """Yahoo Finance'ten uzun dönem günlük kapanış serisi (çapraz doğrulamasız, sadece seviye hesabı için)."""
+        for host in ("query1", "query2"):
+            try:
+                resp = self.session.get(
+                    f"https://{host}.finance.yahoo.com/v8/finance/chart/{symbol}?interval=1d&range={rng}",
+                    timeout=self.timeout,
+                )
+                if resp.status_code != 200:
+                    continue
+                result = resp.json().get("chart", {}).get("result") or []
+                if not result:
+                    continue
+                ts_list = result[0].get("timestamp", []) or []
+                closes = result[0].get("indicators", {}).get("quote", [{}])[0].get("close", []) or []
+                dedup: Dict[str, float] = {}
+                for ts, cl in zip(ts_list, closes):
+                    if ts is not None and cl is not None and not math.isnan(float(cl)):
+                        dedup[datetime.fromtimestamp(int(ts), tz=timezone.utc).strftime("%Y-%m-%d")] = float(cl)
+                if dedup:
+                    return sorted(dedup.items())
+            except Exception:
+                continue
+        return []
+
+    def _bist100_usd_5y_levels(self) -> Dict[str, object]:
+        """BIST 100'ün dolar bazında son 5 yıllık zirvesi ve dibi (tarihleriyle) ve bugünkü uzaklığı."""
+        bist = self._fetch_yahoo_raw("XU100.IS", "5y")
+        usd = self._fetch_yahoo_raw("USDTRY=X", "5y")
+        if not bist or not usd:
+            return {}
+        usd_map = dict(usd)
+        last_usd = usd[0][1]
+        seri: List[Tuple[str, float]] = []
+        for d_str, val in bist:
+            if usd_map.get(d_str, 0) > 0:
+                last_usd = usd_map[d_str]
+            if last_usd > 0:
+                seri.append((d_str, val / last_usd))
+        if not seri:
+            return {}
+        curr = seri[-1][1]
+        z_tarih, z_val = max(seri, key=lambda x: x[1])
+        d_tarih, d_val = min(seri, key=lambda x: x[1])
+        return {
+            "zirve_5y_usd": round(z_val, 2),
+            "zirve_5y_tarih": z_tarih,
+            "zirveye_uzaklik_5y_yuzde": _pct_change(curr, z_val),
+            "dip_5y_usd": round(d_val, 2),
+            "dip_5y_tarih": d_tarih,
+            "dibe_uzaklik_5y_yuzde": _pct_change(curr, d_val),
+        }
 
     def compute_bist100_usd_technical(self) -> BistUsdTechnicalAnalysis:
         """
@@ -384,7 +459,7 @@ class MarketCollector:
             f"Endeks {ma_ifadesi} seyrederken RSI(14) göstergesi {rsi14} seviyesindedir."
         )
 
-        return BistUsdTechnicalAnalysis(
+        result = BistUsdTechnicalAnalysis(
             guncel_usd=curr_usd,
             guncel_tl=round(curr_tl, 2),
             usdtry_kuru=round(curr_kur, 2),
@@ -420,6 +495,9 @@ class MarketCollector:
             rsi14_usd=rsi14,
             teknik_ozet_yorum=yorum,
         )
+        for k, v in self._bist100_usd_5y_levels().items():
+            setattr(result, k, v)
+        return result
 
     def compute_gold_silver_summary(self) -> GoldSilverSummary:
         """

@@ -53,6 +53,41 @@ TRADINGVIEW_SYMBOL_MAP: Dict[str, Tuple[str, str]] = {
     "XUSIN.IS": ("turkey", "BIST:XUSIN"),
 }
 
+# Yahoo Finance Sembolü -> TradingView (global scanner) uzun vadeli seviye eşleşmesi.
+# Not: BIST sektör endeksleri (XUSIN vb.) scanner'da bulunmuyor.
+TRADINGVIEW_LEVEL_MAP: Dict[str, str] = {
+    "XU100.IS": "BIST:XU100",
+    "XU030.IS": "BIST:XU030",
+    "XBANK.IS": "BIST:XBANK",
+    "^GSPC": "SP:SPX",
+    "^IXIC": "NASDAQ:IXIC",
+    "^DJI": "DJ:DJI",
+    "^VIX": "TVC:VIX",
+    "GC=F": "TVC:GOLD",
+    "SI=F": "TVC:SILVER",
+    "USDTRY=X": "FX_IDC:USDTRY",
+    "EURTRY=X": "FX_IDC:EURTRY",
+    "EURUSD=X": "FX:EURUSD",
+    "DX-Y.NYB": "TVC:DXY",
+    "^FVX": "TVC:US05Y",
+    "^TNX": "TVC:US10Y",
+    "^TYX": "TVC:US30Y",
+    "TR2Y": "TVC:TR02Y",
+    "TR10Y": "TVC:TR10Y",
+    "BZ=F": "ICEEUR:BRN1!",
+    "HG=F": "COMEX:HG1!",
+    "ZW=F": "CBOT:ZW1!",
+    "KC=F": "ICEUS:KC1!",
+    "BTC-USD": "BITSTAMP:BTCUSD",
+    "ETH-USD": "BITSTAMP:ETHUSD",
+    "XRP-USD": "BITSTAMP:XRPUSD",
+}
+
+TRADINGVIEW_LEVEL_COLUMNS = [
+    "close", "change", "Perf.W", "Perf.1M", "Perf.3M", "Perf.YTD", "Perf.Y", "Perf.5Y",
+    "High.All", "price_52_week_high",
+]
+
 
 class BackupDataValidator:
     """
@@ -146,6 +181,34 @@ class BackupDataValidator:
         except Exception:
             pass
         return None
+
+    def fetch_tradingview_levels(self, yahoo_symbols: List[str]) -> Dict[str, Dict[str, Optional[float]]]:
+        """
+        TradingView global scanner'dan tek istekle; kapanış, günlük/haftalık/aylık/3A/YTD/1Y/5Y
+        performans, tüm zamanların zirvesi ve 52 haftalık zirveyi çeker.
+        Dönüş: {yahoo_sembol: {"close":..., "change":..., "Perf.W":..., ..., "High.All":...}}
+        """
+        tickers = {TRADINGVIEW_LEVEL_MAP[s]: s for s in yahoo_symbols if s in TRADINGVIEW_LEVEL_MAP}
+        if not tickers:
+            return {}
+        payload = {"symbols": {"tickers": list(tickers)}, "columns": TRADINGVIEW_LEVEL_COLUMNS}
+        out: Dict[str, Dict[str, Optional[float]]] = {}
+        try:
+            resp = self.session.post("https://scanner.tradingview.com/global/scan", json=payload, timeout=self.timeout)
+            if resp.status_code != 200:
+                return {}
+            for row in resp.json().get("data", []):
+                sym = tickers.get(row.get("s"))
+                vals = row.get("d") or []
+                if sym is None or len(vals) != len(TRADINGVIEW_LEVEL_COLUMNS):
+                    continue
+                out[sym] = {
+                    col: (float(v) if isinstance(v, (int, float)) else None)
+                    for col, v in zip(TRADINGVIEW_LEVEL_COLUMNS, vals)
+                }
+        except Exception:
+            return {}
+        return out
 
     def fetch_backup_fx_spot(self, yahoo_symbol: str) -> Optional[float]:
         """

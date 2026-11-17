@@ -2,8 +2,8 @@ name: Günlük Finans Raporu, Excel ve Supabase Otomasyonu
 
 on:
   schedule:
-    # Her gün Türkiye saati ile 18:35'te (BIST kapanışı sonrası - 15:35 UTC) otomatik çalışır
-    - cron: "35 15 * * *"
+    # Hafta içi her gün Türkiye saati ile 18:35'te (BIST kapanışı sonrası - 15:35 UTC) otomatik çalışır
+    - cron: "35 15 * * 1-5"
   workflow_dispatch: # GitHub Actions sekmesinden tek tıkla manuel çalıştırma imkanı
 
 permissions:

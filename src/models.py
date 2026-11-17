@@ -44,6 +44,12 @@ class MultiPeriodAsset:
     degisim_1y: Optional[float] = None
     not_bilgisi: str = ""
     kaynak: str = "Yahoo Finance"
+    # Uzun vadeli seviye metrikleri (TradingView): yayında "zirveye %X kaldı" gibi yorumlar için
+    zirve_tum_zamanlar: Optional[float] = None
+    zirveye_uzaklik_yuzde: Optional[float] = None      # Örn: -31.0 (zirvenin %31 altında)
+    zirve_52h: Optional[float] = None
+    zirve_52h_uzaklik_yuzde: Optional[float] = None
+    degisim_5y: Optional[float] = None
 
     @property
     def yon_1g(self) -> str:
@@ -122,6 +128,14 @@ class BistUsdTechnicalAnalysis:
     ma200_usd: Optional[float] = None
     rsi14_usd: Optional[float] = None
     teknik_ozet_yorum: str = ""
+
+    # 5 Yıllık Dolar Bazlı Zirve / Dip (uzun vadeli seviye yorumları için)
+    zirve_5y_usd: Optional[float] = None
+    zirve_5y_tarih: str = ""
+    zirveye_uzaklik_5y_yuzde: Optional[float] = None
+    dip_5y_usd: Optional[float] = None
+    dip_5y_tarih: str = ""
+    dibe_uzaklik_5y_yuzde: Optional[float] = None
 
 
 @dataclass
